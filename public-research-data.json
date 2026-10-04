@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-04T12:19:14.181Z",
+  "checked_at": "2026-10-04T12:47:37.263Z",
   "intro": "从研究问题，到阶段判断与实际成果。每天核对研究记录，有变化就更新；想法还在验证时，也把依据和待解问题讲清楚。",
   "schedule": {
     "status": "preparing",
@@ -54966,6 +54966,167 @@
         ]
       },
       {
+        "id": "reversible-module-artifact",
+        "title": "萌芽资料可逆压缩候选模块：说明与源码",
+        "category": "tools",
+        "kind": "topic",
+        "summary": "已取得并核对2026年8月的独立候选模块原包。公开说明、接口和源码，展示原始资料、薄事实卡、阅读窗口与分支回溯怎样连接。",
+        "status": "独立候选模块，真实效果待验证",
+        "research_date": "原包形成：2026-08-28；本轮仅静态阅读",
+        "source_labels": [
+          "云端候选模块原包，大小与历史SHA一致"
+        ],
+        "keywords": [
+          "萌芽",
+          "可逆压缩",
+          "资料窗口",
+          "源码",
+          "事实卡"
+        ],
+        "sections": [
+          {
+            "heading": "实际已有的成果",
+            "paragraphs": [
+              "原包包含模块说明、合同、源码、使用示例与11个测试定义。本轮对源码结构、文件清单及敏感模式作静态检查，没有执行原模块。",
+              "公开包保留六份说明与源文件，剔除编译字节码，避免传播运行缓存及内部构建路径。"
+            ],
+            "links": [
+              {
+                "label": "下载公开说明与源码包（候选版本）",
+                "url": "https://zhongshuderen-research.netlify.app/artifacts/reversible-context-source.zip"
+              }
+            ]
+          },
+          {
+            "heading": "研究边界",
+            "paragraphs": [
+              "原始资料保留；阅读窗口只暂时选择部分信息，发现新问题后可以回到来源补证。",
+              "这是独立候选模块，尚不能宣称已接入现行选股系统，也没有据此验证真实Token收益或市场效果。"
+            ]
+          }
+        ],
+        "related": [
+          "reversible-context",
+          "knowledge-graphs",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "macro-transmission",
+        "title": "宏观资金、产业采购与利润分配",
+        "category": "methods",
+        "kind": "topic",
+        "summary": "从宏观变化向下追踪资金、实物和利润三条线，研究具体谁出钱、谁制造、谁交付和谁留下现金。",
+        "status": "历史方法归纳与研究过程",
+        "research_date": "原研究整理时点：2026年9月",
+        "source_labels": [
+          "ChatGPT历史｜大锅饭连续续跑"
+        ],
+        "keywords": [
+          "宏观",
+          "产业链",
+          "资金",
+          "利润分配",
+          "中美产业"
+        ],
+        "sections": [
+          {
+            "heading": "六个可继续复用的问题",
+            "paragraphs": [
+              "把承诺投入与实际付款分开；把技术与交付分开；把行业需求与不同企业的利润分配分开。",
+              "按疑点选择能够观察对应环节的来源，展开不同路径并核对共同依赖，再从技术性能继续追到客户采用、运行与退出成本。",
+              "原判断出现问题时，保留撤回、修正及原因，不把事后解释倒填成事前预测。"
+            ]
+          }
+        ],
+        "related": [
+          "digital-physical",
+          "liquid-cooling",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "factor-decay",
+        "title": "因子失效、独立信息与研究更新",
+        "category": "methods",
+        "kind": "topic",
+        "summary": "历史量化外研区分周期覆盖、信息来源、相关性、风险预算、承载能力和数据故障，不把更新更快预设为胜出方案。",
+        "status": "历史外研归纳，具体策略效果待验证",
+        "research_date": "原研究时点：2026-09-25",
+        "source_labels": [
+          "ChatGPT历史｜回测策略过多"
+        ],
+        "keywords": [
+          "量化",
+          "因子失效",
+          "过拟合",
+          "相关性",
+          "风险预算"
+        ],
+        "sections": [
+          {
+            "heading": "研究中形成的区别",
+            "paragraphs": [
+              "先追问新因子是否增加独立信息，再比较更新频率。风险管理改善、执行成本下降与因子预测力恢复是不同事情。",
+              "旧模型冻结与新方案旁路比较，应使用没有参与开发的数据并保留失败，不能仅以总体准确率挑选结果。"
+            ]
+          },
+          {
+            "heading": "覆盖边界",
+            "paragraphs": [
+              "原研究保留机构公开做法、公开提出方向与工程推演的区别；未达到此前较大的全文数量要求，具体内部阈值不能由缺失资料补造。"
+            ]
+          }
+        ],
+        "related": [
+          "method-quant"
+        ]
+      },
+      {
+        "id": "model-release-history",
+        "title": "国产大模型发布节奏：历史预测与事件口径",
+        "category": "tools",
+        "kind": "topic",
+        "summary": "保存2026年9月26日的模型发布研究方法：将通用主力升级、应用更新、公开可用与开放权重分开记录。",
+        "status": "历史预测方法，非当前官方时间表",
+        "research_date": "原记录截至2026-09-26",
+        "source_labels": [
+          "ChatGPT历史｜国产大模型发布预测"
+        ],
+        "keywords": [
+          "DeepSeek",
+          "Qwen",
+          "GLM",
+          "Kimi",
+          "MiniMax",
+          "豆包",
+          "混元",
+          "文心",
+          "阶跃",
+          "星火"
+        ],
+        "sections": [
+          {
+            "heading": "原研究怎样定义预测对象",
+            "paragraphs": [
+              "十家厂商是研究样本，不是权威能力排名。模型的重要升级、产品小版本变化和权重开放属于不同事件。",
+              "历史发布间隔可以形成观察线索，不能自动等于研发周期；只有少数间隔时不应把中心日期写成确定排期。"
+            ]
+          },
+          {
+            "heading": "如何保留预测结果",
+            "paragraphs": [
+              "观察窗口、判断依据和把握程度分别记录。窗口结束后需要按原定义对照，不能用另一类发布替代原预测对象。",
+              "这页整理历史方法，没有重新核对原记录中的版本与未来日期，不将它们发布为今天的官方公告。"
+            ]
+          }
+        ],
+        "related": [
+          "agent-workflow",
+          "method-evidence"
+        ]
+      },
+      {
         "id": "stock-300077",
         "code": "300077",
         "title": "国民技术｜历史研究档案",
@@ -55870,6 +56031,461 @@
         ],
         "related": [
           "wearable-infrastructure",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-shuanglin",
+        "code": "shuanglin",
+        "title": "双林股份｜历史研究档案",
+        "name": "双林股份",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "比较旧资料中的送样、定点、小批量和经营兑现，关注是否发生真正的阶段变化。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史样本与阶段判断",
+        "source_labels": [
+          "ChatGPT历史｜恢复历史进度"
+        ],
+        "keywords": [
+          "双林股份",
+          "shuanglin",
+          "双林股份",
+          "机器人",
+          "商业验证",
+          "预期变化"
+        ],
+        "sections": [
+          {
+            "heading": "原研究中的位置",
+            "paragraphs": [
+              "比较旧资料中的送样、定点、小批量和经营兑现，关注是否发生真正的阶段变化。",
+              "原讨论是在扩大候选范围后作阶段比较，相关对象不是最终买入名单。后续的母公司表现、业务口径和市场价格需要各自更新。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-ikd",
+        "code": "ikd",
+        "title": "爱柯迪｜历史研究档案",
+        "name": "爱柯迪",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "把主业盈利和现金基础、海外产能爬坡与机器人新增量分开观察。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史样本与阶段判断",
+        "source_labels": [
+          "ChatGPT历史｜恢复历史进度"
+        ],
+        "keywords": [
+          "爱柯迪",
+          "ikd",
+          "爱柯迪",
+          "机器人",
+          "商业验证",
+          "预期变化"
+        ],
+        "sections": [
+          {
+            "heading": "原研究中的位置",
+            "paragraphs": [
+              "把主业盈利和现金基础、海外产能爬坡与机器人新增量分开观察。",
+              "原讨论是在扩大候选范围后作阶段比较，相关对象不是最终买入名单。后续的母公司表现、业务口径和市场价格需要各自更新。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-yapp",
+        "code": "yapp",
+        "title": "亚普股份｜历史研究档案",
+        "name": "亚普股份",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "研究传统业务约束与新增部件业务的关系，传言中的客户链不能替代一级披露。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史样本与阶段判断",
+        "source_labels": [
+          "ChatGPT历史｜恢复历史进度"
+        ],
+        "keywords": [
+          "亚普股份",
+          "yapp",
+          "亚普股份",
+          "机器人",
+          "商业验证",
+          "预期变化"
+        ],
+        "sections": [
+          {
+            "heading": "原研究中的位置",
+            "paragraphs": [
+              "研究传统业务约束与新增部件业务的关系，传言中的客户链不能替代一级披露。",
+              "原讨论是在扩大候选范围后作阶段比较，相关对象不是最终买入名单。后续的母公司表现、业务口径和市场价格需要各自更新。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-veichi",
+        "code": "veichi",
+        "title": "伟创电气｜历史研究档案",
+        "name": "伟创电气",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "区分新业务已经出现收入与母公司毛利、利润修复，保留后续兑现条件。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史样本与阶段判断",
+        "source_labels": [
+          "ChatGPT历史｜恢复历史进度"
+        ],
+        "keywords": [
+          "伟创电气",
+          "veichi",
+          "伟创电气",
+          "机器人",
+          "商业验证",
+          "预期变化"
+        ],
+        "sections": [
+          {
+            "heading": "原研究中的位置",
+            "paragraphs": [
+              "区分新业务已经出现收入与母公司毛利、利润修复，保留后续兑现条件。",
+              "原讨论是在扩大候选范围后作阶段比较，相关对象不是最终买入名单。后续的母公司表现、业务口径和市场价格需要各自更新。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-henggong",
+        "code": "henggong",
+        "title": "恒工精密｜历史研究档案",
+        "name": "恒工精密",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "检查机器人核心零件、整机制造和场景部署混合口径，不能全部算成同一种高价值收入。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史样本与阶段判断",
+        "source_labels": [
+          "ChatGPT历史｜恢复历史进度"
+        ],
+        "keywords": [
+          "恒工精密",
+          "henggong",
+          "恒工精密",
+          "机器人",
+          "商业验证",
+          "预期变化"
+        ],
+        "sections": [
+          {
+            "heading": "原研究中的位置",
+            "paragraphs": [
+              "检查机器人核心零件、整机制造和场景部署混合口径，不能全部算成同一种高价值收入。",
+              "原讨论是在扩大候选范围后作阶段比较，相关对象不是最终买入名单。后续的母公司表现、业务口径和市场价格需要各自更新。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-keli",
+        "code": "keli",
+        "title": "柯力传感｜历史研究档案",
+        "name": "柯力传感",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "以具体客户、订单和产品应用观察力学传感器，同时核对对母公司的实际贡献。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史样本与阶段判断",
+        "source_labels": [
+          "ChatGPT历史｜恢复历史进度"
+        ],
+        "keywords": [
+          "柯力传感",
+          "keli",
+          "柯力传感",
+          "机器人",
+          "商业验证",
+          "预期变化"
+        ],
+        "sections": [
+          {
+            "heading": "原研究中的位置",
+            "paragraphs": [
+              "以具体客户、订单和产品应用观察力学传感器，同时核对对母公司的实际贡献。",
+              "原讨论是在扩大候选范围后作阶段比较，相关对象不是最终买入名单。后续的母公司表现、业务口径和市场价格需要各自更新。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-baolong",
+        "code": "baolong",
+        "title": "保隆科技｜历史研究档案",
+        "name": "保隆科技",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "保留主业修复与新增编码器方向的区别，同时保存旧利润预期失效的反证。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史样本与阶段判断",
+        "source_labels": [
+          "ChatGPT历史｜恢复历史进度"
+        ],
+        "keywords": [
+          "保隆科技",
+          "baolong",
+          "保隆科技",
+          "机器人",
+          "商业验证",
+          "预期变化"
+        ],
+        "sections": [
+          {
+            "heading": "原研究中的位置",
+            "paragraphs": [
+              "保留主业修复与新增编码器方向的区别，同时保存旧利润预期失效的反证。",
+              "原讨论是在扩大候选范围后作阶段比较，相关对象不是最终买入名单。后续的母公司表现、业务口径和市场价格需要各自更新。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-yinlun",
+        "code": "yinlun",
+        "title": "银轮股份｜历史研究档案",
+        "name": "银轮股份",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "多条成长业务分别研究，机器人、液冷和其他第二曲线不能把不同预期重复叠加。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史样本与阶段判断",
+        "source_labels": [
+          "ChatGPT历史｜恢复历史进度"
+        ],
+        "keywords": [
+          "银轮股份",
+          "yinlun",
+          "银轮股份",
+          "机器人",
+          "商业验证",
+          "预期变化"
+        ],
+        "sections": [
+          {
+            "heading": "原研究中的位置",
+            "paragraphs": [
+              "多条成长业务分别研究，机器人、液冷和其他第二曲线不能把不同预期重复叠加。",
+              "原讨论是在扩大候选范围后作阶段比较，相关对象不是最终买入名单。后续的母公司表现、业务口径和市场价格需要各自更新。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-leaderdrive",
+        "code": "leaderdrive",
+        "title": "绿的谐波｜历史研究档案",
+        "name": "绿的谐波",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "业务真实性与股价隐含预期分别核对，不以业务纯度直接推出有认知差。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史样本与阶段判断",
+        "source_labels": [
+          "ChatGPT历史｜恢复历史进度"
+        ],
+        "keywords": [
+          "绿的谐波",
+          "leaderdrive",
+          "绿的谐波",
+          "机器人",
+          "商业验证",
+          "预期变化"
+        ],
+        "sections": [
+          {
+            "heading": "原研究中的位置",
+            "paragraphs": [
+              "业务真实性与股价隐含预期分别核对，不以业务纯度直接推出有认知差。",
+              "原讨论是在扩大候选范围后作阶段比较，相关对象不是最终买入名单。后续的母公司表现、业务口径和市场价格需要各自更新。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-beite",
+        "code": "beite",
+        "title": "北特科技｜历史研究档案",
+        "name": "北特科技",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "把能力建设、产线、订单和对业绩的实际影响分层核对。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史样本与阶段判断",
+        "source_labels": [
+          "ChatGPT历史｜恢复历史进度"
+        ],
+        "keywords": [
+          "北特科技",
+          "beite",
+          "北特科技",
+          "机器人",
+          "商业验证",
+          "预期变化"
+        ],
+        "sections": [
+          {
+            "heading": "原研究中的位置",
+            "paragraphs": [
+              "把能力建设、产线、订单和对业绩的实际影响分层核对。",
+              "原讨论是在扩大候选范围后作阶段比较，相关对象不是最终买入名单。后续的母公司表现、业务口径和市场价格需要各自更新。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-xinchun",
+        "code": "xinchun",
+        "title": "五洲新春｜历史研究档案",
+        "name": "五洲新春",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "关注业务进展、盈利状态和市场已包含的未来假设之间的关系。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史样本与阶段判断",
+        "source_labels": [
+          "ChatGPT历史｜恢复历史进度"
+        ],
+        "keywords": [
+          "五洲新春",
+          "xinchun",
+          "五洲新春",
+          "机器人",
+          "商业验证",
+          "预期变化"
+        ],
+        "sections": [
+          {
+            "heading": "原研究中的位置",
+            "paragraphs": [
+              "关注业务进展、盈利状态和市场已包含的未来假设之间的关系。",
+              "原讨论是在扩大候选范围后作阶段比较，相关对象不是最终买入名单。后续的母公司表现、业务口径和市场价格需要各自更新。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-hengshuai",
+        "code": "hengshuai",
+        "title": "恒帅股份｜历史研究档案",
+        "name": "恒帅股份",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "按需求匹配、送样和规模订单的不同阶段记录，不能只用技术标签升级为确定候选。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史样本与阶段判断",
+        "source_labels": [
+          "ChatGPT历史｜恢复历史进度"
+        ],
+        "keywords": [
+          "恒帅股份",
+          "hengshuai",
+          "恒帅股份",
+          "机器人",
+          "商业验证",
+          "预期变化"
+        ],
+        "sections": [
+          {
+            "heading": "原研究中的位置",
+            "paragraphs": [
+              "按需求匹配、送样和规模订单的不同阶段记录，不能只用技术标签升级为确定候选。",
+              "原讨论是在扩大候选范围后作阶段比较，相关对象不是最终买入名单。后续的母公司表现、业务口径和市场价格需要各自更新。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-kinco",
+        "code": "kinco",
+        "title": "步科股份｜历史研究档案",
+        "name": "步科股份",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "将产品业务增长与市场定价分开，真实经营不等于股票在任何价格都具有优势。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史样本与阶段判断",
+        "source_labels": [
+          "ChatGPT历史｜恢复历史进度"
+        ],
+        "keywords": [
+          "步科股份",
+          "kinco",
+          "步科股份",
+          "机器人",
+          "商业验证",
+          "预期变化"
+        ],
+        "sections": [
+          {
+            "heading": "原研究中的位置",
+            "paragraphs": [
+              "将产品业务增长与市场定价分开，真实经营不等于股票在任何价格都具有优势。",
+              "原讨论是在扩大候选范围后作阶段比较，相关对象不是最终买入名单。后续的母公司表现、业务口径和市场价格需要各自更新。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics",
           "method-evidence"
         ]
       }
