@@ -21,4 +21,12 @@ path = "/topics/*"
 
 [[edge_functions]]
 function = "research"
+path = "/library/*"
+
+[[edge_functions]]
+function = "research"
+path = "/stocks/*"
+
+[[edge_functions]]
+function = "research"
 path = "/sitemap.xml"
