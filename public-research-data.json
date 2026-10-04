@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-04T15:12:35.123Z",
+  "checked_at": "2026-10-04T15:25:19.396Z",
   "intro": "从研究问题，到阶段判断与实际成果。每天核对研究记录，有变化就更新；想法还在验证时，也把依据和待解问题讲清楚。",
   "schedule": {
     "status": "preparing",
@@ -18345,7 +18345,9 @@
         ],
         "related": [
           "method-loans",
-          "method-evidence"
+          "method-evidence",
+          "pharma-translation-chain",
+          "archive-early-run-20260821"
         ]
       },
       {
@@ -27174,7 +27176,9 @@
         ],
         "related": [
           "industry-801053",
-          "method-industry"
+          "method-industry",
+          "precious-metals-transmission",
+          "archive-early-run-20260821"
         ]
       },
       {
@@ -49731,7 +49735,10 @@
         "keywords": [
           "AI制药、基因工具和个性化医疗"
         ],
-        "related": []
+        "related": [
+          "pharma-translation-chain",
+          "stock-03696"
+        ]
       },
       {
         "id": "ai-economy",
@@ -55982,6 +55989,823 @@
           }
         ],
         "related": []
+      },
+      {
+        "id": "pharma-translation-chain",
+        "title": "mRNA与AI制药研究：临床、授权合作与商业兑现",
+        "kind": "topic",
+        "category": "industries",
+        "summary": "从早期医药叙事保存研究线索，区分临床事件、AI平台合作、上游供应和真实收入。",
+        "research_date": "历史运行产物：2026-08-21；本轮回读整理",
+        "status": "历史叙事与待核问题，非当前行情结论",
+        "source_labels": [
+          "三林飞早期运行产物｜全量报告与映射记录"
+        ],
+        "keywords": [
+          "mRNA与AI制药研究：临床、授权合作与商业兑现",
+          "财经研究",
+          "历史研究",
+          "证据核验"
+        ],
+        "sections": [
+          {
+            "heading": "原报告提出的线索",
+            "paragraphs": [
+              "早期报告把mRNA癌症疫苗、创新药出海合作和AI制药放在同一观察线，并映射键凯科技、康希诺、近岸蛋白、北陆药业与英矽智能。映射表示研究提及，不证明各公司都从同一临床事件受益。"
+            ]
+          },
+          {
+            "heading": "临床断言仍需回源",
+            "paragraphs": [
+              "原产物含mRNA癌症疫苗三期成功的强断言，但本轮只取得取数摘要和映射记录，没有取得对应完整临床原公告。试验登记、主要终点、正式结果与批准环节须分别核对，不能把该摘要直接标成已证实。"
+            ]
+          },
+          {
+            "heading": "合作金额拆成不同阶段",
+            "paragraphs": [
+              "AI平台合作、候选分子开发、临床验证、里程碑达成和销售兑现是不同环节。合同潜在总额、近期付款和已确认收入也应分别记录。"
+            ]
+          },
+          {
+            "heading": "供应链映射的下一步",
+            "paragraphs": [
+              "药用材料、酶与平台能力只有经过具体产品、客户验证、实际订单、收入毛利和回款，才能形成公司层面的传导证据。板块上涨本身不能代替这条链。"
+            ]
+          }
+        ],
+        "related": [
+          "stock-688356",
+          "stock-688185",
+          "stock-688137",
+          "stock-300016",
+          "stock-03696",
+          "ai-drug"
+        ]
+      },
+      {
+        "id": "cpo-commercial-evidence",
+        "title": "CPO与半导体设备研究：事件催化怎样落实到公司",
+        "kind": "topic",
+        "category": "industries",
+        "summary": "保留光通信、硅光及设备叙事中的公司线索，继续检查订单、供货阶段和盈利兑现。",
+        "research_date": "历史运行产物：2026-08-21；本轮回读整理",
+        "status": "历史叙事与待核问题，非当前行情结论",
+        "source_labels": [
+          "三林飞早期运行产物｜全量报告与映射记录"
+        ],
+        "keywords": [
+          "CPO与半导体设备研究：事件催化怎样落实到公司",
+          "财经研究",
+          "历史研究",
+          "证据核验"
+        ],
+        "sections": [
+          {
+            "heading": "早期材料的映射",
+            "paragraphs": [
+              "报告把CPO、光模块和半导体设备叙事关联到中瓷电子、星网锐捷、可川科技、通鼎互联与士兰微。原材料中的量产、路线图和设备景气表述，仍需回到对应公司与行业原文。"
+            ]
+          },
+          {
+            "heading": "技术路线不等于全部受益",
+            "paragraphs": [
+              "外壳基板、交换机、硅光组件、互联和模拟芯片承担不同角色。不能用一个热门技术词把所有对象视为同一业务，也不能把某家海外厂商进展替换为每家映射公司的订单。"
+            ]
+          },
+          {
+            "heading": "继续研究的具体问题",
+            "paragraphs": [
+              "逐个核对产品是否处于送样、认证、小批量、量产或收入确认阶段，再看单价、良率、客户结构与利润。原报告明确保留量产订单和收入缺口，本页继续保留。"
+            ]
+          }
+        ],
+        "related": [
+          "stock-003031",
+          "stock-002396",
+          "stock-603052",
+          "stock-002491",
+          "stock-600460",
+          "hbm-supply-claims"
+        ]
+      },
+      {
+        "id": "precious-metals-transmission",
+        "title": "黄金白银研究：价格变化与公司利润的传导",
+        "kind": "topic",
+        "category": "industries",
+        "summary": "从贵金属历史叙事回到企业业务差异，区分金属价格、生产、冶炼回收与市场定价。",
+        "research_date": "历史运行产物：2026-08-21；本轮回读整理",
+        "status": "历史叙事与待核问题，非当前行情结论",
+        "source_labels": [
+          "三林飞早期运行产物｜全量报告与映射记录"
+        ],
+        "keywords": [
+          "黄金白银研究：价格变化与公司利润的传导",
+          "财经研究",
+          "历史研究",
+          "证据核验"
+        ],
+        "sections": [
+          {
+            "heading": "原叙事与提及对象",
+            "paragraphs": [
+              "早期报告用金银价格叙事关联湖南白银与白银有色。原报告具体价格、涨停和板块涨幅属于当时取数摘要，本轮没有重新核验，不作为今天行情使用。"
+            ]
+          },
+          {
+            "heading": "传导不止一个方向",
+            "paragraphs": [
+              "金属价格变化可能影响销售、原料成本、库存、加工收益和资金占用。研究需要先拆企业承担的业务环节，再看它的具体敞口。"
+            ]
+          },
+          {
+            "heading": "保留条件与反例",
+            "paragraphs": [
+              "原料价格与产品价格怎样调整、成本能否转嫁、库存和结算周期以及外部利率与汇率，均可能改变结论。价格方向不自动决定某家公司的盈利或是否低估。"
+            ]
+          }
+        ],
+        "related": [
+          "stock-002716",
+          "stock-601212",
+          "industry-801053",
+          "mat-011"
+        ]
+      },
+      {
+        "id": "robotics-cooling-materials",
+        "title": "机器人液冷与材料研究：题材关联之后查什么",
+        "kind": "topic",
+        "category": "industries",
+        "summary": "将早期飞龙股份和沃特股份映射保留为研究入口，区分材料能力、热管理、客户验证及量产订单。",
+        "research_date": "历史运行产物：2026-08-21；本轮回读整理",
+        "status": "历史叙事与待核问题，非当前行情结论",
+        "source_labels": [
+          "三林飞早期运行产物｜全量报告与映射记录"
+        ],
+        "keywords": [
+          "机器人液冷与材料研究：题材关联之后查什么",
+          "财经研究",
+          "历史研究",
+          "证据核验"
+        ],
+        "sections": [
+          {
+            "heading": "原报告怎样关联",
+            "paragraphs": [
+              "早期运行产物把飞龙股份放入液冷与机器人热管理线索，将沃特股份放入机器人材料线索。原材料同时保留量产订单真实性待核和事件催化属性。"
+            ]
+          },
+          {
+            "heading": "从能力到订单",
+            "paragraphs": [
+              "产品适配的工作环境、客户验证、供货阶段、可靠性及量产一致性应逐项回源。公司既有业务与人形增量之间，还需要可拆分的收入和利润桥。"
+            ]
+          },
+          {
+            "heading": "避免跨场景替代",
+            "paragraphs": [
+              "服务器液冷、其他工业设备和机器人散热不是完全相同的需求。材料被用于某场景，也不等于该场景已经形成大规模商业收入。"
+            ]
+          }
+        ],
+        "related": [
+          "stock-002536",
+          "stock-002886",
+          "robotics",
+          "humanoid-supply-chain"
+        ]
+      },
+      {
+        "id": "market-baseline-separation",
+        "title": "宏观研究基线：市场环境与个股映射的边界",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "保留早期A股与港股环境讨论，宏观节点没有个股映射不等于研究缺失。",
+        "research_date": "历史运行产物：2026-08-21；本轮回读整理",
+        "status": "历史叙事与待核问题，非当前行情结论",
+        "source_labels": [
+          "三林飞早期运行产物｜全量报告与映射记录"
+        ],
+        "keywords": [
+          "宏观研究基线：市场环境与个股映射的边界",
+          "财经研究",
+          "历史研究",
+          "证据核验"
+        ],
+        "sections": [
+          {
+            "heading": "原运行中的角色",
+            "paragraphs": [
+              "五条叙事中的第五条是指数与市场环境基线，原映射记录明确该节点没有个股候选。它用于提供情境，不应强行填一家公司使列表看起来完整。"
+            ]
+          },
+          {
+            "heading": "同口径比较",
+            "paragraphs": [
+              "指数、成交、风格、估值分位和不同市场相对表现回答不同问题；时间、币种、样本和计算方法需要对应。旧报告点位和估值分位没有在本轮回核，因此保留为历史判断。"
+            ]
+          },
+          {
+            "heading": "基线与结论分开",
+            "paragraphs": [
+              "环境材料可以提出约束和反例，但不能自己证明所有股票都应上涨或某行业一定受益。个股业务与市场认知仍需独立研究。"
+            ]
+          }
+        ],
+        "related": [
+          "mat-011",
+          "method-evidence",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "research-source-freshness",
+        "title": "研究证据方法：原始响应、文本索引与信息时效",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "早期报告保留证据摘要和映射，但字段名称、运行状态与原始事实核验各自需要对应证据。",
+        "research_date": "历史运行产物：2026-08-21；本轮回读整理",
+        "status": "历史叙事与待核问题，非当前行情结论",
+        "source_labels": [
+          "三林飞早期运行产物｜全量报告与映射记录"
+        ],
+        "keywords": [
+          "研究证据方法：原始响应、文本索引与信息时效",
+          "财经研究",
+          "历史研究",
+          "证据核验"
+        ],
+        "sections": [
+          {
+            "heading": "九条摘要不等于九个独立来源",
+            "paragraphs": [
+              "原包证据库有9条摘要，部分对应同一筛选或知识库检索的不同派生条目。应追踪底层获取与依赖关系，再决定独立支持数量。"
+            ]
+          },
+          {
+            "heading": "标签与原始内容",
+            "paragraphs": [
+              "来源标识、调用位置和名为content_hash的字段可以帮助索引；符号式文本指纹不能独立证明原始字节、取数真实性或外部事件正确。原包自述真实执行，仍应与可恢复原响应及轨迹分别核对。"
+            ]
+          },
+          {
+            "heading": "日期口径发现的张力",
+            "paragraphs": [
+              "报告头部将8月7日至8月21日窗口标成不超过两个交易日；证据条目又出现8月7日和8月14日材料。日期跨度与新鲜度标签需要回到规则核对，不能只凭标签认定所有内容都足够新。"
+            ]
+          },
+          {
+            "heading": "产物生成与研究完成",
+            "paragraphs": [
+              "原报告运行生成状态成功，但5个市场认知节点仍为未知，订单、临床和宏观验证缺口仍开放。生成HTML不等于这些业务问题已经完成。"
+            ]
+          }
+        ],
+        "related": [
+          "method-evidence",
+          "wide-source-method",
+          "mat-015",
+          "archive-early-run-20260821"
+        ]
+      },
+      {
+        "id": "archive-early-run-20260821",
+        "title": "早期五条产业叙事与14个公司映射｜2026年8月21日",
+        "kind": "archive",
+        "category": "archives",
+        "summary": "现已读回报告、证据摘要、第二轮叙事和公司映射，主题与待核结论分别展开。",
+        "research_date": "历史运行产物：2026-08-21；本轮回读整理",
+        "status": "历史叙事与待核问题，非当前行情结论",
+        "source_labels": [
+          "三林飞早期运行产物｜全量报告与映射记录"
+        ],
+        "keywords": [
+          "早期五条产业叙事与14个公司映射｜2026年8月21日",
+          "财经研究",
+          "历史研究",
+          "证据核验"
+        ],
+        "sections": [
+          {
+            "heading": "实际读取范围",
+            "paragraphs": [
+              "本轮从历史运行产物读取HTML正文、9条证据摘要、5个叙事节点及14个公司映射。没有执行旧工程、改变配置或根据产物状态恢复原任务。"
+            ]
+          },
+          {
+            "heading": "五条研究线",
+            "paragraphs": [
+              "医药与AI制药、CPO及设备、贵金属、机器人液冷材料、宏观环境分别展开；最后一条是基线，没有个股候选。"
+            ]
+          },
+          {
+            "heading": "继续保留的状态",
+            "paragraphs": [
+              "原报告市场认知全部未知，具体临床、订单与收入缺口尚待核验。部分时效标签与材料日期之间有张力，运行成功不能替代这些验证。"
+            ]
+          }
+        ],
+        "related": [
+          "pharma-translation-chain",
+          "cpo-commercial-evidence",
+          "precious-metals-transmission",
+          "robotics-cooling-materials",
+          "market-baseline-separation",
+          "research-source-freshness",
+          "stock-688356",
+          "stock-688185",
+          "stock-688137",
+          "stock-300016",
+          "stock-03696",
+          "stock-003031",
+          "stock-002396",
+          "stock-603052",
+          "stock-002491",
+          "stock-600460",
+          "stock-002716",
+          "stock-601212",
+          "stock-002536",
+          "stock-002886"
+        ]
+      },
+      {
+        "id": "stock-688356",
+        "code": "688356",
+        "name": "键凯科技",
+        "title": "键凯科技｜早期研究映射",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "早期运行产物将该对象列作药用材料与mRNA叙事线索；当前作为独立研究入口保留。",
+        "research_date": "原映射：2026-08-21",
+        "status": "历史研究提及，未完成当前个股核验",
+        "source_labels": [
+          "早期运行产物｜14个公司映射"
+        ],
+        "keywords": [
+          "键凯科技",
+          "688356",
+          "药用材料与mRNA叙事线索"
+        ],
+        "sections": [
+          {
+            "heading": "原材料中的角色",
+            "paragraphs": [
+              "原报告通过药用材料与mRNA叙事线索将该公司纳入观察。映射理由是当时的研究线索，不表示客户关系、量产订单或利润贡献已经在本轮确认。"
+            ]
+          },
+          {
+            "heading": "继续研究的证据",
+            "paragraphs": [
+              "需要核对具体产品或项目、客户与供货状态、真实订单、收入毛利及资金回收。原报告的市场认知状态仍未知，涨停摘要不能替代当前价格与估值研究。"
+            ]
+          }
+        ],
+        "related": [
+          "pharma-translation-chain",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-688185",
+        "code": "688185",
+        "name": "康希诺",
+        "title": "康希诺｜早期研究映射",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "早期运行产物将该对象列作疫苗平台研究线索；当前作为独立研究入口保留。",
+        "research_date": "原映射：2026-08-21",
+        "status": "历史研究提及，未完成当前个股核验",
+        "source_labels": [
+          "早期运行产物｜14个公司映射"
+        ],
+        "keywords": [
+          "康希诺",
+          "688185",
+          "疫苗平台研究线索"
+        ],
+        "sections": [
+          {
+            "heading": "原材料中的角色",
+            "paragraphs": [
+              "原报告通过疫苗平台研究线索将该公司纳入观察。映射理由是当时的研究线索，不表示客户关系、量产订单或利润贡献已经在本轮确认。"
+            ]
+          },
+          {
+            "heading": "继续研究的证据",
+            "paragraphs": [
+              "需要核对具体产品或项目、客户与供货状态、真实订单、收入毛利及资金回收。原报告的市场认知状态仍未知，涨停摘要不能替代当前价格与估值研究。"
+            ]
+          }
+        ],
+        "related": [
+          "pharma-translation-chain",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-688137",
+        "code": "688137",
+        "name": "近岸蛋白",
+        "title": "近岸蛋白｜早期研究映射",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "早期运行产物将该对象列作原料酶与研发供应线索；当前作为独立研究入口保留。",
+        "research_date": "原映射：2026-08-21",
+        "status": "历史研究提及，未完成当前个股核验",
+        "source_labels": [
+          "早期运行产物｜14个公司映射"
+        ],
+        "keywords": [
+          "近岸蛋白",
+          "688137",
+          "原料酶与研发供应线索"
+        ],
+        "sections": [
+          {
+            "heading": "原材料中的角色",
+            "paragraphs": [
+              "原报告通过原料酶与研发供应线索将该公司纳入观察。映射理由是当时的研究线索，不表示客户关系、量产订单或利润贡献已经在本轮确认。"
+            ]
+          },
+          {
+            "heading": "继续研究的证据",
+            "paragraphs": [
+              "需要核对具体产品或项目、客户与供货状态、真实订单、收入毛利及资金回收。原报告的市场认知状态仍未知，涨停摘要不能替代当前价格与估值研究。"
+            ]
+          }
+        ],
+        "related": [
+          "pharma-translation-chain",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-03696",
+        "code": "03696",
+        "name": "英矽智能",
+        "title": "英矽智能｜AI制药与合作条款研究",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "已回官方披露核对03696.HK身份，合作潜在总额、阶段付款、已确认收入与研发进展分别研究。",
+        "research_date": "原映射：2026-08-21",
+        "status": "身份与合作公告已回源，财务和定价仍待核",
+        "source_labels": [
+          "早期运行产物｜14个公司映射",
+          "港交所公司公告及公司合作原文"
+        ],
+        "keywords": [
+          "英矽智能",
+          "03696",
+          "AI药物发现与授权合作",
+          "Insilico Medicine",
+          "3696.HK",
+          "Pharma.AI",
+          "合作里程碑"
+        ],
+        "sections": [
+          {
+            "heading": "本轮回到官方披露的部分",
+            "paragraphs": [
+              "公司披露核对名称为英矽智能，股票代码03696.HK；公司在2025年12月30日于香港主板上市。",
+              "2026年7月2日公司合作公告将约6000万美元描述为项目启动、近期付款及里程碑组合；约6亿美元包括成功条件下的后续里程碑潜在总额，另有未来销售分成。不能把潜在总额直接改称已经全部到账或当期利润。"
+            ],
+            "links": [
+              {
+                "label": "港交所公司公告｜名称与股票代码",
+                "url": "https://www.hkexnews.hk/listedco/listconews/sehk/2026/0123/2026012300100_c.pdf"
+              },
+              {
+                "label": "公司合作公告｜2026年7月2日",
+                "url": "https://insilico.com/news/4ifuiaal01-insilico-medicine-announces-collaboratio"
+              }
+            ]
+          },
+          {
+            "heading": "原材料中的角色",
+            "paragraphs": [
+              "原报告通过AI药物发现与授权合作将该公司纳入观察。映射理由是当时的研究线索，不表示客户关系、量产订单或利润贡献已经在本轮确认。"
+            ]
+          },
+          {
+            "heading": "继续研究的证据",
+            "paragraphs": [
+              "需要核对具体产品或项目、客户与供货状态、真实订单、收入毛利及资金回收。原报告的市场认知状态仍未知，涨停摘要不能替代当前价格与估值研究。"
+            ]
+          }
+        ],
+        "related": [
+          "pharma-translation-chain",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-003031",
+        "code": "003031",
+        "name": "中瓷电子",
+        "title": "中瓷电子｜早期研究映射",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "早期运行产物将该对象列作光通信部件与材料线索；当前作为独立研究入口保留。",
+        "research_date": "原映射：2026-08-21",
+        "status": "历史研究提及，未完成当前个股核验",
+        "source_labels": [
+          "早期运行产物｜14个公司映射"
+        ],
+        "keywords": [
+          "中瓷电子",
+          "003031",
+          "光通信部件与材料线索"
+        ],
+        "sections": [
+          {
+            "heading": "原材料中的角色",
+            "paragraphs": [
+              "原报告通过光通信部件与材料线索将该公司纳入观察。映射理由是当时的研究线索，不表示客户关系、量产订单或利润贡献已经在本轮确认。"
+            ]
+          },
+          {
+            "heading": "继续研究的证据",
+            "paragraphs": [
+              "需要核对具体产品或项目、客户与供货状态、真实订单、收入毛利及资金回收。原报告的市场认知状态仍未知，涨停摘要不能替代当前价格与估值研究。"
+            ]
+          }
+        ],
+        "related": [
+          "cpo-commercial-evidence",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-002396",
+        "code": "002396",
+        "name": "星网锐捷",
+        "title": "星网锐捷｜早期研究映射",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "早期运行产物将该对象列作数据中心交换机线索；当前作为独立研究入口保留。",
+        "research_date": "原映射：2026-08-21",
+        "status": "历史研究提及，未完成当前个股核验",
+        "source_labels": [
+          "早期运行产物｜14个公司映射"
+        ],
+        "keywords": [
+          "星网锐捷",
+          "002396",
+          "数据中心交换机线索"
+        ],
+        "sections": [
+          {
+            "heading": "原材料中的角色",
+            "paragraphs": [
+              "原报告通过数据中心交换机线索将该公司纳入观察。映射理由是当时的研究线索，不表示客户关系、量产订单或利润贡献已经在本轮确认。"
+            ]
+          },
+          {
+            "heading": "继续研究的证据",
+            "paragraphs": [
+              "需要核对具体产品或项目、客户与供货状态、真实订单、收入毛利及资金回收。原报告的市场认知状态仍未知，涨停摘要不能替代当前价格与估值研究。"
+            ]
+          }
+        ],
+        "related": [
+          "cpo-commercial-evidence",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-603052",
+        "code": "603052",
+        "name": "可川科技",
+        "title": "可川科技｜早期研究映射",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "早期运行产物将该对象列作硅光及组件线索；当前作为独立研究入口保留。",
+        "research_date": "原映射：2026-08-21",
+        "status": "历史研究提及，未完成当前个股核验",
+        "source_labels": [
+          "早期运行产物｜14个公司映射"
+        ],
+        "keywords": [
+          "可川科技",
+          "603052",
+          "硅光及组件线索"
+        ],
+        "sections": [
+          {
+            "heading": "原材料中的角色",
+            "paragraphs": [
+              "原报告通过硅光及组件线索将该公司纳入观察。映射理由是当时的研究线索，不表示客户关系、量产订单或利润贡献已经在本轮确认。"
+            ]
+          },
+          {
+            "heading": "继续研究的证据",
+            "paragraphs": [
+              "需要核对具体产品或项目、客户与供货状态、真实订单、收入毛利及资金回收。原报告的市场认知状态仍未知，涨停摘要不能替代当前价格与估值研究。"
+            ]
+          }
+        ],
+        "related": [
+          "cpo-commercial-evidence",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-002491",
+        "code": "002491",
+        "name": "通鼎互联",
+        "title": "通鼎互联｜早期研究映射",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "早期运行产物将该对象列作光通信与互联线索；当前作为独立研究入口保留。",
+        "research_date": "原映射：2026-08-21",
+        "status": "历史研究提及，未完成当前个股核验",
+        "source_labels": [
+          "早期运行产物｜14个公司映射"
+        ],
+        "keywords": [
+          "通鼎互联",
+          "002491",
+          "光通信与互联线索"
+        ],
+        "sections": [
+          {
+            "heading": "原材料中的角色",
+            "paragraphs": [
+              "原报告通过光通信与互联线索将该公司纳入观察。映射理由是当时的研究线索，不表示客户关系、量产订单或利润贡献已经在本轮确认。"
+            ]
+          },
+          {
+            "heading": "继续研究的证据",
+            "paragraphs": [
+              "需要核对具体产品或项目、客户与供货状态、真实订单、收入毛利及资金回收。原报告的市场认知状态仍未知，涨停摘要不能替代当前价格与估值研究。"
+            ]
+          }
+        ],
+        "related": [
+          "cpo-commercial-evidence",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-600460",
+        "code": "600460",
+        "name": "士兰微",
+        "title": "士兰微｜早期研究映射",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "早期运行产物将该对象列作半导体制造与模拟芯片线索；当前作为独立研究入口保留。",
+        "research_date": "原映射：2026-08-21",
+        "status": "历史研究提及，未完成当前个股核验",
+        "source_labels": [
+          "早期运行产物｜14个公司映射"
+        ],
+        "keywords": [
+          "士兰微",
+          "600460",
+          "半导体制造与模拟芯片线索"
+        ],
+        "sections": [
+          {
+            "heading": "原材料中的角色",
+            "paragraphs": [
+              "原报告通过半导体制造与模拟芯片线索将该公司纳入观察。映射理由是当时的研究线索，不表示客户关系、量产订单或利润贡献已经在本轮确认。"
+            ]
+          },
+          {
+            "heading": "继续研究的证据",
+            "paragraphs": [
+              "需要核对具体产品或项目、客户与供货状态、真实订单、收入毛利及资金回收。原报告的市场认知状态仍未知，涨停摘要不能替代当前价格与估值研究。"
+            ]
+          }
+        ],
+        "related": [
+          "cpo-commercial-evidence",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-601212",
+        "code": "601212",
+        "name": "白银有色",
+        "title": "白银有色｜早期研究映射",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "早期运行产物将该对象列作贵金属及有色金属生产线索；当前作为独立研究入口保留。",
+        "research_date": "原映射：2026-08-21",
+        "status": "历史研究提及，未完成当前个股核验",
+        "source_labels": [
+          "早期运行产物｜14个公司映射"
+        ],
+        "keywords": [
+          "白银有色",
+          "601212",
+          "贵金属及有色金属生产线索"
+        ],
+        "sections": [
+          {
+            "heading": "原材料中的角色",
+            "paragraphs": [
+              "原报告通过贵金属及有色金属生产线索将该公司纳入观察。映射理由是当时的研究线索，不表示客户关系、量产订单或利润贡献已经在本轮确认。"
+            ]
+          },
+          {
+            "heading": "继续研究的证据",
+            "paragraphs": [
+              "需要核对具体产品或项目、客户与供货状态、真实订单、收入毛利及资金回收。原报告的市场认知状态仍未知，涨停摘要不能替代当前价格与估值研究。"
+            ]
+          }
+        ],
+        "related": [
+          "precious-metals-transmission",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-002536",
+        "code": "002536",
+        "name": "飞龙股份",
+        "title": "飞龙股份｜早期研究映射",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "早期运行产物将该对象列作液冷与热管理线索；当前作为独立研究入口保留。",
+        "research_date": "原映射：2026-08-21",
+        "status": "历史研究提及，未完成当前个股核验",
+        "source_labels": [
+          "早期运行产物｜14个公司映射"
+        ],
+        "keywords": [
+          "飞龙股份",
+          "002536",
+          "液冷与热管理线索"
+        ],
+        "sections": [
+          {
+            "heading": "原材料中的角色",
+            "paragraphs": [
+              "原报告通过液冷与热管理线索将该公司纳入观察。映射理由是当时的研究线索，不表示客户关系、量产订单或利润贡献已经在本轮确认。"
+            ]
+          },
+          {
+            "heading": "继续研究的证据",
+            "paragraphs": [
+              "需要核对具体产品或项目、客户与供货状态、真实订单、收入毛利及资金回收。原报告的市场认知状态仍未知，涨停摘要不能替代当前价格与估值研究。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics-cooling-materials",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-002886",
+        "code": "002886",
+        "name": "沃特股份",
+        "title": "沃特股份｜早期研究映射",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "早期运行产物将该对象列作机器人材料线索；当前作为独立研究入口保留。",
+        "research_date": "原映射：2026-08-21",
+        "status": "历史研究提及，未完成当前个股核验",
+        "source_labels": [
+          "早期运行产物｜14个公司映射"
+        ],
+        "keywords": [
+          "沃特股份",
+          "002886",
+          "机器人材料线索"
+        ],
+        "sections": [
+          {
+            "heading": "原材料中的角色",
+            "paragraphs": [
+              "原报告通过机器人材料线索将该公司纳入观察。映射理由是当时的研究线索，不表示客户关系、量产订单或利润贡献已经在本轮确认。"
+            ]
+          },
+          {
+            "heading": "继续研究的证据",
+            "paragraphs": [
+              "需要核对具体产品或项目、客户与供货状态、真实订单、收入毛利及资金回收。原报告的市场认知状态仍未知，涨停摘要不能替代当前价格与估值研究。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics-cooling-materials",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
       },
       {
         "id": "robotics-price-comparison",
