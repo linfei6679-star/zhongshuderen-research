@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-04T17:17:32.023Z",
+  "checked_at": "2026-10-04T17:37:41.963Z",
   "intro": "从研究问题，到阶段判断与实际成果。每天核对研究记录，有变化就更新；想法还在验证时，也把依据和待解问题讲清楚。",
   "schedule": {
     "status": "preparing",
@@ -48741,9 +48741,18 @@
               "该对象在已取得的云端研究材料中出现。提及、对照样本与形成结论是不同阶段，后续继续按原材料整理。",
               "相关材料：04_哲学思想_主题与来源索引.md（资料更新 2026-09-17）；03_哲学思辨对话集.md（资料更新 2026-09-17）；05_哲学相关历史材料_完整文本保全.md（资料更新 2026-09-16）；06_信源2哲学数学迁移卷_原文件.docx（资料更新 2026-09-16）"
             ]
+          },
+          {
+            "heading": "早期情绪价值讨论",
+            "paragraphs": [
+              "早期信源讨论以泡泡玛特解释情绪、IP、收藏与身份的消费维度，并用为玩偶增加实用功能的假设说明评价标准可能改变。这是历史研究者观点，不是消费者实验或当前估值结论。"
+            ]
           }
         ],
-        "related": []
+        "related": [
+          "agency-and-wealth-context",
+          "seed-lifecycle"
+        ]
       },
       {
         "id": "stock-tesla",
@@ -50195,12 +50204,23 @@
               "维护作者、原始出处、时间和作品内容，为研究保留资料来路。",
               "文字归集和流水线属于基础设施，实际效果仍要看能否发现并推进有价值的问题。"
             ]
+          },
+          {
+            "heading": "早期来源原件中的职责边界",
+            "paragraphs": [
+              "本轮读回早期百眼总纲与信源讨论原件，分别整理观察契约、事件去重、种子生命史和发现与核验的差别。目标规模、MVP计划与实际完成情况分别保留。"
+            ]
           }
         ],
         "keywords": [
           "百眼、信源与财经信息观察"
         ],
-        "related": []
+        "related": [
+          "baiyan-observation-contract",
+          "event-views-dedup",
+          "seed-lifecycle",
+          "weak-signal-vs-verification"
+        ]
       },
       {
         "id": "agent-workflow",
@@ -55116,11 +55136,18 @@
             "paragraphs": [
               "可通过对应主题和研究项目继续阅读。"
             ]
+          },
+          {
+            "heading": "文本审计与实际运行分开",
+            "paragraphs": [
+              "原报告59项文本结构检查通过，列163项不变量和166个测试定义；这不是166次真实研究实验通过。本轮未运行原工程。"
+            ]
           }
         ],
         "related": [
           "source-observation",
-          "agent-workflow"
+          "agent-workflow",
+          "three-role-research-design"
         ]
       },
       {
@@ -55148,11 +55175,20 @@
             "paragraphs": [
               "可通过对应主题和研究项目继续阅读。"
             ]
+          },
+          {
+            "heading": "本轮读回的规范与审计范围",
+            "paragraphs": [
+              "本轮从历史施工附件中读取V4.14.2总图和审计报告，新增取证、叙事、呈现及定向补缺的公开说明。只读来源，没有执行其中重建工程或删除旧代码的历史指令。"
+            ]
           }
         ],
         "related": [
           "source-observation",
-          "agent-workflow"
+          "agent-workflow",
+          "three-role-research-design",
+          "linfei-context-provenance",
+          "linfei-targeted-gaps"
         ]
       },
       {
@@ -56361,9 +56397,19 @@
               "F. 本轮发现的关键冲突｜必须保留，不强行统一",
               "G. 仍未解决的问题（下一轮研究边界，不自动开工）"
             ]
+          },
+          {
+            "heading": "来源预算V2补充",
+            "paragraphs": [
+              "本轮读取2026-08-22来源政策包，登记68项来源、28项中文原生线索。默认比例是历史启发式；配置审计通过且原记录真实模型API调用为0。"
+            ]
           }
         ],
-        "related": []
+        "related": [
+          "source-budget-priors",
+          "source-surface-origin",
+          "source-negative-evidence"
+        ]
       },
       {
         "id": "stock-ford-reference",
@@ -64025,6 +64071,832 @@
         "related": [
           "robotics",
           "method-evidence"
+        ]
+      },
+      {
+        "id": "heaven-earth-math",
+        "title": "天地人数学计划：思想、现实与数学如何连接",
+        "kind": "topic",
+        "category": "philosophy",
+        "summary": "思想和当下判断、现实变化、数学表达分别承担不同职责；数学作为翻译桥梁，不能代替现实。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "天地人数学计划：思想、现实与数学如何连接",
+          "phil-0010",
+          "mat-001",
+          "qualification-not-ranking"
+        ],
+        "sections": [
+          {
+            "heading": "三者的原始定义",
+            "paragraphs": [
+              "历史底稿中，天指思想、直觉、经验和当下状态；地指现实，阶段性收窄到股票市场；人指数学，用于减少表达歧义并形成可计算结构。",
+              "用户状态允许变化和反转，过去的兴趣不应冻结为必须延续的固定画像。"
+            ]
+          },
+          {
+            "heading": "模型和现实发生冲突时",
+            "paragraphs": [
+              "模型冲突应先审计变量、来源和形式化假设。原底稿不是最终投资模型，也没有凭此证明收益。",
+              "当前网站整理的是历史研究结构，不将旧版本的控制规则自动套到今天的研究项目。"
+            ]
+          }
+        ],
+        "related": [
+          "phil-0010",
+          "mat-001",
+          "qualification-not-ranking"
+        ]
+      },
+      {
+        "id": "qualification-not-ranking",
+        "title": "萌芽候选：资格开关与价值排序的区别",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "新路径、现实供需变化、预期映射是候选入口；入池不等于已经值得投资。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "萌芽候选：资格开关与价值排序的区别",
+          "heaven-earth-math",
+          "mat-009",
+          "opportunity"
+        ],
+        "sections": [
+          {
+            "heading": "历史候选机制",
+            "paragraphs": [
+              "底稿将新技术或盈利路径、价格供需成本变化、市场预期映射列为三种资格开关，任一成立就可进入候选池。",
+              "机器负责减少无效内容，候选展示保留随机抽样与人的选择，不把没有来源的加权总分伪装成价值。"
+            ]
+          },
+          {
+            "heading": "仍然没有解决的识别问题",
+            "paragraphs": [
+              "市场正在将新事物映射到某公司，是重要但未解决的机器识别问题。相对吸引力改善也尚缺不依赖主观评分的可执行条件。",
+              "资格过滤、当下兴趣、后续证据与最终市场效果需要分别检验，不能用通过入池条件代替交易验证。"
+            ]
+          }
+        ],
+        "related": [
+          "heaven-earth-math",
+          "mat-009",
+          "opportunity"
+        ]
+      },
+      {
+        "id": "random-and-mainstream-search",
+        "title": "主干产业搜索与随机碰撞：两条路径共同汇流",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "随机碰撞扩展陌生入口，产业逻辑、政策、公司动作与技术资料仍构成主干。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "主干产业搜索与随机碰撞：两条路径共同汇流",
+          "random-discovery",
+          "mat-006",
+          "seed-substitution-cases"
+        ],
+        "sections": [
+          {
+            "heading": "原规则及其修正",
+            "paragraphs": [
+              "历史规则在同一行业分类池内，由前五行业各抽取五个其他行业，最多形成25组；后续还提出全池两两碰撞，但其与旧规则的替代关系未确定。",
+              "不同分类框架不能混成一个行业池；抽样前先由模型判断是否相关，会污染原本想保留的随机性。"
+            ]
+          },
+          {
+            "heading": "试验结果的限度",
+            "paragraphs": [
+              "盲搜模拟曾重新触及鱼油、酵母蛋白等已知例子。这只支持已知关键词可以被重新发现，尚不证明系统能在开放世界中识别值得报告的未知变化。",
+              "常规产业搜索与随机探索进入同一候选池，不能把整个研究系统缩成随机碰撞器。"
+            ]
+          }
+        ],
+        "related": [
+          "random-discovery",
+          "mat-006",
+          "seed-substitution-cases"
+        ]
+      },
+      {
+        "id": "search-resource-map",
+        "title": "搜索资源图：行业规模、市场位置与探索深度",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "行业面积、市场位置和人工偏好是不同变量，图形表达必须对应实际数学含义。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "搜索资源图：行业规模、市场位置与探索深度",
+          "heaven-earth-math",
+          "random-and-mainstream-search"
+        ],
+        "sections": [
+          {
+            "heading": "历史界面的数学含义",
+            "paragraphs": [
+              "扇区宽度来自同一行业框架下的规模；半径表达约20个交易日的市场涨跌位置，不能同时宣称它就是搜索深度。",
+              "白色留白表示探索资源空间，宽基基准是一圈参考圆，不能与圆心混淆。"
+            ]
+          },
+          {
+            "heading": "资源偏好不等于真伪判断",
+            "paragraphs": [
+              "人工升降某行业预算只是研究资源偏好，不意味着该行业被证伪。历史常态预算归一为100，特殊日扩大绝对投入也不必从其他行业扣走。",
+              "具体搜索深度函数和多样性函数仍待定，不根据视觉吸引力就认定模型已经可执行。"
+            ]
+          }
+        ],
+        "related": [
+          "heaven-earth-math",
+          "random-and-mainstream-search"
+        ]
+      },
+      {
+        "id": "discovery-math-candidates",
+        "title": "发现研究的数学候选：边际收益、未见空间与多样性",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "高级数学工具先看需要的数据和可执行条件，再决定能否进入研究流程。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "发现研究的数学候选：边际收益、未见空间与多样性",
+          "random-and-mainstream-search",
+          "qualification-not-ranking"
+        ],
+        "sections": [
+          {
+            "heading": "资源与发现曲线",
+            "paragraphs": [
+              "底稿把边际发现收益、多保真搜索、自适应局部加密和受约束优化列为候选。需要真实搜索日志与发现曲线，不能先编造概率或固定分配比例。",
+              "Good–Turing未见质量估计需要稳定的主题定义；次模选择、MaxMin和DPP可研究候选多样性，但原材料尚未确定采用哪一种。"
+            ]
+          },
+          {
+            "heading": "研究级工具的边界",
+            "paragraphs": [
+              "持久同调、语义空洞、SINDy和主动子空间属于研究或后验审计方向，需要足够数据；没有数据不应把方法名字加入执行层冒充能力。",
+              "随机游走适合已有线索后的扩散，从零发现未知关键词仍是另一项难题。"
+            ]
+          }
+        ],
+        "related": [
+          "random-and-mainstream-search",
+          "qualification-not-ranking"
+        ]
+      },
+      {
+        "id": "weak-signal-vs-verification",
+        "title": "弱信号发现与事实核验：保留不确定性的数据状态",
+        "kind": "topic",
+        "category": "philosophy",
+        "summary": "先看见正在形成的变化，再判断其意义；单一信号可以保留，但不是确定事实。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "弱信号发现与事实核验：保留不确定性的数据状态",
+          "opportunity",
+          "source-observation",
+          "seed-lifecycle"
+        ],
+        "sections": [
+          {
+            "heading": "两种任务",
+            "paragraphs": [
+              "早期来源底稿区分变化发现与事实确认：前者允许孤立、矛盾和弱信号，后者需要核对真实性与依据。",
+              "将信息保存、观察、聚合和演化作为连续状态，比立即强制归为真或假更能保留变化线索。"
+            ]
+          },
+          {
+            "heading": "时间与判断分别记录",
+            "paragraphs": [
+              "成熟信息可能准确却已形成共识，早期信息也可能最终错误。早期性和真实性不能相互冒充。",
+              "本页解释研究者的发现方法，不将弱信号直接升级成股票结论或获利承诺。"
+            ]
+          }
+        ],
+        "related": [
+          "opportunity",
+          "source-observation",
+          "seed-lifecycle"
+        ]
+      },
+      {
+        "id": "agency-and-wealth-context",
+        "title": "认知边界、选择与成功叙事中的遗漏变量",
+        "kind": "topic",
+        "category": "philosophy",
+        "summary": "扩大能看见的选择，同时保留时势、偶然、约束和杠杆这些叙事常删去的变量。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "认知边界、选择与成功叙事中的遗漏变量",
+          "weak-signal-vs-verification",
+          "phil-0015"
+        ],
+        "sections": [
+          {
+            "heading": "看见和选择",
+            "paragraphs": [
+              "原研究把理解一个主体的利益、恐惧、历史与资源作为分析入口。理解其行为逻辑不等于认同。",
+              "信息工具的价值是扩展观察范围，让人知道还有其他选择，最终判断仍由人承担。"
+            ]
+          },
+          {
+            "heading": "成功不是单一能力的证据",
+            "paragraphs": [
+              "历史底稿用能力、时势、偶然位置、选择和杠杆共同讨论财富形成。成功者能力可能真实，成功结果却未必全部由其能力产生。",
+              "这是研究者的因果视角，不是经过统计估计的财富公式，也不由个别事后成功案例证明普遍有效。"
+            ]
+          }
+        ],
+        "related": [
+          "weak-signal-vs-verification",
+          "phil-0015"
+        ]
+      },
+      {
+        "id": "baiyan-observation-contract",
+        "title": "百眼信息观察：按人追踪、可追溯内容与异常状态",
+        "kind": "topic",
+        "category": "tools",
+        "summary": "先验证能否稳定带回指定信源的新内容，再谈聚类、理解和后续研究。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "百眼信息观察：按人追踪、可追溯内容与异常状态",
+          "source-observation",
+          "event-views-dedup",
+          "seed-lifecycle"
+        ],
+        "sections": [
+          {
+            "heading": "系统职责",
+            "paragraphs": [
+              "原方案把观察对象、内容、快照分成三个对象，保留账号、原网址、发布时间、抓取时间、文本及内容标识。摘要用来降低阅读成本，不替代来源。",
+              "采集、呈现与投资判断分开；50到100个观察对象是目标规模，第一版10到20人、两个平台是计划，不能写成已经实现的持续覆盖。"
+            ]
+          },
+          {
+            "heading": "完成与异常",
+            "paragraphs": [
+              "无新增、登录要求、频率限制、验证码、页面变更与未知错误应分别记录。访问失败不能计成已覆盖，完成状态不由模型一句话决定。",
+              "本轮只读取设计原件，没有开启平台采集、登录、交易或其他研究系统。"
+            ]
+          }
+        ],
+        "related": [
+          "source-observation",
+          "event-views-dedup",
+          "seed-lifecycle"
+        ]
+      },
+      {
+        "id": "event-views-dedup",
+        "title": "事件去重与观点保留：转载次数不等于独立证据",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "同一事件合并，新的观察角度保留；内容身份、网址、文本及来源链要分别核对。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "事件去重与观点保留：转载次数不等于独立证据",
+          "baiyan-observation-contract",
+          "seed-lifecycle",
+          "linfei-context-provenance"
+        ],
+        "sections": [
+          {
+            "heading": "事件与观点",
+            "paragraphs": [
+              "同一事件在公告、媒体和个人账号出现多次，全部当独立事件会制造虚假热度；全部压成一句摘要，又可能删掉独有角度。",
+              "历史方案因此提出事件级去重与观点级保留，并区分平台内容ID、网址和内容哈希。"
+            ]
+          },
+          {
+            "heading": "演化与修订",
+            "paragraphs": [
+              "重新发布、标题变化和正文修订不必都变成新事实。来源链、首次出现时间与后续新增信息应保留。",
+              "语义相似不等于证据独立，也不保证两条材料可以无损合并；效果仍需要实际样本验收。"
+            ]
+          }
+        ],
+        "related": [
+          "baiyan-observation-contract",
+          "seed-lifecycle",
+          "linfei-context-provenance"
+        ]
+      },
+      {
+        "id": "seed-lifecycle",
+        "title": "研究种子的生命史：首次信号、后续变化与人的反馈",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "保存变化链与研究状态，避免把每天重复的摘要当作新的成果。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "研究种子的生命史：首次信号、后续变化与人的反馈",
+          "weak-signal-vs-verification",
+          "event-views-dedup",
+          "seed-substitution-cases"
+        ],
+        "sections": [
+          {
+            "heading": "从浅扫到深挖",
+            "paragraphs": [
+              "早期方案先做浅层变化检测、分类、去重和候选呈现，再由人选择进一步研究的内容。深挖应围绕被选择的问题，不能先生成大量无关叙事。",
+              "种子可经历首次线索、其他主体跟进、扩产、产品进入市场和价格变化，时间轴要允许长期观察与失败。"
+            ]
+          },
+          {
+            "heading": "记忆与反馈",
+            "paragraphs": [
+              "工作材料、结构化事件、种子生命史和长期知识有不同用途。不点击一次不等于永久屏蔽，后来主动检索可以重新激活主题。",
+              "这是历史研究架构的公开整理，不是授权删除原始资料，也不是声明该系统已经自动日更运行。"
+            ]
+          }
+        ],
+        "related": [
+          "weak-signal-vs-verification",
+          "event-views-dedup",
+          "seed-substitution-cases"
+        ]
+      },
+      {
+        "id": "seed-substitution-cases",
+        "title": "替代路线研究线索：藻类DHA/EPA与发酵蛋白",
+        "kind": "topic",
+        "category": "industries",
+        "summary": "需求与传统供应约束如何引出替代技术，是早期种子讨论的两组例子。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "替代路线研究线索：藻类DHA/EPA与发酵蛋白",
+          "random-and-mainstream-search",
+          "seed-lifecycle"
+        ],
+        "sections": [
+          {
+            "heading": "原讨论的两条链",
+            "paragraphs": [
+              "鱼油与藻类DHA/EPA被用于讨论需求变化、供应约束与生物制造替代路线；乳清与发酵蛋白被用于讨论蛋白供应和扩产方式。",
+              "这些是原讨论中的研究线索。本轮没有核对当前价格、产品营养等效性、成本优势或商业化进度，不将设想当作已完成的产业验证。"
+            ]
+          },
+          {
+            "heading": "从线索到研究",
+            "paragraphs": [
+              "需要分别核对技术能否实现、谁拥有产能、单位成本、监管要求、客户接受与实际订单。",
+              "此前系统多次未主动发现这些例子；事后重新搜到不等于证明自主发现能力。"
+            ]
+          }
+        ],
+        "related": [
+          "random-and-mainstream-search",
+          "seed-lifecycle"
+        ]
+      },
+      {
+        "id": "source-budget-priors",
+        "title": "研究搜索预算：从地理配额转向任务与证据产出",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "按任务相关性、可读性和有效证据调整搜索投入，保留默认参数的历史日期。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "研究搜索预算：从地理配额转向任务与证据产出",
+          "source-surface-origin",
+          "source-negative-evidence"
+        ],
+        "sections": [
+          {
+            "heading": "V2的历史修正",
+            "paragraphs": [
+              "2026-08-22来源方案取消机械的国家配额，区分发布表面和知识产出来源。英语平台并不意味着作者或团队来自美国。",
+              "原AI工程表面预算65/30/5、产出来源55/35/10是历史起点，不是今天的网站曝光预算，也不是事实可信度或国力排名。"
+            ]
+          },
+          {
+            "heading": "乘法权重的限度",
+            "paragraphs": [
+              "原方案按任务、时效、证据产出和可访问性乘权再归一化，并允许特定主题提高相关生态投入。",
+              "虽然资料称其贝叶斯更新，现有文本没有提供校准似然或概率模型；本页将其视为研究预算启发式，不包装成已验证统计后验。"
+            ]
+          }
+        ],
+        "related": [
+          "source-surface-origin",
+          "source-negative-evidence"
+        ]
+      },
+      {
+        "id": "source-surface-origin",
+        "title": "发布平台与产出来源：英文材料不等于美国材料",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "语言、平台、团队与一手性分别登记，减少来源覆盖的误计。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "发布平台与产出来源：英文材料不等于美国材料",
+          "source-budget-priors",
+          "source-negative-evidence"
+        ],
+        "sections": [
+          {
+            "heading": "两个维度",
+            "paragraphs": [
+              "中国团队可以在GitHub等全球平台发布英文资料，产出来源可来自中国，发布表面仍是英语全球。",
+              "读到这些资料不等于已经读取中文原生实践社区。平台数量和根域名数量也不能代替独立知识来源。"
+            ]
+          },
+          {
+            "heading": "逐条判断",
+            "paragraphs": [
+              "原来源登记册包含68项线索，其中28项标作中文原生；这是登记数，不是本轮已访问或验证的68个网站。",
+              "来源只提供检索入口，具体材料仍要看作者、实证细节、可追溯产物、时效和公开质疑。"
+            ]
+          }
+        ],
+        "related": [
+          "source-budget-priors",
+          "source-negative-evidence"
+        ]
+      },
+      {
+        "id": "source-negative-evidence",
+        "title": "外部研究的反例：厂商声明、实践失败与覆盖证据",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "让失败、限制和反对意见进入研究，不把成功宣传票数当作方案优劣。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "外部研究的反例：厂商声明、实践失败与覆盖证据",
+          "source-budget-priors",
+          "source-surface-origin"
+        ],
+        "sections": [
+          {
+            "heading": "不同来源回答不同问题",
+            "paragraphs": [
+              "官网对自己的接口、版本和声明有一手价值；选择架构或比较方案仍需要实践材料、原始日志、维护者讨论与失败案例。",
+              "原V2给出官网25%、实践45%、单域名15%等约束。这些只是该历史方案的规则，不是经过本轮验证的最优比例。"
+            ]
+          },
+          {
+            "heading": "验收和实际效果",
+            "paragraphs": [
+              "原审计记12轮对抗问题有规则回应，配置验证退出为0，真实模型API调用为0。结构检查通过不意味着真实研究产出已改善。",
+              "被阻断不能算覆盖，摘要不能冒充线程已读；反例和原文可读性应留在研究记录中。"
+            ]
+          }
+        ],
+        "related": [
+          "source-budget-priors",
+          "source-surface-origin"
+        ]
+      },
+      {
+        "id": "three-role-research-design",
+        "title": "三林飞研究架构：取证、叙事与呈现的角色划分",
+        "kind": "topic",
+        "category": "tools",
+        "summary": "旧系统总图把数据取证、研究叙事和固定呈现拆成不同职责，规范存在与运行效果分开。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "三林飞研究架构：取证、叙事与呈现的角色划分",
+          "linfei-context-provenance",
+          "linfei-targeted-gaps",
+          "archive-k890yh"
+        ],
+        "sections": [
+          {
+            "heading": "V4.14.2总图内容",
+            "paragraphs": [
+              "总图列出取证模块、叙事模块与呈现模块，来源通道包括通达信、IMA和定向补缺。能力状态区分已验证、待定、不可用和受阻。",
+              "规范要求关联证据、研究缺口、公司映射、市场认知与输出结构，不能因为写出了函数名就认定通道已连接或数据已取得。"
+            ]
+          },
+          {
+            "heading": "审计的范围",
+            "paragraphs": [
+              "原审计记录59项文本结构检查通过、163项不变量及166个测试定义，核对编号、引用与语法结构。",
+              "这些是规范审计结果，不是166次真实业务实验通过；本轮没有重建原工程、执行旧施工指令或运行交易。"
+            ]
+          }
+        ],
+        "related": [
+          "linfei-context-provenance",
+          "linfei-targeted-gaps",
+          "archive-k890yh",
+          "archive-bsodf2"
+        ]
+      },
+      {
+        "id": "linfei-context-provenance",
+        "title": "研究上下文整理：事实增量、去重与来源回链",
+        "kind": "topic",
+        "category": "tools",
+        "summary": "减少重复材料时仍保留数字、事实和来源，压缩效率与事实召回分别评价。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "研究上下文整理：事实增量、去重与来源回链",
+          "event-views-dedup",
+          "three-role-research-design",
+          "linfei-targeted-gaps"
+        ],
+        "sections": [
+          {
+            "heading": "旧规范中的对象",
+            "paragraphs": [
+              "V4.14.2列出精确内容哈希、句子签名、数字签名、事实签名和重复来源合并，并定义上下文装包清单。",
+              "后续输入要求区分新结构值、新事件、新来源事实以及没有可证实的新事实。重写摘要不自动算新增事实。"
+            ]
+          },
+          {
+            "heading": "校准与保留",
+            "paragraphs": [
+              "规范提出保留必要事实召回、减少冗余字节的校准目标，但没有凭函数定义证明真实业务校准已经通过。",
+              "每个增量要连接到旧基线和来源，保留缺失、冲突与失败；不能用更短的文字冒充信息没有损失。"
+            ]
+          }
+        ],
+        "related": [
+          "event-views-dedup",
+          "three-role-research-design",
+          "linfei-targeted-gaps"
+        ]
+      },
+      {
+        "id": "linfei-targeted-gaps",
+        "title": "定向补缺研究：从叙事缺口到新增事实",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "先明确缺少哪条事实，再进行目标检索，找不到与新增不解决问题需要分别记录。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "定向补缺研究：从叙事缺口到新增事实",
+          "three-role-research-design",
+          "linfei-context-provenance",
+          "source-negative-evidence"
+        ],
+        "sections": [
+          {
+            "heading": "规范提出的流程",
+            "paragraphs": [
+              "原总图先生成研究缺口，按校准规则选择可定向问题，再形成检索变体、路由计划与候选排序。",
+              "结果区分找到满足缺口的新事实、新但未解决问题的事实、重复、无匹配、来源失败以及规则尚未校准。"
+            ]
+          },
+          {
+            "heading": "停止和完成",
+            "paragraphs": [
+              "没有证实的新事实时不能自动宣称研究推进；来源失败不能静默改用未验证路由并当作相同证据。",
+              "这是读取到的历史设计，不是本轮启动外部业务检索或恢复旧研究系统。"
+            ]
+          }
+        ],
+        "related": [
+          "three-role-research-design",
+          "linfei-context-provenance",
+          "source-negative-evidence"
+        ]
+      },
+      {
+        "id": "historical-company-method",
+        "title": "历史公司研究方法：非共识、核心变量与多空反证",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "旧公司模板强调每家公司的核心变量和多空理由；主观权重不等于校准的胜率。",
+        "status": "历史研究方法与设计，实施效果分开验证",
+        "research_date": "历史材料：2026年7—8月；本轮读取：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件"
+        ],
+        "keywords": [
+          "历史公司研究方法：非共识、核心变量与多空反证",
+          "stock-600771",
+          "stock-688525",
+          "qualification-not-ranking"
+        ],
+        "sections": [
+          {
+            "heading": "原模板想研究什么",
+            "paragraphs": [
+              "2026-07-28模板并行整理基本面与非共识观点，保留各观点来源，寻找公司的特定经营变量，随后比较看多与看空理由。",
+              "广誉远举例关注销售费用率变化，佰维存储举例关注存货周转与毛利率。它们是历史分析示例，不是本轮财报核验后的当前判断。"
+            ]
+          },
+          {
+            "heading": "保留版本和未验证部分",
+            "paragraphs": [
+              "原模板有独立理由权重和概率式语言，但没有在本轮提供样本校准、交易分母或收益证据，不能将主观分数转述为获利概率。",
+              "早期评分模板与后续萌芽不评分设计属于不同日期和任务；本页并存记录，不擅自合并成今日统一规则。"
+            ]
+          }
+        ],
+        "related": [
+          "stock-600771",
+          "stock-688525",
+          "qualification-not-ranking",
+          "mat-001"
+        ]
+      },
+      {
+        "id": "stock-600771",
+        "code": "600771",
+        "name": "广誉远",
+        "title": "广誉远｜早期研究提及与方法关联",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "历史公司研究模板中用销售费用率作为特定经营变量的例子。",
+        "status": "历史提及，当前经营与效果待核",
+        "research_date": "原材料：2026年7—8月；名称代码核对：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件",
+          "公司公开网站｜名称代码"
+        ],
+        "keywords": [
+          "广誉远",
+          "600771",
+          "公司核心变量",
+          "历史研究"
+        ],
+        "sections": [
+          {
+            "heading": "原研究记录",
+            "paragraphs": [
+              "原2026-07-28模板以销售费用率的变化解释每家公司应有独有的核心跟踪变量。",
+              "原数字及拐点未在本轮重新核验，不将旧示例当作当前买卖判断。"
+            ]
+          },
+          {
+            "heading": "证券身份与公开出处",
+            "paragraphs": [
+              "公司公开页面支持名称与代码对应；身份核对不等于为旧分析背书。"
+            ],
+            "links": [
+              {
+                "label": "广誉远公司公开页面",
+                "url": "https://www.guangyuyuan.com/brief/overview/"
+              }
+            ]
+          }
+        ],
+        "related": [
+          "historical-company-method"
+        ]
+      },
+      {
+        "id": "stock-688525",
+        "code": "688525",
+        "name": "佰维存储",
+        "title": "佰维存储｜早期研究提及与方法关联",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "历史公司研究模板中以存货周转和毛利率联动作为例子。",
+        "status": "历史提及，当前经营与效果待核",
+        "research_date": "原材料：2026年7—8月；名称代码核对：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件",
+          "公司公开网站｜名称代码"
+        ],
+        "keywords": [
+          "佰维存储",
+          "688525",
+          "公司核心变量",
+          "历史研究"
+        ],
+        "sections": [
+          {
+            "heading": "原研究记录",
+            "paragraphs": [
+              "原模板用存货周转率与毛利率联动说明经营变量，另将该公司列作报告样板。",
+              "本轮取得的是方法模板与样板名称，没有因此声称已取得样板完整财报分析或验证收益。"
+            ]
+          },
+          {
+            "heading": "证券身份与公开出处",
+            "paragraphs": [
+              "公司公开页面支持名称与代码对应；身份核对不等于为旧分析背书。"
+            ],
+            "links": [
+              {
+                "label": "佰维存储公司公开页面",
+                "url": "https://www.biwin.com.cn/about/company"
+              }
+            ]
+          }
+        ],
+        "related": [
+          "historical-company-method"
+        ]
+      },
+      {
+        "id": "stock-300255",
+        "code": "300255",
+        "name": "常山药业",
+        "title": "常山药业｜早期研究提及与方法关联",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "天地人数学计划的索引中提及该公司及GLP-1案例，原材料未给出完整公司研报。",
+        "status": "历史提及，当前经营与效果待核",
+        "research_date": "原材料：2026年7—8月；名称代码核对：2026-10-05",
+        "source_labels": [
+          "早期研究来源原件",
+          "公司公开网站｜名称代码"
+        ],
+        "keywords": [
+          "常山药业",
+          "300255",
+          "GLP-1",
+          "天地人"
+        ],
+        "sections": [
+          {
+            "heading": "原研究记录",
+            "paragraphs": [
+              "2026-08-15底稿的记忆索引出现常山药业与司美格鲁肽、GLP-1案例。索引提及保留为研究入口。",
+              "该索引不足以证明产品权属、临床结果、监管进展或业绩兑现，本轮不补造这些结论。"
+            ]
+          },
+          {
+            "heading": "证券身份与公开出处",
+            "paragraphs": [
+              "公司公开页面支持名称与代码对应；身份核对不等于为旧分析背书。"
+            ],
+            "links": [
+              {
+                "label": "常山药业公司公开页面",
+                "url": "https://www.hbcsbio.com/"
+              }
+            ]
+          }
+        ],
+        "related": [
+          "heaven-earth-math",
+          "qualification-not-ranking"
         ]
       },
       {
