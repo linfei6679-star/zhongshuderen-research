@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-04T17:37:41.963Z",
+  "checked_at": "2026-10-04T17:51:01.796Z",
   "intro": "从研究问题，到阶段判断与实际成果。每天核对研究记录，有变化就更新；想法还在验证时，也把依据和待解问题讲清楚。",
   "schedule": {
     "status": "preparing",
@@ -50174,6 +50174,12 @@
               "关注输入何时可知、样本范围、误报、提醒时点与后续行情；工程运行与市场效果分开记录。",
               "中证1000、预测系统与萌芽等项目各有研究边界，失败和暂停同样保留。"
             ]
+          },
+          {
+            "heading": "预测蓝图成果及审计展开",
+            "paragraphs": [
+              "本轮从历史附件读取预测候选、R24审查、合成诊断与连续窗口报告，新增可沿链阅读的要点页。新页面保留未回测、未部署和失败例子，不改变源研究合同。"
+            ]
           }
         ],
         "keywords": [
@@ -50182,7 +50188,10 @@
         "related": [
           "tdx-formula-library",
           "formula-asof-review",
-          "formula-data-dependencies"
+          "formula-data-dependencies",
+          "forecast-research-hub",
+          "forecast-library-feedback",
+          "forecast-window-evidence"
         ]
       },
       {
@@ -50210,6 +50219,12 @@
             "paragraphs": [
               "本轮读回早期百眼总纲与信源讨论原件，分别整理观察契约、事件去重、种子生命史和发现与核验的差别。目标规模、MVP计划与实际完成情况分别保留。"
             ]
+          },
+          {
+            "heading": "信源专项的获取与分析流程",
+            "paragraphs": [
+              "原口罩哥专项从术语模仿转向信息渠道、筛选、模型解释与本人判断的逆向研究。1454条是历史基线，恢复包没有取得原全量语料重新核验。"
+            ]
           }
         ],
         "keywords": [
@@ -50219,7 +50234,10 @@
           "baiyan-observation-contract",
           "event-views-dedup",
           "seed-lifecycle",
-          "weak-signal-vs-verification"
+          "weak-signal-vs-verification",
+          "research-source-reconstruction",
+          "source-fingerprint-chain",
+          "transcript-term-preservation"
         ]
       },
       {
@@ -51126,11 +51144,20 @@
               "不能恢复成已完成或默认下一步的旧事项",
               "下次继续"
             ]
+          },
+          {
+            "heading": "无锁精度记录的公开展开",
+            "paragraphs": [
+              "原截图中途报告的覆盖和precision并非本轮独立复算；旧精度、分母、锁语义与完整逐事件结果仍缺，不能据此定根因。"
+            ]
           }
         ],
         "related": [
           "source-observation",
-          "agent-workflow"
+          "agent-workflow",
+          "forecast-unlocked-precision",
+          "forecast-risk-measure",
+          "forecast-time-reference"
         ]
       },
       {
@@ -51534,9 +51561,17 @@
               "原文件历史正文（完整保留；不是当前控制）",
               "KZG_同步迁移对照与验收"
             ]
+          },
+          {
+            "heading": "迁移包的分层验收",
+            "paragraphs": [
+              "本地文档一致性、附件上传、原ID写回、项目指令安装与新会话续接是不同验收层。历史失败回执不能由上传一个新包抵消。"
+            ]
           }
         ],
-        "related": []
+        "related": [
+          "cloud-repair-evidence"
+        ]
       },
       {
         "id": "archive-1ozqnog",
@@ -52307,9 +52342,19 @@
               "6. 下一次“继续”的业务动作",
               "7. 本轮检索和保存边界"
             ]
+          },
+          {
+            "heading": "恢复索引与原业务未完成边界",
+            "paragraphs": [
+              "原共享对话只取得部分正文，原视频语料、完整来源匹配表与计时日志未取回。研究对象和原要求可恢复线索，不等于原研究完成。"
+            ]
           }
         ],
-        "related": []
+        "related": [
+          "research-source-reconstruction",
+          "source-fingerprint-chain",
+          "cloud-repair-evidence"
+        ]
       },
       {
         "id": "archive-scgazx",
@@ -52555,9 +52600,18 @@
               "当前仍未部署",
               "不重复建设的下一步"
             ]
+          },
+          {
+            "heading": "v0.1.1模拟回归的范围",
+            "paragraphs": [
+              "原报告复现三类非法计划并修补，52项本地合成及HTTP模拟通过；真实Google账号条件写入、原目标更新、新会话端到端与后台同步仍未完成。"
+            ]
           }
         ],
-        "related": []
+        "related": [
+          "fixed-id-update-repair",
+          "cloud-repair-evidence"
+        ]
       },
       {
         "id": "archive-1je50fm",
@@ -52586,11 +52640,19 @@
             "paragraphs": [
               "KZG｜固定ID修复器施工结果"
             ]
+          },
+          {
+            "heading": "原v0.1.0施工结果与后续版本分别保留",
+            "paragraphs": [
+              "该版30项合成与HTTP模拟通过，正式云端目标更新0次。后续v0.1.1的52项是另一版回归，不把两版次数累加成独立成功研究。"
+            ]
           }
         ],
         "related": [
           "source-observation",
-          "agent-workflow"
+          "agent-workflow",
+          "fixed-id-update-repair",
+          "cloud-repair-evidence"
         ]
       },
       {
@@ -64071,6 +64133,924 @@
         "related": [
           "robotics",
           "method-evidence"
+        ]
+      },
+      {
+        "id": "forecast-research-hub",
+        "title": "预测系统蓝图研究成果：候选、反证与工程验证",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "把预测机制、评价口径、计算优化和实际行情效果分开，保留修订与未完成项目。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "预测系统蓝图研究成果：候选、反证与工程验证",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "这批原件包含什么",
+            "paragraphs": [
+              "本轮读取历史备份里的候选内核、R24审查、综合诊断、连续十日研究、扩库与闭环比较、无锁精度同步和历史行情实物验收记录。",
+              "候选说明、合成试验、原源码小负载计时、截图中途结果及真实市场回测是不同证据，本页分别连接。"
+            ]
+          },
+          {
+            "heading": "尚不能证明的结果",
+            "paragraphs": [
+              "这些附件没有完成新增预测机制的真实市场收益比较，也没有证明当前Windows工程故障已修复。旧计划和参数不自动成为今日实施规则。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-normal-band",
+          "forecast-switching-paths",
+          "forecast-event-time",
+          "forecast-time-reference",
+          "forecast-risk-measure",
+          "forecast-window-evidence",
+          "forecast-unlocked-precision",
+          "forecast-library-feedback",
+          "forecast-prewarm-evidence",
+          "forecast-queue-publication",
+          "forecast-incremental-equivalence",
+          "forecast-history-audit",
+          "forecast-detection-state",
+          "forecast-leadlag-info",
+          "forecast-path-geometry",
+          "forecast-daily-maintenance"
+        ]
+      },
+      {
+        "id": "forecast-normal-band",
+        "title": "同钟点正常波动带：异常幅度与未来事件分别判断",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "用历史相同钟点的位移描述当前状态，未来危险概率仍需单独建模和验证。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "同钟点正常波动带：异常幅度与未来事件分别判断",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "历史候选路线A",
+            "paragraphs": [
+              "原候选研究从此前完整交易日的同钟点开盘后绝对位移构造正常带。平均绝对位移不是标准差，也不自动代表某个置信覆盖率。",
+              "14日等参数来自原方案复现初值，不是本轮校准结果；缺失同钟点资料应记缺口，不能用当日未来记录补齐。"
+            ]
+          },
+          {
+            "heading": "描述不等于预测",
+            "paragraphs": [
+              "出带、推进速度、方向效率与回拉提供已见状态；未来恢复、危险或未决需要另定义标签与预测头。",
+              "要与只用收益和效率的简单参照比较，并查看删除正常带后是否仍有同样效果。原策略业绩不能直接转成这里的A股提前预警能力。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-research-hub",
+          "forecast-time-reference",
+          "forecast-risk-measure"
+        ]
+      },
+      {
+        "id": "forecast-switching-paths",
+        "title": "机制切换与前向路径：恢复、漂移和状态概率",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "当前状态概率、未来状态和整条未来路径是不同输出，不能互相替代。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "机制切换与前向路径：恢复、漂移和状态概率",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "历史候选路线B",
+            "paragraphs": [
+              "原方案以固定参数的切换回归描述收益、局部中心偏离、回拉与漂移，盘中仅做数值滤波和前向模拟。状态可能只识别高低波动，不应强行命名成方向。",
+              "午休、隔夜和多连续时段需明确序列边界，不能虚构休市期间的一分钟更新。"
+            ]
+          },
+          {
+            "heading": "因果与适配",
+            "paragraphs": [
+              "整段平滑可以利用后续观测，不能回填为当时的报警。模拟中的中心只能随模拟价格更新，不能用真实未来中心。",
+              "原报告认为现成库仍需前向路径适配，并建议与不切换回归、纯波动状态对照。本轮没有安装库或运行这些候选。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-research-hub",
+          "forecast-detection-state",
+          "forecast-queue-publication"
+        ]
+      },
+      {
+        "id": "forecast-event-time",
+        "title": "竞争事件时间：恢复先到、危险先到与尚未观察到",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "对多种互斥结局给出共同概率结构，删失和数据缺失要分别处理。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "竞争事件时间：恢复先到、危险先到与尚未观察到",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "历史候选路线C",
+            "paragraphs": [
+              "原方案把恢复、危险、观察截止分开，学习结局类型与发生时间；同一分钟内先后未知时保留歧义，不能统一判有利。",
+              "每次预测只使用发布时已知特征。未来区间编码可以作为输入，真实未来行情特征不能塞回本次预测。"
+            ]
+          },
+          {
+            "heading": "共同概率与输出范围",
+            "paragraphs": [
+              "恢复、危险和仍未决要属于同一合法概率结构。两个独立分类器的概率不能未经约束相加，未决也不能填成恢复。",
+              "事件时间分布不是完整价格路径。临近收盘未发生、行情缺失与实际恢复是不同状态，原研究未给出可继承的A股分钟胜率。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-research-hub",
+          "forecast-risk-measure",
+          "forecast-window-evidence"
+        ]
+      },
+      {
+        "id": "forecast-time-reference",
+        "title": "预警提前量：起点、确认时刻与真实发布时间",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "同一个报警可能晚于事件起点、早于持续性确认；两个提前量必须分别报告。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "预警提前量：起点、确认时刻与真实发布时间",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "时间基准的纠正",
+            "paragraphs": [
+              "R24审查指出，单边开始前和持续单边确认前不是同一目标。应分别保留事后起点、既有事件确认时刻和真实报警发布时间。",
+              "以09:40起点、10:05报警、10:10确认的纯算术例子，报警相对起点晚25分钟，相对确认早5分钟；例子不是真实策略成绩。"
+            ]
+          },
+          {
+            "heading": "匹配和收益边界",
+            "paragraphs": [
+              "方向、允许期限、重复报警、多个事件匹配与漏报分母要明确。持续亮灯不能拆成许多独立成功。",
+              "不能为让候选过关而推迟标签确认点，也不能把没有期限的旧看空在事后追认为命中。较早识别的经济价值仍要扣回误报代价。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-research-hub",
+          "forecast-risk-measure",
+          "forecast-daily-maintenance"
+        ]
+      },
+      {
+        "id": "forecast-risk-measure",
+        "title": "报警指标：precision、FPR、召回与覆盖的分母",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "不同错误率回答不同问题，提高阈值并不保证报警precision改善。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "报警指标：precision、FPR、召回与覆盖的分母",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "原审查指出的口径混淆",
+            "paragraphs": [
+              "假阳性占固定负样本的比例、报警中错误比例、危险事件召回和输出覆盖有不同分母，不能统称精度。",
+              "若最高分报警是错、较低两条是对，提高阈值到只留最高分会降低precision。这是算术反例，不是市场实测。"
+            ]
+          },
+          {
+            "heading": "沉默也要记账",
+            "paragraphs": [
+              "永不报警可在非事件很多的样本中有较高总准确率，但报警precision没有分母，危险事件召回为0。",
+              "低覆盖、漏报、未结算与相关事件需要并列报告，不能靠不回答困难时段让系统显得有效。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-research-hub",
+          "forecast-unlocked-precision",
+          "forecast-window-evidence"
+        ]
+      },
+      {
+        "id": "forecast-detection-state",
+        "title": "变化检测、状态年龄与剩余寿命的区别",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "检测已发生变化、描述状态年龄、预测未来结局分别需要对应的机制和证据。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "变化检测、状态年龄与剩余寿命的区别",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "检测不是自动提前预测",
+            "paragraphs": [
+              "R24审查将CUSUM等顺序检测作为检测基线或特征候选，指出较早发现变化仍不自动证明未来持续单边。",
+              "自定义两个通道或分数拼接不应直接继承原算法名与理论保证；实际实现和重置规则需要核对。"
+            ]
+          },
+          {
+            "heading": "年龄不是剩余时间",
+            "paragraphs": [
+              "原报告指出，常数风险率的无记忆段长设定下，已持续多久并不会自动产生年龄相关剩余寿命。",
+              "状态年龄、状态参数更新和未来事件预测需要分别定义。局部恢复速度与半衰期也只有在相应动力假设下才有解释。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-event-time",
+          "forecast-switching-paths",
+          "forecast-time-reference"
+        ]
+      },
+      {
+        "id": "forecast-leadlag-info",
+        "title": "跨指数领先信息：预测时移与真实可得时间",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "解释当前目标的滞后关系不等于预测未来，陈旧报价也可能制造伪领先。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "跨指数领先信息：预测时移与真实可得时间",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "原审查的未来期限缺口",
+            "paragraphs": [
+              "用较早的领先变量解释当前目标残差，只得到当前未解释部分；未来预测需要明确目标步长、训练边界和当时可得的输入。",
+              "每条关系要写出目标、收益期限、发布时间与预测时移，比较目标自身滞后与加入其他指数后的增量。"
+            ]
+          },
+          {
+            "heading": "数据与稳定性",
+            "paragraphs": [
+              "缺少同步历史和稳定关系时，只能记待核。不同来源的报价刷新延迟不能直接解释为真实市场传导。",
+              "本轮整理研究方法，不下载新行情或运行跨指数实验。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-time-reference",
+          "forecast-research-hub",
+          "forecast-history-audit"
+        ]
+      },
+      {
+        "id": "forecast-path-geometry",
+        "title": "路径表示与不可回返：同终点不等于同次序",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "低阶几何特征可能遗漏路径次序，时间不可逆性也不等于价格无法恢复。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "路径表示与不可回返：同终点不等于同次序",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "表示能力的反例",
+            "paragraphs": [
+              "原R24审查用不同增量次序但相同端点及平方和的路径，说明低阶面积并不保证区分所有顺序。",
+              "需要明确嵌入、阶数、分量与参照，不能把任意同终点路径未区分一律定为代码错误。"
+            ]
+          },
+          {
+            "heading": "增量是否独立",
+            "paragraphs": [
+              "反向路径差若只是净位移的倍数，未必提供新信息。应与收益、波动、效率进行消融比较。",
+              "几何表示层与预测机制分开；时间不可逆不构成价格以后不再回来的证明。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-research-hub",
+          "forecast-detection-state",
+          "chan-transition"
+        ]
+      },
+      {
+        "id": "forecast-window-evidence",
+        "title": "连续十日回放：近期适配、独立证据与重叠窗口",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "连续、最近、固定和独立是四个属性，短窗回放不能单独证明未来稳定。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "连续十日回放：近期适配、独立证据与重叠窗口",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "历史评价建议",
+            "paragraphs": [
+              "2026-09-21报告建议连续近期窗口用于当前状态和版本回归，但最终前后窗口未定。随机整日若有合规预热、过去训练和完整日内顺序，也不必然错误。",
+              "反复看到结果并修改的日期进入开发过程，不能继续冒充未参与选择的独立验收。"
+            ]
+          },
+          {
+            "heading": "重叠与缺失",
+            "paragraphs": [
+              "相邻十日窗口共享九天；重复窗口数量不是独立日期数量。没有危险事件时，该项应记未受检验，而非漏报率零并通过。",
+              "应测10日只取得8日就保留缺失2日，不能自动补换日期；预热、训练历史、评分窗口和因子回看也不能一起擅自缩成十日。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-research-hub",
+          "forecast-library-feedback",
+          "research-race-results"
+        ]
+      },
+      {
+        "id": "forecast-daily-maintenance",
+        "title": "预测维护与报警距离：每周审计不等于每周改版",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "方向正确还要看报警以前已经发生多少不利位移，同时保留误报和恢复机会的代价。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "预测维护与报警距离：每周审计不等于每周改版",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "历史需求的边界",
+            "paragraphs": [
+              "原纪要要求按近期环境审计，没有明显变化可以不改；并未要求每周重建模型或固定换因子。",
+              "示例中的0.4%和前后10/20日没有成为最终批准参数，期权损失估计也不是指数变动的通用换算。"
+            ]
+          },
+          {
+            "heading": "有效性和及时性并列",
+            "paragraphs": [
+              "原用户反对以两级模糊提示绕开实际判断问题。提出先找有效候选、再比较报警距离、最后少量细跑，计算节省尚未实测。",
+              "成功筛选不能删除失败样本，报警后的剩余危险与误报错失修复都要保留。本页不设置定时审计或恢复源项目。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-time-reference",
+          "forecast-unlocked-precision",
+          "forecast-risk-measure"
+        ]
+      },
+      {
+        "id": "forecast-unlocked-precision",
+        "title": "取消五分钟锁后的精度骤降：原截图和待核根因",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "覆盖变化与精度变化需要核同日期、事件与分母，截图中途报告不能冒充独立复算。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "取消五分钟锁后的精度骤降：原截图和待核根因",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "历史同步记录",
+            "paragraphs": [
+              "原截图中途报告R90-K04覆盖扩大到82条、精度42.68%，R90-K07覆盖85条、精度32.94%。这是工作台截图表述，不是本轮重新计算。",
+              "截图没有完整旧精度、最终结果、逐事件明细、分母和锁语义。不能倒算已验证成功数，也不能把报警数量当作独立事件数。"
+            ]
+          },
+          {
+            "heading": "需要核对而尚未定案",
+            "paragraphs": [
+              "锁可能影响噪声筛选、样本构成或评分，仍是解释候选。可靠性下降不能仅用报警更多或更早来淡化。",
+              "原记录不授权网站整理过程恢复旧锁、改参数、删除失败或重跑工程；当前网页保留历史问题与证据边界。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-risk-measure",
+          "forecast-time-reference",
+          "archive-3qvw29"
+        ]
+      },
+      {
+        "id": "forecast-library-feedback",
+        "title": "扩库与闭环迭代：资料数量、独立机制与真实增益",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "扩展材料与实际反馈互相补充，源码数量并不直接回答哪些机制有效。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "扩库与闭环迭代：资料数量、独立机制与真实增益",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "历史报告的阶段判断",
+            "paragraphs": [
+              "原报告建议用既有材料提出明确假设、实际运行、接受数值反馈，再按失败诊断定向补盲区；这没有撤销未完成的万条源码目标。",
+              "资料数量、可运行候选、互补机制和独立有效组件是四个数量。308个不同正文不等于308种原理或308个有效因子。"
+            ]
+          },
+          {
+            "heading": "研究选择偏差",
+            "paragraphs": [
+              "外部公式挑历史最好与内部反复生成变体都可能用熟同一验证集。真实回测可以纠错，也可能参与过拟合。",
+              "原建议的双路线同预算比较没有执行；需共同输入、标签、评价边界和冻结后验收，不能把纯自我评价当作进步。"
+            ]
+          }
+        ],
+        "related": [
+          "tdx-formula-library",
+          "factor-decay",
+          "forecast-window-evidence"
+        ]
+      },
+      {
+        "id": "forecast-prewarm-evidence",
+        "title": "盘前预热的原源码小负载试验：冷启动与稳态分开",
+        "kind": "topic",
+        "category": "tools",
+        "summary": "训练搬到盘前可减少首次开销，不能由此宣称所有延迟或稳态计算都大幅改善。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "盘前预热的原源码小负载试验：冷启动与稳态分开",
+          "研究记录"
+        ],
+        "sections": [
+          {
+            "heading": "原报告实际试验",
+            "paragraphs": [
+              "历史综合报告记录4个合成日期、每日期90条分钟数据、6个合成特征。原首次预测中位80.186毫秒，原缓存后5.419毫秒；参考盘前准备74.382毫秒，盘中首次6.183毫秒、后续5.433毫秒。",
+              "这是原源码的小负载合成计时记录，不是当前Windows机器的实测，也不是市场数据。"
+            ]
+          },
+          {
+            "heading": "结论收窄",
+            "paragraphs": [
+              "参考实现把训练成本移走，未消灭成本，缓存后的稳态耗时基本相当。不能把冷启动改善包装成每分钟提速十几倍。",
+              "旧源码某些同锁调用确会等待，另一状态读取本来不取同一锁；因此所有界面都被锁住不是该试验支持的结论。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-research-hub",
+          "forecast-queue-publication"
+        ]
+      },
+      {
+        "id": "forecast-queue-publication",
+        "title": "有界预测队列：结果有效期、单调发布与快速风险",
+        "kind": "topic",
+        "category": "tools",
+        "summary": "合并繁重任务时保留逐条行情事件，出现更新请求也不自动使在算结果失效。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "有界预测队列：结果有效期、单调发布与快速风险",
+          "研究记录"
+        ],
+        "sections": [
+          {
+            "heading": "原过载模拟",
+            "paragraphs": [
+              "原报告以60个输入、每5秒一个、每次重预测12秒、有效期30秒作离散事件模拟。FIFO虽完成60次，仅3次仍有效；粗暴只接最新请求结果只发布1次。",
+              "有界队列改为身份正确、未过期、比已发布更新即可发布，模拟发布26次、最大输入年龄17秒。这不是当前生产负载或最新报价等价证明。"
+            ]
+          },
+          {
+            "heading": "状态与风险不丢失",
+            "paragraphs": [
+              "结果保留自身输入截止、发布时间、原有效期，不能重标成基于最新报价算出，也不能延长过期结果。",
+              "重预测忙碌时仍要逐条处理已收到行情和快速风险；原合成100到98再到100的短暂破界，粗暴只留最新会遗漏。上游没采到的轨迹不在本试验能力内。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-prewarm-evidence",
+          "forecast-incremental-equivalence",
+          "forecast-time-reference"
+        ]
+      },
+      {
+        "id": "forecast-incremental-equivalence",
+        "title": "增量特征等价验证：20字段通过不等于整模块通过",
+        "kind": "topic",
+        "category": "tools",
+        "summary": "先确认语义和数据边界一致，再比较相同工作量的速度。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "增量特征等价验证：20字段通过不等于整模块通过",
+          "研究记录"
+        ],
+        "sections": [
+          {
+            "heading": "原验证范围",
+            "paragraphs": [
+              "历史报告记录218条合成分钟记录、20个字段、4360个数值单元核对一致，包含跨日、午休与断分钟。",
+              "字段是3、5、10、20、30窗口的动量、效率、波动和有符号持续性；全零路径的除零未被强行填0。"
+            ]
+          },
+          {
+            "heading": "尚未涵盖的部分",
+            "paragraphs": [
+              "量能、日线背景、EWMA与历史修订没有完成全量增量替换，不能凭20字段通过认定整模块已等价。",
+              "增量子集与原全模块工作量不同，不给出不公平的整体提速倍数；本轮只读取原报告，不运行原代码。"
+            ]
+          }
+        ],
+        "related": [
+          "forecast-queue-publication",
+          "forecast-research-hub"
+        ]
+      },
+      {
+        "id": "forecast-history-audit",
+        "title": "历史行情实物验收：下载入口、字节与记录覆盖",
+        "kind": "topic",
+        "category": "tools",
+        "summary": "标题、目录和可解压都不能代替逐证券、逐日、逐分钟的数据验收。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "预测系统蓝图｜历史备份与研究报告"
+        ],
+        "keywords": [
+          "历史行情实物验收：下载入口、字节与记录覆盖",
+          "研究记录"
+        ],
+        "sections": [
+          {
+            "heading": "2026-09-21历史状态",
+            "paragraphs": [
+              "原实物验收报告取得目标原件0份、解析记录0条、整包验收0份。记录DNS失败、工具未登记下载、登录要求和远程电脑当时不在线等不同失败。",
+              "这些只描述该次取包尝试，不证明用户工作台没有行情。正确原生样本链接在商品页存在，也不足以证明文件已取得或HTTP有效。"
+            ]
+          },
+          {
+            "heading": "验收应包含什么",
+            "paragraphs": [
+              "文件字节、哈希、档案完整性、证券列表、最早最晚时间、缺日缺分钟、重复乱序、OHLC关系、量额单位与复权版本都要核对。",
+              "一分钟、五分钟、日线和原生分时分别验收；样本通过不代表全历史通过。本轮不重复下载行情或购买数据。"
+            ]
+          }
+        ],
+        "related": [
+          "qfq-price-method",
+          "forecast-window-evidence"
+        ]
+      },
+      {
+        "id": "research-source-reconstruction",
+        "title": "从口吻模仿到信息流程：信源专项研究的逆向问题",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "研究一个信息作者的获取、筛选、解释和最终判断链，而不靠模仿几个术语宣称复制其能力。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究与恢复：2026-09-16；本轮读取：2026-10-05",
+        "source_labels": [
+          "信源专项研究｜原对话恢复索引与同步修复附件"
+        ],
+        "keywords": [
+          "从口吻模仿到信息流程：信源专项研究的逆向问题",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "原研究要求",
+            "paragraphs": [
+              "恢复索引显示，原重点从特殊口头表达提高到反推信息渠道、筛选和分析方式，持续提出假设并验证或推翻。",
+              "历史采用1454条视频语料作为基线，但该恢复包没有取得原语料重新计数，不能称本轮逐条重读1454条。"
+            ]
+          },
+          {
+            "heading": "待验证的链条",
+            "paragraphs": [
+              "来源抓取、报警推送、深度确认、多模型解释和本人拼接都是研究线索。提到某平台不能证明实际订阅，发布时间快也不足以识别具体软件。",
+              "分享对话只取得部分正文，相邻完整顺序未全部核对；原助手的统计、匹配和时间推断需要重新验，财富与个人背景不作为公开能力证据。"
+            ]
+          }
+        ],
+        "related": [
+          "source-fingerprint-chain",
+          "transcript-term-preservation",
+          "cloud-repair-evidence"
+        ]
+      },
+      {
+        "id": "source-fingerprint-chain",
+        "title": "数字指纹追源：专名、版本与时间窗怎样形成候选链",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "先建可反驳的来源候选，再用原文与真实发布时间核对，避免把相似描述当已匹配。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "信源专项研究｜原对话恢复索引与同步修复附件"
+        ],
+        "keywords": [
+          "数字指纹追源：专名、版本与时间窗怎样形成候选链",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "原账本D与E的研究线索",
+            "paragraphs": [
+              "数字组合、专有名词、报告页数、日期和版本可缩小原文搜索范围。候选来源与已确认来源需要分开。",
+              "付费研报和电话会需要报告全名、日期、版本、页码与对应原句，不能仅有报告标题就宣称读了原文。"
+            ]
+          },
+          {
+            "heading": "时间证据",
+            "paragraphs": [
+              "视频ID编码时间需要与平台直接时间字段抽样比对，不能当作精确发布时间。正文发布、修改、转写抓取和资料上传时间也不是同一个时刻。",
+              "原恢复包未取回逐条匹配表、原语料ID表和完整计时日志；本页保存方法和缺口，不复述旧助手的来源命中率为事实。"
+            ]
+          }
+        ],
+        "related": [
+          "research-source-reconstruction",
+          "source-surface-origin",
+          "stock-nittobo-reference",
+          "stock-amazon-reference"
+        ]
+      },
+      {
+        "id": "transcript-term-preservation",
+        "title": "口头术语与转写：原句、规范词与确认来源分层",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "保留原句，另存词义和确认状态；无法确定的昵称不擅自映射到公司。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "信源专项研究｜原对话恢复索引与同步修复附件"
+        ],
+        "keywords": [
+          "口头术语与转写：原句、规范词与确认来源分层",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "恢复材料保留的片段",
+            "paragraphs": [
+              "原片段可支持CWW对应存储为王、屯维王对应囤积存储为王；另一些昵称与用户解释没有完整取回，应保留未知。",
+              "Blue到bro目前只取到历史助手确认片段，不能代替完整用户确认；同一个短语也可能随语境改变。"
+            ]
+          },
+          {
+            "heading": "公司映射的限制",
+            "paragraphs": [
+              "材料同时提及美光、海力士和三星，但不据不完整昵称自动建立一一对应。原始转写、规范词、解释与证据分别保存。",
+              "本页不复制整份第三方视频转写，不因恢复到一个术语就宣称已还原作者整个信息流程。"
+            ]
+          }
+        ],
+        "related": [
+          "research-source-reconstruction",
+          "stock-micron",
+          "stock-sk-hynix",
+          "stock-samsung-electronics"
+        ]
+      },
+      {
+        "id": "fixed-id-update-repair",
+        "title": "固定ID云端修复设计：身份、基线与条件写入",
+        "kind": "topic",
+        "category": "tools",
+        "summary": "保护同一文件身份、未知内容和部分完成状态；代码上传与正式目标写回是两件事。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "信源专项研究｜原对话恢复索引与同步修复附件"
+        ],
+        "keywords": [
+          "固定ID云端修复设计：身份、基线与条件写入",
+          "研究记录"
+        ],
+        "sections": [
+          {
+            "heading": "原v0.1.0程序设计",
+            "paragraphs": [
+              "原修复器保留8个固定目标，计划核对目标角色、父目录、文件类型和基线全文，再做在线条件写入探测、同ID回读、续传和幂等。",
+              "原30项本地合成及HTTP模拟通过，真实账号条件写入未执行，正式云端目标实际更新0次。"
+            ]
+          },
+          {
+            "heading": "后续修补",
+            "paragraphs": [
+              "v0.1.1原记录复现三类非法计划：自行宣称业务已验证、跨项目日志身份和伪造未运行验收成功。修补后52项合成与HTTP模拟通过。",
+              "52项通过仍不是Google真实账号测试；部署、项目指令安装、新会话端到端与原研究恢复分别未验证。本轮不调用或部署旧修复器。"
+            ]
+          }
+        ],
+        "related": [
+          "cloud-repair-evidence",
+          "research-source-reconstruction"
+        ]
+      },
+      {
+        "id": "cloud-repair-evidence",
+        "title": "云端同步验收分层：上传、同ID写回与新会话续接",
+        "kind": "topic",
+        "category": "tools",
+        "summary": "恢复索引、同步代码和业务完成各需要自己的证据，不能相互冒充。",
+        "status": "历史研究与审计记录，当前效果另行验证",
+        "research_date": "历史研究：2026-09-15至09-21；本轮读取：2026-10-05",
+        "source_labels": [
+          "信源专项研究｜原对话恢复索引与同步修复附件"
+        ],
+        "keywords": [
+          "云端同步验收分层：上传、同ID写回与新会话续接",
+          "研究记录"
+        ],
+        "sections": [
+          {
+            "heading": "原迁移和修复记录",
+            "paragraphs": [
+              "迁移包记录本地文档一致性与真实覆盖失败；上传新文件不代表更新原固定控制文件，不能改造另一份启动入口来掩盖身份歧义。",
+              "原修复器两个版本均记录正式云端目标写入0次，后台同步未安装，真实账号探测未运行。"
+            ]
+          },
+          {
+            "heading": "本轮只做网站内容整理",
+            "paragraphs": [
+              "本轮读取到原共享对话部分正文及恢复索引，可以恢复研究对象和原要求的线索，但没有因此完成1454条语料验证或修复跨对话同步。",
+              "网站的新公开说明不替换原项目入口，也不代表原研究自动恢复运行。"
+            ]
+          }
+        ],
+        "related": [
+          "fixed-id-update-repair",
+          "research-source-reconstruction",
+          "archive-o02uqd",
+          "archive-e6b9rn"
+        ]
+      },
+      {
+        "id": "stock-nittobo-reference",
+        "code": "nittobo-reference",
+        "name": "日东纺（Nittobo）",
+        "title": "日东纺（Nittobo）｜信源研究背景提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "历史信源追源讨论提及Nittobo，原报告指纹与占比未独立复核。",
+        "status": "历史背景提及，消息内容待核",
+        "research_date": "原恢复材料：2026-09-16；身份核对：2026-10-05",
+        "source_labels": [
+          "信源专项研究｜原对话恢复索引与同步修复附件",
+          "公司投资者关系｜证券身份"
+        ],
+        "keywords": [
+          "日东纺（Nittobo）",
+          "3110",
+          "T-glass",
+          "日東紡"
+        ],
+        "sections": [
+          {
+            "heading": "原材料中的身份",
+            "paragraphs": [
+              "原助手的报告追源假设出现Connectivity、T-glass和Nittobo，恢复索引明确97页报告案例及相关数字尚未独立复核。",
+              "保留为材料中的公司提及，不将旧占比或商业判断写成已确认事实。"
+            ]
+          },
+          {
+            "heading": "公开证券身份",
+            "paragraphs": [
+              "公司IR股票信息页列东京证券交易所代码3110。",
+              "证券身份核对不代表该背景消息已经验证。"
+            ],
+            "links": [
+              {
+                "label": "公司IR证券信息",
+                "url": "https://www.nittobo.co.jp/ir/memo.htm"
+              }
+            ]
+          }
+        ],
+        "related": [
+          "source-fingerprint-chain",
+          "research-source-reconstruction"
+        ]
+      },
+      {
+        "id": "stock-amazon-reference",
+        "code": "amazon-reference",
+        "name": "亚马逊（Amazon）",
+        "title": "亚马逊（Amazon）｜信源研究背景提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "历史信源讨论中出现亚马逊，具体业务消息和来源匹配仍待核。",
+        "status": "历史背景提及，消息内容待核",
+        "research_date": "原恢复材料：2026-09-16；身份核对：2026-10-05",
+        "source_labels": [
+          "信源专项研究｜原对话恢复索引与同步修复附件",
+          "公司投资者关系｜证券身份"
+        ],
+        "keywords": [
+          "亚马逊（Amazon）",
+          "AMZN",
+          "亚马逊"
+        ],
+        "sections": [
+          {
+            "heading": "原材料中的身份",
+            "paragraphs": [
+              "原共享对话的历史助手答复将亚马逊列入一条模型商业合作新闻的追源例子。该恢复包没有提供完整逐条来源匹配证据。",
+              "本轮仅补公司身份与研究关联，不确认原消息的分成、谈判进展或投资含义。"
+            ]
+          },
+          {
+            "heading": "公开证券身份",
+            "paragraphs": [
+              "公司IR常见问题列纳斯达克股票代码AMZN。",
+              "证券身份核对不代表该背景消息已经验证。"
+            ],
+            "links": [
+              {
+                "label": "公司IR证券信息",
+                "url": "https://ir.aboutamazon.com/faqs/"
+              }
+            ]
+          }
+        ],
+        "related": [
+          "source-fingerprint-chain",
+          "research-source-reconstruction"
         ]
       },
       {
