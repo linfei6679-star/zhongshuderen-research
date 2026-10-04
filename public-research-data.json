@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-04T11:43:01.189Z",
+  "checked_at": "2026-10-04T12:19:14.181Z",
   "intro": "从研究问题，到阶段判断与实际成果。每天核对研究记录，有变化就更新；想法还在验证时，也把依据和待解问题讲清楚。",
   "schedule": {
     "status": "preparing",
@@ -553,15 +553,17 @@
         "name": "万科A",
         "kind": "stock",
         "category": "stocks",
-        "summary": "审查区间内多份担保公告证实万科及并表子公司存在银行借款，有的贷款已提款，有的新贷拟提款。公告用途多未把银行贷款支付与新增项目建设/收购逐笔对应，故不能以担保或提款单独认定扩张用款；股东深铁借款另属关联方借款，不计银行借款。",
-        "research_date": "贷款研究窗口：2024-09-23至2026-09-23",
-        "status": "未确认扩张用途｜多笔银行贷款已提款但用途未逐笔证明",
+        "summary": "区分政策消息关联、实际执行和股东收益，保留地产信用情景的验证条件。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
         "source_labels": [
-          "A股银行贷款业务拓展审计（剔除北交所）"
+          "A股银行贷款业务拓展审计（剔除北交所）",
+          "ChatGPT历史研究｜分析股票消息"
         ],
         "keywords": [
           "万科A",
-          "000002"
+          "000002",
+          "万科A"
         ],
         "sections": [
           {
@@ -585,11 +587,19 @@
                 "url": "https://static.cninfo.com.cn/finalpage/2025-08-16/1224500648.PDF"
               }
             ]
+          },
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "历史讨论把消息人士报道、贷款展期、正式安排和经营风险分别处理，展期不等于免债。",
+              "应追踪执行范围、期限和正式披露，不把股价活跃或消息关联最直接当成风险已经消除。"
+            ]
           }
         ],
         "related": [
           "method-loans",
-          "method-evidence"
+          "method-evidence",
+          "housing"
         ]
       },
       {
@@ -11120,18 +11130,20 @@
         "name": "长盈精密",
         "kind": "stock",
         "category": "stocks",
-        "summary": "2024-12及2025-12披露子公司拟分别申请长期固定资产贷款用于新能源动力电池核心结构件项目和电子产品精密结构件智造工厂；公告均为初步方案/担保预案，未证实借款合同执行或实际提款。",
-        "research_date": "贷款研究窗口：2024-09-23至2026-09-23",
-        "status": "证据不足｜固定资产贷款申请",
+        "summary": "保存具身智能收入归属的口径纠正，研究新业务与母公司盈利之间的关系。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
         "source_labels": [
           "A股银行贷款业务拓展审计（剔除北交所）",
           "优化工作流_补充备份覆盖说明_20261001.txt",
           "机器人未来硬件_首批审计_20260921_原件备份_20261001.md",
-          "优化工作流_施工纪录.md"
+          "优化工作流_施工纪录.md",
+          "ChatGPT历史研究｜继续比较机器人公司"
         ],
         "keywords": [
           "长盈精密",
-          "300115"
+          "300115",
+          "长盈精密"
         ],
         "sections": [
           {
@@ -11153,6 +11165,13 @@
             "paragraphs": [
               "该对象在已取得的云端研究材料中出现。提及、对照样本与形成结论是不同阶段，后续继续按原材料整理。",
               "相关材料：优化工作流_补充备份覆盖说明_20261001.txt（资料更新 2026-10-01）；机器人未来硬件_首批审计_20260921_原件备份_20261001.md（资料更新 2026-10-01）；优化工作流_施工纪录.md（资料更新 2026-10-01）"
+            ]
+          },
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "原讨论将具身智能与新兴科技硬件的混合口径与纯人形机器人业务分开，也区分零组件件数和整机台数。",
+              "需要追踪纯人形业务收入与毛利、旧业务修复及扩张占用现金；新业务进展不能直接替代母公司盈利改善的证明。"
             ]
           }
         ],
@@ -45663,16 +45682,18 @@
         "name": "安恒信息",
         "kind": "stock",
         "category": "stocks",
-        "summary": "研究材料中的公司记录，包含已取得的判断、依据和待核对问题。",
-        "research_date": "研究材料各自时点见来源记录",
-        "status": "历史研究记录",
+        "summary": "关注AI与安全托管服务怎样改变交付利润率、续费和现金回收。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
         "source_labels": [
           "爱分析的林飞_01_生产施工链路日志",
-          "爱分析的林飞_02_滚动对话日志_历史"
+          "爱分析的林飞_02_滚动对话日志_历史",
+          "ChatGPT历史研究｜修正盈利判断"
         ],
         "keywords": [
           "安恒信息",
-          "688023"
+          "688023",
+          "安恒信息"
         ],
         "sections": [
           {
@@ -45681,10 +45702,18 @@
               "该对象在已取得的云端研究材料中出现。提及、对照样本与形成结论是不同阶段，后续继续按原材料整理。",
               "相关材料：爱分析的林飞_01_生产施工链路日志（资料更新 2026-09-23）；爱分析的林飞_02_滚动对话日志_历史（资料更新 2026-09-23）"
             ]
+          },
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "旧研究将AI收入出现与全公司经营改善分开，比较机构观点、收入预测和后续报表表现。",
+              "增长可能来自收入规模或利润率变化；需要核对交付成本、续费及回款，不能只凭AI收入增长认定经营拐点。"
+            ]
           }
         ],
         "related": [
-          "cybersecurity"
+          "cybersecurity",
+          "method-evidence"
         ]
       },
       {
@@ -46363,17 +46392,19 @@
         "name": "三未信安",
         "kind": "stock",
         "category": "stocks",
-        "summary": "研究材料中的公司记录，包含已取得的判断、依据和待核对问题。",
-        "research_date": "研究材料各自时点见来源记录",
-        "status": "历史研究记录",
+        "summary": "从机器身份、硬件信任与密码升级研究未来需求，同时保留商业兑现和价值归属的边界。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
         "source_labels": [
           "爱分析的林飞_00_实时记忆_唯一入口",
           "爱分析的林飞_02_滚动对话日志_历史",
-          "03_哲学思辨对话集.md"
+          "03_哲学思辨对话集.md",
+          "ChatGPT历史研究｜修正盈利判断"
         ],
         "keywords": [
           "三未信安",
-          "sansec"
+          "sansec",
+          "三未信安"
         ],
         "sections": [
           {
@@ -46382,10 +46413,18 @@
               "该对象在已取得的云端研究材料中出现。提及、对照样本与形成结论是不同阶段，后续继续按原材料整理。",
               "相关材料：爱分析的林飞_00_实时记忆_唯一入口（资料更新 2026-09-23）；爱分析的林飞_02_滚动对话日志_历史（资料更新 2026-09-23）；03_哲学思辨对话集.md（资料更新 2026-09-17）"
             ]
+          },
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "历史材料将密码芯片收入与机器人安全收入区分，也把前沿技术和已形成规模的业务分开。",
+              "需要追踪重复订单、客户复购、单机价值和报表贡献；还要研究独立产品是否会被主芯片或平台内置能力替代。"
+            ]
           }
         ],
         "related": [
-          "cybersecurity"
+          "cybersecurity",
+          "method-evidence"
         ]
       },
       {
@@ -46395,20 +46434,22 @@
         "name": "雷赛智能",
         "kind": "stock",
         "category": "stocks",
-        "summary": "研究材料中的公司记录，包含已取得的判断、依据和待核对问题。",
-        "research_date": "研究材料各自时点见来源记录",
-        "status": "历史研究记录",
+        "summary": "把电机订单、在建产能和实际收入分开，研究机器人业务进展对母公司利润的传导。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
         "source_labels": [
           "优化工作流_补充备份覆盖说明_20261001.txt",
           "机器人未来硬件_首批审计_20260921_原件备份_20261001.md",
           "优化工作流_施工纪录.md",
           "爱分析的林飞_01_生产施工链路日志",
           "爱分析的林飞_00_实时记忆_唯一入口",
-          "投资大师专家团_2025年以来全球人形机器人产业商业化进展_最终报告.html"
+          "投资大师专家团_2025年以来全球人形机器人产业商业化进展_最终报告.html",
+          "ChatGPT历史研究｜继续比较机器人公司"
         ],
         "keywords": [
           "雷赛智能",
-          "leadshine"
+          "leadshine",
+          "雷赛智能"
         ],
         "sections": [
           {
@@ -46417,10 +46458,18 @@
               "该对象在已取得的云端研究材料中出现。提及、对照样本与形成结论是不同阶段，后续继续按原材料整理。",
               "相关材料：优化工作流_补充备份覆盖说明_20261001.txt（资料更新 2026-10-01）；机器人未来硬件_首批审计_20260921_原件备份_20261001.md（资料更新 2026-10-01）；优化工作流_施工纪录.md（资料更新 2026-10-01）；爱分析的林飞_01_生产施工链路日志（资料更新 2026-09-23）；爱分析的林飞_00_实时记忆_唯一入口（资料更新 2026-09-23）；投资大师专家团_2025年以来全球人形机器人产业商业化进展_最终报告.html（资料更新 2026-08-27）"
             ]
+          },
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "原材料强调电机数量不是机器人整机数量，订单与产能也不能直接等于已确认收入。",
+              "下一步观察交付、毛利和回款，并核对市场已包含多少预期；不能只增加行业看好材料。"
+            ]
           }
         ],
         "related": [
-          "robotics"
+          "robotics",
+          "method-evidence"
         ]
       },
       {
@@ -46430,17 +46479,19 @@
         "name": "震裕科技",
         "kind": "stock",
         "category": "stocks",
-        "summary": "研究材料中的公司记录，包含已取得的判断、依据和待核对问题。",
-        "research_date": "研究材料各自时点见来源记录",
-        "status": "历史研究记录",
+        "summary": "将券商远期利润预测反推为需要实现的经营条件，再检查业务、毛利与现金。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
         "source_labels": [
           "优化工作流_补充备份覆盖说明_20261001.txt",
           "机器人未来硬件_首批审计_20260921_原件备份_20261001.md",
-          "优化工作流_施工纪录.md"
+          "优化工作流_施工纪录.md",
+          "ChatGPT历史研究｜继续比较机器人公司"
         ],
         "keywords": [
           "震裕科技",
-          "zhenyu"
+          "zhenyu",
+          "震裕科技"
         ],
         "sections": [
           {
@@ -46449,10 +46500,18 @@
               "该对象在已取得的云端研究材料中出现。提及、对照样本与形成结论是不同阶段，后续继续按原材料整理。",
               "相关材料：优化工作流_补充备份覆盖说明_20261001.txt（资料更新 2026-10-01）；机器人未来硬件_首批审计_20260921_原件备份_20261001.md（资料更新 2026-10-01）；优化工作流_施工纪录.md（资料更新 2026-10-01）"
             ]
+          },
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "历史研究区分实际利润与预测分母，说明低预测市盈率可能依赖较高的后续盈利要求。",
+              "应逐项追踪增长来自哪些业务、毛利如何变化和回款能否跟上，反推只是对假设的检查，不是盈利承诺。"
+            ]
           }
         ],
         "related": [
-          "robotics"
+          "robotics",
+          "method-evidence"
         ]
       },
       {
@@ -54515,6 +54574,1302 @@
         ],
         "related": [
           "method-context",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "algal-oil",
+        "title": "藻油、营养原料与公司研究",
+        "category": "industries",
+        "kind": "topic",
+        "summary": "历史研究请求关注藻油赛道的成长性与相关公司，并要求把公司风险单独核对；目前已取回请求与交接说明，完整报告仍待追溯。",
+        "research_date": "原研究请求时点：2026年10月",
+        "status": "研究请求已取得，报告待补",
+        "source_labels": [
+          "ChatGPT历史｜筛选藻油龙头股"
+        ],
+        "keywords": [
+          "藻油",
+          "DHA",
+          "营养原料",
+          "嘉必优",
+          "金达威"
+        ],
+        "sections": [
+          {
+            "heading": "已取得的内容与缺口",
+            "paragraphs": [
+              "原请求要求比较赛道发展潜力及相关A股，并重点核对公司风险。本轮取得的对话尾段只证明这些研究已被提出和安排，不能当作最终研究报告。",
+              "赛道成长性、公司的经营暴露和具体风险需要分别研究，不能承诺任何企业永远不会发生ST或退市风险。"
+            ]
+          }
+        ],
+        "related": [
+          "stock-cabio",
+          "stock-kingdomway",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "industrial-transformation",
+        "title": "制造业转型、出海与多年证据",
+        "category": "industries",
+        "kind": "topic",
+        "summary": "把新故事放回多年经营和组织变化，区分延续、波动与真正的新变量。",
+        "research_date": "历史研究讨论，具体时点见关联档案",
+        "status": "研究主线与阶段判断",
+        "source_labels": [
+          "已取得的ChatGPT历史研究对话"
+        ],
+        "keywords": [
+          "制造业转型、出海与多年证据"
+        ],
+        "sections": [
+          {
+            "heading": "研究范围",
+            "paragraphs": [
+              "把新故事放回多年经营和组织变化，区分延续、波动与真正的新变量。",
+              "历史研究涉及杰克、北路、海天、弘亚、慈星和兰剑等不同对象；后续修正与反证一起保留。"
+            ]
+          }
+        ],
+        "related": []
+      },
+      {
+        "id": "liquid-cooling",
+        "title": "算力液冷：产品、认证、订单与利润",
+        "category": "industries",
+        "kind": "topic",
+        "summary": "沿产品、送样、小批量、规模订单和报表贡献追踪算力液冷，不把认证或展会动作当作客户定点。",
+        "research_date": "历史研究讨论，具体时点见关联档案",
+        "status": "研究主线与阶段判断",
+        "source_labels": [
+          "已取得的ChatGPT历史研究对话"
+        ],
+        "keywords": [
+          "算力液冷：产品、认证、订单与利润"
+        ],
+        "sections": [
+          {
+            "heading": "研究范围",
+            "paragraphs": [
+              "沿产品、送样、小批量、规模订单和报表贡献追踪算力液冷，不把认证或展会动作当作客户定点。",
+              "溯联的研究记录保留了从成长叙事转为观察订单跃迁的修正，以及标准化可能同时带来机会和竞争的边界。"
+            ]
+          }
+        ],
+        "related": []
+      },
+      {
+        "id": "wearable-infrastructure",
+        "title": "可穿戴、感知输入与公共数字音频",
+        "category": "industries",
+        "kind": "topic",
+        "summary": "从听觉、连续信号采集和个人AI设备的实际需求向上游制造环节研究，覆盖AFE、MEMS、低功耗音频和Auracast。",
+        "research_date": "历史研究讨论，具体时点见关联档案",
+        "status": "研究主线与阶段判断",
+        "source_labels": [
+          "已取得的ChatGPT历史研究对话"
+        ],
+        "keywords": [
+          "可穿戴、感知输入与公共数字音频"
+        ],
+        "sections": [
+          {
+            "heading": "研究范围",
+            "paragraphs": [
+              "从听觉、连续信号采集和个人AI设备的实际需求向上游制造环节研究，覆盖AFE、MEMS、低功耗音频和Auracast。",
+              "需求真实、技术能够制造、客户应用和股东价值分别验证；研报稀疏不是市场未定价的充分证明。"
+            ]
+          }
+        ],
+        "related": []
+      },
+      {
+        "id": "micro-companies",
+        "title": "小团队、AI生产力与责任能力",
+        "category": "social",
+        "kind": "topic",
+        "summary": "历史未来推演关注组织人数与经济影响规模可能脱钩：产品能力变强后，信用、责任和履约仍有现实约束。",
+        "status": "历史研究与开放问题",
+        "research_date": "原研究讨论时点：2026年8月至9月",
+        "source_labels": [
+          "ChatGPT历史｜继续研究"
+        ],
+        "keywords": [
+          "小团队、AI生产力与责任能力"
+        ],
+        "sections": [
+          {
+            "heading": "研究内容",
+            "paragraphs": [
+              "历史未来推演关注组织人数与经济影响规模可能脱钩：产品能力变强后，信用、责任和履约仍有现实约束。",
+              "小团队生产力提升不保证利润提升，供给增加和竞争也可能更快。这里保留研究问题，不把推演当成已发生的普遍规律。"
+            ]
+          }
+        ],
+        "related": [
+          "method-evidence",
+          "method-context"
+        ]
+      },
+      {
+        "id": "agent-discovery",
+        "title": "人怎样找到你，AI又怎样发现你",
+        "category": "social",
+        "kind": "topic",
+        "summary": "旧讨论把产品能够制造与产品能够进入候选集分开，关注机器可读信息、发现、比较和验证的过程。",
+        "status": "历史研究与开放问题",
+        "research_date": "原研究讨论时点：2026年8月至9月",
+        "source_labels": [
+          "ChatGPT历史｜继续研究"
+        ],
+        "keywords": [
+          "人怎样找到你，AI又怎样发现你"
+        ],
+        "sections": [
+          {
+            "heading": "研究内容",
+            "paragraphs": [
+              "旧讨论把产品能够制造与产品能够进入候选集分开，关注机器可读信息、发现、比较和验证的过程。",
+              "曝光入口、平台采样与排序可能影响被发现的机会；谁最终掌握这些环节仍是开放研究问题。"
+            ]
+          }
+        ],
+        "related": [
+          "method-evidence",
+          "method-context"
+        ]
+      },
+      {
+        "id": "digital-physical",
+        "title": "数字决策颗粒与物理履约批量",
+        "category": "social",
+        "kind": "topic",
+        "summary": "机器可以形成更细的经济决策，现实仍存在生产批次、物流、质检、库存和最低批量等条件。",
+        "status": "历史研究与开放问题",
+        "research_date": "原研究讨论时点：2026年8月至9月",
+        "source_labels": [
+          "ChatGPT历史｜继续研究"
+        ],
+        "keywords": [
+          "数字决策颗粒与物理履约批量"
+        ],
+        "sections": [
+          {
+            "heading": "研究内容",
+            "paragraphs": [
+              "机器可以形成更细的经济决策，现实仍存在生产批次、物流、质检、库存和最低批量等条件。",
+              "原讨论用嘉立创等观察入口研究数字需求怎样重新聚合为可生产和交付的物理动作。具体企业受益仍要核对。"
+            ]
+          }
+        ],
+        "related": [
+          "method-evidence",
+          "method-context"
+        ]
+      },
+      {
+        "id": "agent-payments",
+        "title": "机器微支付、授权与确定性",
+        "category": "social",
+        "kind": "topic",
+        "summary": "旧讨论从高频小额机器动作出发，追问授权、限额、责任、结算和对账怎样匹配。",
+        "status": "历史研究与开放问题",
+        "research_date": "原研究讨论时点：2026年8月至9月",
+        "source_labels": [
+          "ChatGPT历史｜继续研究"
+        ],
+        "keywords": [
+          "机器微支付、授权与确定性"
+        ],
+        "sections": [
+          {
+            "heading": "研究内容",
+            "paragraphs": [
+              "旧讨论从高频小额机器动作出发，追问授权、限额、责任、结算和对账怎样匹配。",
+              "这是未来结构候选，不把金融基础设施应具的条件当成现行法律结论，也不提供具体支付或投资操作。"
+            ]
+          }
+        ],
+        "related": [
+          "method-evidence",
+          "method-context"
+        ]
+      },
+      {
+        "id": "reversible-context",
+        "title": "研究资料为什么需要可逆的阅读窗口",
+        "category": "tools",
+        "kind": "topic",
+        "summary": "把原始材料、索引、选择窗口和最终摘要分开，避免一次压缩决定以后还能看到什么。",
+        "status": "历史研究与开放问题",
+        "research_date": "原研究讨论时点：2026年8月至9月",
+        "source_labels": [
+          "ChatGPT历史｜财联社风口反推"
+        ],
+        "keywords": [
+          "研究资料为什么需要可逆的阅读窗口"
+        ],
+        "sections": [
+          {
+            "heading": "研究内容",
+            "paragraphs": [
+              "把原始材料、索引、选择窗口和最终摘要分开，避免一次压缩决定以后还能看到什么。",
+              "历史工程中形成过候选模块和测试记录；内部测试通过不代表真实研究效率或节省效果已经验证。"
+            ]
+          }
+        ],
+        "related": [
+          "method-evidence",
+          "method-context"
+        ]
+      },
+      {
+        "id": "knowledge-graphs",
+        "title": "图关系、多层摘要与迭代检索",
+        "category": "tools",
+        "kind": "topic",
+        "summary": "历史外研比较GraphRAG、RAPTOR、GraphReader、LazyGraphRAG等资料组织思路，重点是从全局视野回到具体来源。",
+        "status": "历史研究与开放问题",
+        "research_date": "原研究讨论时点：2026年8月至9月",
+        "source_labels": [
+          "ChatGPT历史｜财联社风口反推"
+        ],
+        "keywords": [
+          "图关系、多层摘要与迭代检索"
+        ],
+        "sections": [
+          {
+            "heading": "研究内容",
+            "paragraphs": [
+              "历史外研比较GraphRAG、RAPTOR、GraphReader、LazyGraphRAG等资料组织思路，重点是从全局视野回到具体来源。",
+              "本条整理学习路径与方法问题，不复述旧论文的性能数字为今天的结论；具体实现与效果要按任务验证。"
+            ]
+          }
+        ],
+        "related": [
+          "method-evidence",
+          "method-context"
+        ]
+      },
+      {
+        "id": "exploration-organ",
+        "title": "发现线索与研究结论怎样分工",
+        "category": "tools",
+        "kind": "topic",
+        "summary": "原研究将开放探索、问题组织、矛盾保存和进一步研究分开，发现器不直接成为股票选择器。",
+        "status": "历史研究与开放问题",
+        "research_date": "原研究讨论时点：2026年8月至9月",
+        "source_labels": [
+          "ChatGPT历史｜继续验收总计划"
+        ],
+        "keywords": [
+          "发现线索与研究结论怎样分工"
+        ],
+        "sections": [
+          {
+            "heading": "研究内容",
+            "paragraphs": [
+              "原研究将开放探索、问题组织、矛盾保存和进一步研究分开，发现器不直接成为股票选择器。",
+              "规则可以帮助保存范围和防止遗漏，真正的新认识与后续现实效果仍需分别验收。"
+            ]
+          }
+        ],
+        "related": [
+          "method-evidence",
+          "method-context"
+        ]
+      },
+      {
+        "id": "research-handoffs",
+        "title": "研究协作怎样减少传话与信息丢失",
+        "category": "tools",
+        "kind": "topic",
+        "summary": "历史设计讨论用持久化材料、来源引用和明确问题交接，保持连续研究而不是层层缩短为口头摘要。",
+        "status": "历史研究与开放问题",
+        "research_date": "原研究讨论时点：2026年8月至9月",
+        "source_labels": [
+          "ChatGPT历史｜信源二迁移解析"
+        ],
+        "keywords": [
+          "研究协作怎样减少传话与信息丢失"
+        ],
+        "sections": [
+          {
+            "heading": "研究内容",
+            "paragraphs": [
+              "历史设计讨论用持久化材料、来源引用和明确问题交接，保持连续研究而不是层层缩短为口头摘要。",
+              "模块名称和分工可以改变，证据、原始问题和历史不能因工具变更而被改写。"
+            ]
+          }
+        ],
+        "related": [
+          "method-evidence",
+          "method-context"
+        ]
+      },
+      {
+        "id": "random-discovery",
+        "title": "随机探索与认知边界",
+        "category": "methods",
+        "kind": "topic",
+        "summary": "原讨论保留一部分不由热点和模型相关性预先决定的探索方向，认真检查它与现实是否有联系。",
+        "status": "历史研究与开放问题",
+        "research_date": "原研究讨论时点：2026年8月至9月",
+        "source_labels": [
+          "ChatGPT历史｜信源二迁移解析"
+        ],
+        "keywords": [
+          "随机探索与认知边界"
+        ],
+        "sections": [
+          {
+            "heading": "研究内容",
+            "paragraphs": [
+              "原讨论保留一部分不由热点和模型相关性预先决定的探索方向，认真检查它与现实是否有联系。",
+              "随机探索用于扩大观察，不是随机挑股票；它也不替代证据、事实核对和投资判断。"
+            ]
+          }
+        ],
+        "related": [
+          "method-evidence",
+          "method-context"
+        ]
+      },
+      {
+        "id": "narrative-library",
+        "title": "产业叙事怎样连到公司与股票",
+        "category": "methods",
+        "kind": "topic",
+        "summary": "把变化、原因、产业链、利润可能流向、反向解释和具体公司连起来，避免最后只附一张概念股名单。",
+        "status": "历史研究与开放问题",
+        "research_date": "原研究讨论时点：2026年8月至9月",
+        "source_labels": [
+          "ChatGPT历史｜信源二迁移解析"
+        ],
+        "keywords": [
+          "产业叙事怎样连到公司与股票"
+        ],
+        "sections": [
+          {
+            "heading": "研究内容",
+            "paragraphs": [
+              "把变化、原因、产业链、利润可能流向、反向解释和具体公司连起来，避免最后只附一张概念股名单。",
+              "每个公司都需要说明哪一条关系可能影响它，猜想、证据和未知分别保存。"
+            ]
+          }
+        ],
+        "related": [
+          "method-evidence",
+          "method-context"
+        ]
+      },
+      {
+        "id": "stock-300077",
+        "code": "300077",
+        "title": "国民技术｜历史研究档案",
+        "name": "国民技术",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "安全业务与其他MCU业务必须分开研究，A股与港股的业务资料可以互参，市场价格和估值不能混用。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
+        "source_labels": [
+          "ChatGPT历史研究｜修正盈利判断"
+        ],
+        "keywords": [
+          "国民技术",
+          "300077",
+          "国民技术",
+          "300077",
+          "02701",
+          "MCU",
+          "安全芯片"
+        ],
+        "sections": [
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "历史阅读注意到电源、光模块等MCU增长论证与安全业务贡献并非同一问题。",
+              "公司官网列示A股300077.SZ和港股02701.HK；先核对证券身份，再判断研究材料适用于哪一种价格口径。"
+            ]
+          },
+          {
+            "heading": "证券身份核对",
+            "paragraphs": [
+              "官网列示A股代码300077.SZ、港股代码02701.HK。东方国信是另一家公司，其代码为300166；两者不能混用。"
+            ],
+            "links": [
+              {
+                "label": "国民技术官网：公司与代码",
+                "url": "https://www.nationstech.com/about/index/"
+              },
+              {
+                "label": "东方国信官网：公司与代码",
+                "url": "https://www.bonc.com.cn/about"
+              }
+            ]
+          }
+        ],
+        "related": [
+          "cybersecurity",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-wangsu",
+        "code": "wangsu",
+        "title": "网宿科技｜历史研究档案",
+        "name": "网宿科技",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "网络安全研究重点之一：高毛利安全及增值服务的经济分量，能否持续转成公司利润。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
+        "source_labels": [
+          "ChatGPT历史研究｜修正盈利判断"
+        ],
+        "keywords": [
+          "网宿科技",
+          "wangsu",
+          "网宿科技"
+        ],
+        "sections": [
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "历史讨论区分安全及增值服务的合并口径、纯AI安全收入、毛利与净利润，避免把这些口径混为一谈。",
+              "后续应观察付费客户、续费、单客户收入和费用投入；分部收入增长不自动等于公司扣非利润增长。"
+            ]
+          }
+        ],
+        "related": [
+          "cybersecurity",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-dptech",
+        "code": "dptech",
+        "title": "迪普科技｜历史研究档案",
+        "name": "迪普科技",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "将核心安全业务恢复与全公司收入、费用变化分别观察，研究利润改善的来源。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
+        "source_labels": [
+          "ChatGPT历史研究｜修正盈利判断"
+        ],
+        "keywords": [
+          "迪普科技",
+          "dptech",
+          "迪普科技"
+        ],
+        "sections": [
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "原讨论指出总收入变化可能掩盖安全产品与其他业务的分化，利润改善也可能由费用下降支撑。",
+              "核心安全收入和毛利能否接过降费的作用，是经营修复能否持续的关键问题。"
+            ]
+          }
+        ],
+        "related": [
+          "cybersecurity",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-sangfor",
+        "code": "sangfor",
+        "title": "深信服｜历史研究档案",
+        "name": "深信服",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "作为经营兑现能力的对照，研究云计算、AI基础设施与安全业务分别贡献什么增长。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
+        "source_labels": [
+          "ChatGPT历史研究｜修正盈利判断"
+        ],
+        "keywords": [
+          "深信服",
+          "sangfor",
+          "深信服"
+        ],
+        "sections": [
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "历史研究不把全公司新增收入归为网络安全需求，也将收入与现金流表现分别观察。",
+              "公司有经营兑现不等于当前股票更便宜；估值所要求的未来增长仍需独立核对。"
+            ]
+          }
+        ],
+        "related": [
+          "cybersecurity",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-venustech",
+        "code": "venustech",
+        "title": "启明星辰｜历史研究档案",
+        "name": "启明星辰",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "研究经营恢复、费用下降与AI产品增长率之间的不同含义。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
+        "source_labels": [
+          "ChatGPT历史研究｜修正盈利判断"
+        ],
+        "keywords": [
+          "启明星辰",
+          "venustech",
+          "启明星辰"
+        ],
+        "sections": [
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "原讨论把收入、扣非利润、现金流、费用和毛利共同观察，避免只根据扭亏判断业务拐点。",
+              "高增长率需要核对基数及绝对规模；后续继续关注订单质量、AI收入和毛利是否能接续恢复。"
+            ]
+          }
+        ],
+        "related": [
+          "cybersecurity",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-qianxin",
+        "code": "qianxin",
+        "title": "奇安信｜历史研究档案",
+        "name": "奇安信",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "研究账面减亏与主营经营反转的区别，核对投资收益、扣非结果与回款。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
+        "source_labels": [
+          "ChatGPT历史研究｜修正盈利判断"
+        ],
+        "keywords": [
+          "奇安信",
+          "qianxin",
+          "奇安信"
+        ],
+        "sections": [
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "历史材料将金融资产收益带来的利润变化与主营业务改善分开，也比较报告标题和预测模型的变化。",
+              "需要用扣非盈利、订单质量和回款追踪反转，不将积极评级本身当成盈利模型已经改善的证据。"
+            ]
+          }
+        ],
+        "related": [
+          "cybersecurity",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-cabio",
+        "code": "cabio",
+        "title": "嘉必优｜历史研究档案",
+        "name": "嘉必优",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "藻油研究中的比较对象，已有赛道成长性与风险核对的研究请求，完整报告仍待追溯。",
+        "research_date": "原研究请求与交接时点：2026年10月",
+        "status": "已提及，完整研究报告待补",
+        "source_labels": [
+          "ChatGPT历史研究｜筛选藻油龙头股"
+        ],
+        "keywords": [
+          "嘉必优",
+          "cabio",
+          "嘉必优"
+        ],
+        "sections": [
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "原对话要求在藻油相关A股中比较发展潜力，并把金达威与嘉必优的风险放在重点核对范围。",
+              "取得的尾段只证明研究被提出和交接，未取回完整报告；不能据此宣布公司没有ST或退市风险。"
+            ]
+          }
+        ],
+        "related": [
+          "algal-oil",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-kingdomway",
+        "code": "kingdomway",
+        "title": "金达威｜历史研究档案",
+        "name": "金达威",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "藻油相关研究比较对象，历史请求重点核对公司风险，尚不能用交接记录替代最终报告。",
+        "research_date": "原研究请求与交接时点：2026年10月",
+        "status": "已提及，完整研究报告待补",
+        "source_labels": [
+          "ChatGPT历史研究｜筛选藻油龙头股"
+        ],
+        "keywords": [
+          "金达威",
+          "kingdomway",
+          "金达威"
+        ],
+        "sections": [
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "原对话将金达威与嘉必优放在比较范围，并提出ST、退市风险需要独立核对。",
+              "本轮拿到的是研究请求和交接说明，未取回完整研究结果；这里保留已提及的对象与缺口。"
+            ]
+          }
+        ],
+        "related": [
+          "algal-oil",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-002244",
+        "code": "002244",
+        "title": "滨江集团｜历史研究档案",
+        "name": "滨江集团",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "研究新房贴息情景能否通过政策覆盖、项目销售与回款传导到企业经营。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
+        "source_labels": [
+          "ChatGPT历史研究｜分析股票消息"
+        ],
+        "keywords": [
+          "滨江集团",
+          "002244",
+          "滨江集团"
+        ],
+        "sections": [
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "原讨论把土地储备地域、在售项目、购房条件和经营收入分别核对；地域比例不能直接当受补贴收入比例。",
+              "该页保留历史情景，具体政策以形成当时及后续正式文件为准；经营受益、消息交易和股票表现并非同一组对象。"
+            ]
+          }
+        ],
+        "related": [
+          "housing",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-600383",
+        "code": "600383",
+        "title": "金地集团｜历史研究档案",
+        "name": "金地集团",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "观察信用预期如何由个别房企扩散到行业，同时核对企业自身的融资和回款。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
+        "source_labels": [
+          "ChatGPT历史研究｜分析股票消息"
+        ],
+        "keywords": [
+          "金地集团",
+          "600383",
+          "金地集团"
+        ],
+        "sections": [
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "原讨论没有将万科的消息安排直接套用到金地，区分行业预期与公司实际变化。",
+              "需要自己的融资、债务安排和销售回款支持，不由另一家公司上涨推出同样的经营改善。"
+            ]
+          }
+        ],
+        "related": [
+          "housing",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-600325",
+        "code": "600325",
+        "title": "华发股份｜历史研究档案",
+        "name": "华发股份",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "研究核心城市项目、库存去化与经营风险，避免仅凭国企背景或地域标签判断。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
+        "source_labels": [
+          "ChatGPT历史研究｜分析股票消息"
+        ],
+        "keywords": [
+          "华发股份",
+          "600325",
+          "华发股份"
+        ],
+        "sections": [
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "原讨论将多城市布局与纯二线城市情景区分，同时关注减值、负债和回款。",
+              "具体政策覆盖、项目状况和经营数据需要按各自时点核对。"
+            ]
+          }
+        ],
+        "related": [
+          "housing",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-601155",
+        "code": "601155",
+        "title": "新城控股｜历史研究档案",
+        "name": "新城控股",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "将商业运营与地产开发分开，研究融资和住宅销售情景怎样作用于不同业务。",
+        "research_date": "原研究时点：2026年9月",
+        "status": "历史研究记录与阶段判断",
+        "source_labels": [
+          "ChatGPT历史研究｜分析股票消息"
+        ],
+        "keywords": [
+          "新城控股",
+          "601155",
+          "新城控股"
+        ],
+        "sections": [
+          {
+            "heading": "研究中的具体问题",
+            "paragraphs": [
+              "原讨论指出商业经营与住宅销售有不同变量，不能只用房贷贴息解释全公司。",
+              "先确定受影响的业务、政策覆盖和现金传导，再判断经营变化与市场预期。"
+            ]
+          }
+        ],
+        "related": [
+          "housing",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-jack-tech",
+        "code": "jack-tech",
+        "title": "杰克科技｜历史研究档案",
+        "name": "杰克科技",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "把公司战略沿革放回多年历史，撤回将整厂方案与数字化视为近期突然转型的判断。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜继续施工 halted"
+        ],
+        "keywords": [
+          "杰克科技",
+          "jack-tech",
+          "杰克科技",
+          "多年年报",
+          "商业兑现",
+          "研究修正"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "历史年报对照显示整厂、成套智联和大客户路线早已有延续，近期AI和机器人讨论不能自动当成新发现。",
+              "进一步的问题是自动化与客户集中度是否相互强化；这属于研究推演，需要客户、订单和资本投入的独立证据。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "industrial-transformation",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-beilu-intelligent",
+        "code": "beilu-intelligent",
+        "title": "北路智控｜历史研究档案",
+        "name": "北路智控",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "区分研发方向持续存在、研发投入持续加速和商业化成功三种状态。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜继续施工 halted"
+        ],
+        "keywords": [
+          "北路智控",
+          "beilu-intelligent",
+          "北路智控",
+          "多年年报",
+          "商业兑现",
+          "研究修正"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "历史研究曾把资源持续向无人驾驶迁移说得过强，后续按多年数据补入研发金额与经营变化的反证。",
+              "需要核对客户能否复制、项目验收与批量订单，不能只用第二增长曲线的叙事判断兑现。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "industrial-transformation",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-haitian-precision",
+        "code": "haitian-precision",
+        "title": "海天精工｜历史研究档案",
+        "name": "海天精工",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "通过多年海外收入变化，修正持续直线加速的出海叙事。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜继续施工 halted"
+        ],
+        "keywords": [
+          "海天精工",
+          "haitian-precision",
+          "海天精工",
+          "多年年报",
+          "商业兑现",
+          "研究修正"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "历史对照保留增长、回落和再恢复，而不是只截取连续增长的两年。",
+              "全球化真实存在与海外增长始终加速不同，后续需要订单、地区和周期共同解释。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "industrial-transformation",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-hongya-cnc",
+        "code": "hongya-cnc",
+        "title": "弘亚数控｜历史研究档案",
+        "name": "弘亚数控",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "将海外份额推演与竞争对手的真实变化分开，保存成本优势可能被竞争削弱的反证。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜继续施工 halted"
+        ],
+        "keywords": [
+          "弘亚数控",
+          "hongya-cnc",
+          "弘亚数控",
+          "多年年报",
+          "商业兑现",
+          "研究修正"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "原研究不再直接以欧洲设备商成本较高推出公司必然取得份额，保留对方转产、降价及技术差距等竞争解释。",
+              "应同时比较海外对手的订单、区域收入和份额，才能验证本公司的增长究竟来自行业恢复还是份额变化。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "industrial-transformation",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-cixing",
+        "code": "cixing",
+        "title": "慈星股份｜历史研究档案",
+        "name": "慈星股份",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "研究收购技术、品牌、渠道之后能否形成与过去不同的经营变化。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜继续施工 halted"
+        ],
+        "keywords": [
+          "慈星股份",
+          "cixing",
+          "慈星股份",
+          "多年年报",
+          "商业兑现",
+          "研究修正"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "历史材料将收购公告和真实整合分开，关注工程人员、客户留存、采购和成本变化。",
+              "研究覆盖少不等于市场一定漏估，仍需验证新资产是否带来实际订单和盈利。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "industrial-transformation",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-lancs",
+        "code": "lancs",
+        "title": "兰剑智能｜历史研究档案",
+        "name": "兰剑智能",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "按组织、项目、订单和收入的时间顺序追踪海外业务变化。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜继续施工 halted"
+        ],
+        "keywords": [
+          "兰剑智能",
+          "lancs",
+          "兰剑智能",
+          "多年年报",
+          "商业兑现",
+          "研究修正"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "历史研究把先建立海外组织、再拿项目、随后形成收入的过程连起来，同时保存新增订单速度放缓的观察。",
+              "兑现以前的订单与新订单继续加速是两件事，后续判断需要区分这两个时间钟。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "industrial-transformation",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-sulian",
+        "code": "sulian",
+        "title": "溯联股份｜历史研究档案",
+        "name": "溯联股份",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "研究汽车流体控制能力向算力液冷的迁移，区分产品、认证、小批量和规模利润。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜继续施工"
+        ],
+        "keywords": [
+          "溯联股份",
+          "sulian",
+          "溯联股份",
+          "多年年报",
+          "商业兑现",
+          "研究修正"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "历史讨论通过展会、招聘、标准和客户路径寻找商业动作，但没有把参展或认证当作进入国际大客户供应链的证明。",
+              "应追踪正式定点、可见订单、报表贡献和完整产品组合，保留从成长叙事转为观察订单跃迁的判断修正。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "liquid-cooling",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-goodix",
+        "code": "goodix",
+        "title": "汇顶科技｜历史研究档案",
+        "name": "汇顶科技",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "从连续人体和生化信号的实际需求追问上游模拟前端的位置，而不是只套AI眼镜概念。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜模块化分析方法"
+        ],
+        "keywords": [
+          "汇顶科技",
+          "goodix",
+          "汇顶科技",
+          "可穿戴",
+          "端侧AI",
+          "真实需求"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "原研究把整机CGM与上游电化学AFE分别观察，关注数据采集、客户导入与制造能力。",
+              "研报数量少只是观察入口，不能单独证明市场未定价；产业必要性、竞争和经营贡献仍需核对。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "wearable-infrastructure",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-chipsea",
+        "code": "chipsea",
+        "title": "芯海科技｜历史研究档案",
+        "name": "芯海科技",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "将PPG与压力触控等输入方式放在不同需求场景里研究。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜模块化分析方法"
+        ],
+        "keywords": [
+          "芯海科技",
+          "chipsea",
+          "芯海科技",
+          "可穿戴",
+          "端侧AI",
+          "真实需求"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "历史材料关注人体状态采集和人机交互，而不把相似产品标签当成与其他厂商完全相同的机会。",
+              "后续需要核对客户、量产、产品价值及竞争，不能由技术方向直接推出股票收益。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "wearable-infrastructure",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-bluetrum",
+        "code": "bluetrum",
+        "title": "中科蓝讯｜历史研究档案",
+        "name": "中科蓝讯",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "沿公共数字音频需求研究LE Audio和Auracast的制造与终端关系。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜模块化分析方法"
+        ],
+        "keywords": [
+          "中科蓝讯",
+          "bluetrum",
+          "中科蓝讯",
+          "可穿戴",
+          "端侧AI",
+          "真实需求"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "原讨论从嘈杂环境、翻译、公共广播等使用场景出发，观察芯片支持与接收终端的配套。",
+              "真实基础设施部署、终端渗透和竞争位置需要分别核对，不把功能支持直接当成大规模商业机会。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "wearable-infrastructure",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-actions-semi",
+        "code": "actions-semi",
+        "title": "炬芯科技｜历史研究档案",
+        "name": "炬芯科技",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "研究低功耗、低延迟音频与端侧AI计算，比较技术路线是否匹配实际需求。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜模块化分析方法"
+        ],
+        "keywords": [
+          "炬芯科技",
+          "actions-semi",
+          "炬芯科技",
+          "可穿戴",
+          "端侧AI",
+          "真实需求"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "历史讨论没有只听单一厂商的存内计算故事，而提出与海外不同架构对照。",
+              "产品收入、实际应用和架构适用性属于不同问题，已有共识也不等于股票没有继续研究价值。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "wearable-infrastructure",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-memsensing",
+        "code": "memsensing",
+        "title": "敏芯股份｜历史研究档案",
+        "name": "敏芯股份",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "将多种MEMS感知元件放回实际设备与用户需求，追踪组合感知的制造价值。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜模块化分析方法"
+        ],
+        "keywords": [
+          "敏芯股份",
+          "memsensing",
+          "敏芯股份",
+          "可穿戴",
+          "端侧AI",
+          "真实需求"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "历史材料将其作为进一步研究入口，而不是直接以AI穿戴标签给出买入排序。",
+              "客户、产品组合、制造能力与实际收入要逐项核对。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "wearable-infrastructure",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-hearing-medical",
+        "code": "hearing-medical",
+        "title": "锦好医疗｜历史研究档案",
+        "name": "锦好医疗",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "作为听觉场景的实际需求观察入口，研究复杂环境中的体验与配套条件。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜模块化分析方法"
+        ],
+        "keywords": [
+          "锦好医疗",
+          "hearing-medical",
+          "锦好医疗",
+          "可穿戴",
+          "端侧AI",
+          "真实需求"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "原讨论通过终端使用场景验证需求是否真实，同时区分需求的重要性和单家公司能否获得利润。",
+              "公司经营与行业部署仍需分别核对，这里保留研究入口和已形成的问题。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "wearable-infrastructure",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-orbbec",
+        "code": "orbbec",
+        "title": "奥比中光｜历史研究档案",
+        "name": "奥比中光",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "作为物理世界三维感知的研究对象，观察技术映射、真实应用和机构覆盖。",
+        "research_date": "原讨论资料时点：2026年9月",
+        "status": "历史研究及其后续修正",
+        "source_labels": [
+          "ChatGPT历史｜模块化分析方法"
+        ],
+        "keywords": [
+          "奥比中光",
+          "orbbec",
+          "奥比中光",
+          "可穿戴",
+          "端侧AI",
+          "真实需求"
+        ],
+        "sections": [
+          {
+            "heading": "研究过程与判断变化",
+            "paragraphs": [
+              "原讨论把3D视觉与设备理解环境的需求连接，也记录市场研究已开始覆盖相关方向。",
+              "技术映射清晰、市场已有关注和经营价值兑现分别判断，不把其中一个直接当成另外两个。",
+              "此处按原讨论时点保留问题与修正，不把它改写为今天的新经营结论。"
+            ]
+          }
+        ],
+        "related": [
+          "wearable-infrastructure",
           "method-evidence"
         ]
       }
