@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-04T15:33:05.107Z",
+  "checked_at": "2026-10-04T15:55:02.479Z",
   "intro": "从研究问题，到阶段判断与实际成果。每天核对研究记录，有变化就更新；想法还在验证时，也把依据和待解问题讲清楚。",
   "schedule": {
     "status": "preparing",
@@ -28596,7 +28596,9 @@
         ],
         "related": [
           "industry-801095",
-          "method-industry"
+          "method-industry",
+          "catl-longterm-study",
+          "archive-catl-study"
         ]
       },
       {
@@ -47066,9 +47068,9 @@
         "name": "宁德时代",
         "kind": "stock",
         "category": "stocks",
-        "summary": "研究材料中的公司记录，包含已取得的判断、依据和待核对问题。",
-        "research_date": "研究材料各自时点见来源记录",
-        "status": "历史研究记录",
+        "summary": "原报告形成长期基本面强判断，研究动力、储能、技术、现金流和海外路径；旧估值与预测按历史日期保留。",
+        "research_date": "原研究：2026-08-28；本轮回核公司2025年报摘要",
+        "status": "历史长期研究已展开，当前估值未在本轮确认",
         "source_labels": [
           "爱分析的林飞_01_生产施工链路日志",
           "爱分析的林飞_00_实时记忆_唯一入口",
@@ -47077,13 +47079,32 @@
           "百眼系统_02_滚动对话日志_历史",
           "投资大师专家团_2025年以来全球人形机器人产业商业化进展_最终报告.html",
           "V9.1.5_爱思考的林飞_WorkBuddy母版.md",
-          "V9.1_历史萌芽时间模块_补丁_P1_20260824.md"
+          "V9.1_历史萌芽时间模块_补丁_P1_20260824.md",
+          "宁德时代中长期研究｜云端原包",
+          "公司2025年报发布原文"
         ],
         "keywords": [
           "宁德时代",
-          "300750"
+          "300750",
+          "03750.HK",
+          "护城河",
+          "储能",
+          "长期研究"
         ],
         "sections": [
+          {
+            "heading": "原报告的观点与结构",
+            "paragraphs": [
+              "旧稿以三至五年以上框架形成长期投资价值强、质量与价格匹配的判断；估值、机构预测和操作区间均属于当时观点，不能自动视为今天建议。",
+              "技术、规模、客户、成本与现金流用于解释壁垒；风险包括价格竞争、技术替代、海外资本回报及增长兑现。"
+            ],
+            "links": [
+              {
+                "label": "公司2025年报发布原文",
+                "url": "https://www.catl.com/news/9654.html"
+              }
+            ]
+          },
           {
             "heading": "云端讨论中的提及",
             "paragraphs": [
@@ -47092,7 +47113,12 @@
             ]
           }
         ],
-        "related": []
+        "related": [
+          "catl-longterm-study",
+          "catl-valuation-method",
+          "catl-risk-scenarios",
+          "archive-catl-study"
+        ]
       },
       {
         "id": "stock-300766",
@@ -48423,7 +48449,10 @@
             ]
           }
         ],
-        "related": []
+        "related": [
+          "catl-longterm-study",
+          "archive-catl-study"
+        ]
       },
       {
         "id": "stock-nvidia",
@@ -55991,6 +56020,1275 @@
         "related": []
       },
       {
+        "id": "stock-ford-reference",
+        "code": "ford-reference",
+        "name": "福特",
+        "title": "福特｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于宁德报告中的技术授权与海外制造背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "福特",
+          "宁德报告中的技术授权与海外制造背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于宁德报告中的技术授权与海外制造背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-catl-study",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-vw-reference",
+        "code": "vw-reference",
+        "name": "大众",
+        "title": "大众｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于宁德报告的客户生态背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "大众",
+          "宁德报告的客户生态背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于宁德报告的客户生态背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-catl-study",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-bmw-reference",
+        "code": "bmw-reference",
+        "name": "宝马",
+        "title": "宝马｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于宁德报告的客户生态背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "宝马",
+          "宁德报告的客户生态背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于宁德报告的客户生态背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-catl-study",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-mercedes-reference",
+        "code": "mercedes-reference",
+        "name": "奔驰",
+        "title": "奔驰｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于宁德报告的客户生态背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "奔驰",
+          "宁德报告的客户生态背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于宁德报告的客户生态背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-catl-study",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-stellantis-reference",
+        "code": "stellantis-reference",
+        "name": "Stellantis",
+        "title": "Stellantis｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于宁德报告的客户与海外项目背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "Stellantis",
+          "宁德报告的客户与海外项目背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于宁德报告的客户与海外项目背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-catl-study",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-honda-reference",
+        "code": "honda-reference",
+        "name": "本田",
+        "title": "本田｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于宁德报告的客户生态背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "本田",
+          "宁德报告的客户生态背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于宁德报告的客户生态背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-catl-study",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-lges-reference",
+        "code": "lges-reference",
+        "name": "LG新能源",
+        "title": "LG新能源｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于宁德报告的电池同业比较背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "LG新能源",
+          "宁德报告的电池同业比较背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于宁德报告的电池同业比较背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-catl-study",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-panasonic-reference",
+        "code": "panasonic-reference",
+        "name": "松下",
+        "title": "松下｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于宁德报告的电池同业比较背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "松下",
+          "宁德报告的电池同业比较背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于宁德报告的电池同业比较背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-catl-study",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-wuling-reference",
+        "code": "wuling-reference",
+        "name": "五菱",
+        "title": "五菱｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于宁德报告的车市价格竞争背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "五菱",
+          "宁德报告的车市价格竞争背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于宁德报告的车市价格竞争背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-catl-study",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-brunp-reference",
+        "code": "brunp-reference",
+        "name": "邦普循环",
+        "title": "邦普循环｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于宁德报告的电池回收链背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "邦普循环",
+          "宁德报告的电池回收链背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于宁德报告的电池回收链背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-catl-study",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-openai-reference",
+        "code": "openai-reference",
+        "name": "OpenAI",
+        "title": "OpenAI｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于FDE与开源趋势原报告的AI产业背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "OpenAI",
+          "FDE与开源趋势原报告的AI产业背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于FDE与开源趋势原报告的AI产业背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-fde-memo",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-anthropic-reference",
+        "code": "anthropic-reference",
+        "name": "Anthropic",
+        "title": "Anthropic｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于FDE原报告的AI部署市场背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "Anthropic",
+          "FDE原报告的AI部署市场背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于FDE原报告的AI部署市场背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-fde-memo",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-blackstone-reference",
+        "code": "blackstone-reference",
+        "name": "黑石",
+        "title": "黑石｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于FDE原报告的资本参与背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "黑石",
+          "FDE原报告的资本参与背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于FDE原报告的资本参与背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-fde-memo",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-microsoft-reference",
+        "code": "microsoft-reference",
+        "name": "微软",
+        "title": "微软｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于原开源报告的课程与工具背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "微软",
+          "原开源报告的课程与工具背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于原开源报告的课程与工具背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-github-monthly",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-tencent-reference",
+        "code": "tencent-reference",
+        "name": "腾讯",
+        "title": "腾讯｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于原开源报告的记忆工具企业背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "腾讯",
+          "原开源报告的记忆工具企业背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于原开源报告的记忆工具企业背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-github-monthly",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-altos-reference",
+        "code": "altos-reference",
+        "name": "Altos Labs",
+        "title": "Altos Labs｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于衰老报告的研发机构背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "Altos Labs",
+          "衰老报告的研发机构背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于衰老报告的研发机构背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-aging-search",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-logitech-reference",
+        "code": "logitech-reference",
+        "name": "罗技",
+        "title": "罗技｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于原开源报告的桌面工具比较背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "罗技",
+          "原开源报告的桌面工具比较背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于原开源报告的桌面工具比较背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-github-monthly",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-block-reference",
+        "code": "block-reference",
+        "name": "block（原仓库组织名）",
+        "title": "block（原仓库组织名）｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于原开源报告的协作工具组织背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "block（原仓库组织名）",
+          "原开源报告的协作工具组织背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于原开源报告的协作工具组织背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-github-monthly",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-volcengine-reference",
+        "code": "volcengine-reference",
+        "name": "volcengine（原仓库组织名）",
+        "title": "volcengine（原仓库组织名）｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于原开源报告的记忆工具组织背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "volcengine（原仓库组织名）",
+          "原开源报告的记忆工具组织背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于原开源报告的记忆工具组织背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-github-monthly",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "stock-basecamp-reference",
+        "code": "basecamp-reference",
+        "name": "basecamp（原仓库组织名）",
+        "title": "basecamp（原仓库组织名）｜历史报告背景对象",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料将该对象用于原开源报告的本地系统工具组织背景，与当前投资候选分开保存。",
+        "status": "企业或组织背景提及，证券身份与当前业务待核",
+        "research_date": "原报告：2026-08-28",
+        "source_labels": [
+          "云端研究报告｜2026-08-28"
+        ],
+        "keywords": [
+          "basecamp（原仓库组织名）",
+          "原开源报告的本地系统工具组织背景"
+        ],
+        "sections": [
+          {
+            "heading": "在原报告中承担的角色",
+            "paragraphs": [
+              "该对象属于原开源报告的本地系统工具组织背景。这是一项提及记录，不能自动证明实际合作关系、供货金额、机构背书或当下投资价值。"
+            ]
+          },
+          {
+            "heading": "后续核验应怎样区分",
+            "paragraphs": [
+              "产品、研发机构、仓库组织、上市主体和证券类别应逐项对应官方资料。原报告的技术、合同或财务表述仍需按其日期复核，不能由公司名称相似补齐证据。",
+              "网址名称标识用于页面定位，不是交易代码。企业背景页不会将未确认证券身份的对象写成已经核验的上市股票。"
+            ]
+          }
+        ],
+        "related": [
+          "archive-github-monthly",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "catl-longterm-study",
+        "title": "宁德时代长期研究：业务、护城河与现金流",
+        "kind": "topic",
+        "category": "industries",
+        "summary": "原报告以长期基本面框架研究动力、储能、海外与资本回报，保留历史强判断与尚待复核的假设。",
+        "research_date": "原报告：2026-08-28；本轮回读整理",
+        "status": "历史研究观点与验证边界",
+        "source_labels": [
+          "云端研究报告与执行记录｜2026-08-28"
+        ],
+        "keywords": [
+          "宁德时代长期研究：业务、护城河与现金流",
+          "AI研究",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "原研究的结论与日期",
+            "paragraphs": [
+              "2026年8月28日原稿形成长期投资价值较强、价格与质量匹配的判断，讨论三至五年以上的经营路径。这里保存该历史观点，不把它改写成今天的估值或建仓判断。"
+            ]
+          },
+          {
+            "heading": "研究如何拆业务",
+            "paragraphs": [
+              "报告分别研究动力电池、储能、材料回收与资源，围绕技术、规模、客户、成本与资本投入解释护城河。企业质量、增长和股东可捕获价值是不同环节。"
+            ]
+          },
+          {
+            "heading": "本轮回到公司原文的部分",
+            "paragraphs": [
+              "公司3月10日年报发布摘要披露2025年营收4237亿元、归母净利润722亿元、经营现金流1332亿元和研发投入221亿元。本轮核对了这份原文；旧稿其余技术参数、预测和估值未全部重新审计。"
+            ],
+            "links": [
+              {
+                "label": "公司2025年报发布原文",
+                "url": "https://www.catl.com/news/9654.html"
+              }
+            ]
+          },
+          {
+            "heading": "保持可跟踪的问题",
+            "paragraphs": [
+              "储能与海外增长能否转成利润和自由现金流，客户集中、价格竞争、技术替代与资本开支怎样改变路径，仍需按后续报告及反证观察。"
+            ]
+          }
+        ],
+        "related": [
+          "stock-300750",
+          "catl-valuation-method",
+          "catl-risk-scenarios",
+          "archive-catl-study"
+        ]
+      },
+      {
+        "id": "catl-valuation-method",
+        "title": "宁德时代估值研究：预测分母、日期和AH口径",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "把旧报告价格、未来EPS和AH比价拆成条件输入，避免将不同日期和币种混成一个当前结论。",
+        "research_date": "原报告：2026-08-28；本轮回读整理",
+        "status": "历史研究观点与验证边界",
+        "source_labels": [
+          "云端研究报告与执行记录｜2026-08-28"
+        ],
+        "keywords": [
+          "宁德时代估值研究：预测分母、日期和AH口径",
+          "AI研究",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "保留原来的估值思路",
+            "paragraphs": [
+              "原稿用未来利润、现金流、增长与资本回报来判断质价匹配。预期利润属于预测分母，目标价和操作区间是当时观点，不是本轮更新后的行情。"
+            ]
+          },
+          {
+            "heading": "一个可复算的条件",
+            "paragraphs": [
+              "原稿368.89元与预测EPS20.88元相除约为17.67倍，这是条件算术。原表另列18.74倍一致预期PE；两者要核对报价日期和数据口径，不能自动当成同一快照。"
+            ]
+          },
+          {
+            "heading": "AH比较需要共同基础",
+            "paragraphs": [
+              "A股和H股报价使用不同日期与币种时，先核汇率、股份类别、股本与可交易条件，再比较相对价格。原稿的折价判断仍应回到当时数据，而非直接套用。"
+            ]
+          },
+          {
+            "heading": "观点失效与当前判断",
+            "paragraphs": [
+              "原报告列出增长、毛利、现金回收、海外产能和技术变化的失效条件。需要持续跟踪这些条件，不能让一张旧估值表长期替代研究。"
+            ]
+          }
+        ],
+        "related": [
+          "stock-300750",
+          "catl-longterm-study",
+          "robotics-valuation-inputs"
+        ]
+      },
+      {
+        "id": "catl-risk-scenarios",
+        "title": "电池龙头情景研究：增长兑现与反方证据",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "按原宁德时代报告的风险线索研究需求、成本、技术与海外资本投入，不以技术领先替代估值审查。",
+        "research_date": "原报告：2026-08-28；本轮回读整理",
+        "status": "历史研究观点与验证边界",
+        "source_labels": [
+          "云端研究报告与执行记录｜2026-08-28"
+        ],
+        "keywords": [
+          "电池龙头情景研究：增长兑现与反方证据",
+          "AI研究",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "风险有不同传导路径",
+            "paragraphs": [
+              "原稿关注价格竞争、锂价与存货、车企自制、海外产能、贸易环境和资本开支。每条风险需要对应收入、毛利、现金流或资金回报的路径。"
+            ]
+          },
+          {
+            "heading": "技术路线不能只看展示",
+            "paragraphs": [
+              "固态、钠电、超充等技术需要分开验证性能、制造良率、成本、量产和客户采用。旧稿的具体时间表与参数属于当时材料，未在本轮全部核对。"
+            ]
+          },
+          {
+            "heading": "反方应能改变判断",
+            "paragraphs": [
+              "增长不及预期、资本回报推迟或价格已含过高兑现要求，都可能改变好公司与好价格的关系。风险表不是附录装饰，需要形成可以继续核对的反证。"
+            ]
+          }
+        ],
+        "related": [
+          "catl-longterm-study",
+          "catl-valuation-method",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "fde-market-entry",
+        "title": "FDE市场进入研究：垂直场景与轻资产假说",
+        "kind": "topic",
+        "category": "social",
+        "summary": "原备忘提出垂直型AI部署服务的进入假说，用需求、能力、切入路径和时间窗口组织验证。",
+        "research_date": "原报告：2026-08-28；本轮回读整理",
+        "status": "历史研究观点与验证边界",
+        "source_labels": [
+          "云端研究报告与执行记录｜2026-08-28"
+        ],
+        "keywords": [
+          "FDE市场进入研究：垂直场景与轻资产假说",
+          "AI研究",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "原稿提出什么",
+            "paragraphs": [
+              "FDE指面向客户业务现场部署的复合交付角色。旧备忘建议以垂直场景轻资产试水，反对只因宏观岗位增长就直接做通用服务。"
+            ]
+          },
+          {
+            "heading": "三条子假说",
+            "paragraphs": [
+              "需求是否真实、是否有未被覆盖的客户场景、交付能力和单元经济是否成立，需要分别验证。行业报道、对能力的推断和客户真实承诺是不同证据。"
+            ]
+          },
+          {
+            "heading": "计划没有变成事实",
+            "paragraphs": [
+              "原稿列出客户访谈、演示与毛利测算阈值，但本轮没有得到实际访谈或履约结果，也没有联系任何客户。阈值是当时的验证设计，不是经过证明的通用成功公式。"
+            ]
+          },
+          {
+            "heading": "材料中的计数问题",
+            "paragraphs": [
+              "原稿预警表同时将切入路径与商业模式列为黄色，文字却说只有一个黄色维度。计数和规则应复核，不能据此机械升级或否定进入结论。"
+            ]
+          }
+        ],
+        "related": [
+          "fde-hypothesis-tests",
+          "archive-fde-memo",
+          "tool-capability-review"
+        ]
+      },
+      {
+        "id": "fde-hypothesis-tests",
+        "title": "战略假说方法：需求、能力、经济性与退出条件",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "从FDE备忘保留可证伪的假说树，让访谈、交付和商业条件分别产生证据。",
+        "research_date": "原报告：2026-08-28；本轮回读整理",
+        "status": "历史研究观点与验证边界",
+        "source_labels": [
+          "云端研究报告与执行记录｜2026-08-28"
+        ],
+        "keywords": [
+          "战略假说方法：需求、能力、经济性与退出条件",
+          "AI研究",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "把结论拆成测试",
+            "paragraphs": [
+              "市场看起来有机会，不等于具体团队有客户或能交付。需求、能力、报价成本、采用和竞争窗口各自需要可观察结果。"
+            ]
+          },
+          {
+            "heading": "先查可能改变结论的未知",
+            "paragraphs": [
+              "旧备忘将能力补齐和客户预算列为优先验证，而不是不断增加市场规模故事。发现不成立时应保留反转条件，避免沉没成本迫使结论不变。"
+            ]
+          },
+          {
+            "heading": "先定义失败条件",
+            "paragraphs": [
+              "何种客户反馈、交付成本或竞争变化足以退出，应先说明。到期、创建任务或写出报告都不能代替测试完成。"
+            ]
+          }
+        ],
+        "related": [
+          "fde-market-entry",
+          "mat-015",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "aging-literature-map",
+        "title": "抗衰老研究文献：热点、模型与证据层次",
+        "kind": "topic",
+        "category": "industries",
+        "summary": "原报告整理衰老机制、重编程、代谢、标志物与再生方向，原置信标签与本轮已取得的原文范围分别阅读。",
+        "research_date": "原报告：2026-08-28；本轮回读整理",
+        "status": "历史研究观点与验证边界",
+        "source_labels": [
+          "云端研究报告与执行记录｜2026-08-28"
+        ],
+        "keywords": [
+          "抗衰老研究文献：热点、模型与证据层次",
+          "AI研究",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "原检索的范围",
+            "paragraphs": [
+              "旧稿覆盖2023年至2026年，以研究现状、核心来源、热点和学术空白组织文献。它认为领域正在从机制探索走向转化，但不同研究对象和终点的证据不相同。"
+            ]
+          },
+          {
+            "heading": "主要研究线索",
+            "paragraphs": [
+              "细胞衰老、部分重编程、营养感应与代谢、衰老时钟、细胞外基质、炎症与再生分别构成观察面。不能把这些方向统一视为已经证明的人体延寿方法。"
+            ]
+          },
+          {
+            "heading": "原文层次要对应",
+            "paragraphs": [
+              "本轮找到精准老年医学综述和灵长类祖细胞研究的PubMed书目与摘要入口，后者描述初步灵长类证据。网页全文访问受限，未把摘要和原稿高置信标签当成所有方法完整审读。"
+            ],
+            "links": [
+              {
+                "label": "精准老年医学综述书目",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/40250404/"
+              },
+              {
+                "label": "灵长类祖细胞研究摘要",
+                "url": "https://pubmed.ncbi.nlm.nih.gov/40516525/"
+              }
+            ]
+          },
+          {
+            "heading": "旧结论需要继续核对",
+            "paragraphs": [
+              "原稿列有多种人体试验与补剂证据评价，具体方案、样本、终点、效应及限制仍须回到论文。这里展示研究线索，不提供用药或干预方案。"
+            ]
+          }
+        ],
+        "related": [
+          "aging-translation-gaps",
+          "archive-aging-search",
+          "ai-drug",
+          "phil-0025"
+        ]
+      },
+      {
+        "id": "aging-translation-gaps",
+        "title": "衰老研究转化：生物年龄、功能终点与长期验证",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "将动物机制、标志物改变和人体健康结局分开，保留原报告关于转化缺口的研究问题。",
+        "research_date": "原报告：2026-08-28；本轮回读整理",
+        "status": "历史研究观点与验证边界",
+        "source_labels": [
+          "云端研究报告与执行记录｜2026-08-28"
+        ],
+        "keywords": [
+          "衰老研究转化：生物年龄、功能终点与长期验证",
+          "AI研究",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "指标改变回答什么",
+            "paragraphs": [
+              "原报告关注表观、蛋白、转录和器官层面的年龄指标。指标变动是否预测发病、功能或长期健康，需要纵向研究，不能只用一个时钟变化宣布整体逆龄。"
+            ]
+          },
+          {
+            "heading": "模型之间怎样迁移",
+            "paragraphs": [
+              "小鼠、灵长类和人类数据承担不同证据角色。研究设计、对象代表性、对照和长期安全性都应随迁移重新检查。"
+            ]
+          },
+          {
+            "heading": "转化问题继续开放",
+            "paragraphs": [
+              "原稿讨论检测成本、干预反应性、临床终点、人群差异与长期安全等缺口。其监管和试验进度表述是旧记录，未在本轮全部更新，不当作当前临床许可。"
+            ]
+          }
+        ],
+        "related": [
+          "aging-literature-map",
+          "pharma-translation-chain",
+          "method-evidence"
+        ]
+      },
+      {
+        "id": "github-trend-study",
+        "title": "开源趋势研究：榜单快照与技术选型的区别",
+        "kind": "topic",
+        "category": "tools",
+        "summary": "旧月度报告归纳AI编程、记忆、网关与本地工具方向，历史星标和当前能力不混用。",
+        "research_date": "原报告：2026-08-28；本轮回读整理",
+        "status": "历史研究观点与验证边界",
+        "source_labels": [
+          "云端研究报告与执行记录｜2026-08-28"
+        ],
+        "keywords": [
+          "开源趋势研究：榜单快照与技术选型的区别",
+          "AI研究",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "原报告看了什么",
+            "paragraphs": [
+              "8月28日旧稿从全语言及几类语言页归纳AI编程代理、记忆、模型网关、安全与本地优先方向。它是当时网页快照的整理，不是今天的排行榜。"
+            ]
+          },
+          {
+            "heading": "榜单数字怎样核对",
+            "paragraphs": [
+              "月度新增星标、总星标、不同语言页及同一仓库重复出现需要分开。原稿的具体数值未在本轮回到当时冻结页面核验，不能把它们当成稳定性能指标。"
+            ]
+          },
+          {
+            "heading": "项目热度与适配",
+            "paragraphs": [
+              "仓库活跃或热门不能独立证明可靠、低成本、许可适用或能替代现有系统。应回项目文档核当前能力，用同任务结果和维护成本判断。"
+            ]
+          },
+          {
+            "heading": "本轮的使用边界",
+            "paragraphs": [
+              "原稿列出的网关、记忆与交易引擎仅作为历史候选线索保存。没有安装代码、接入服务或按旧榜单发出当下产品推荐。"
+            ]
+          }
+        ],
+        "related": [
+          "upstream-research-radar",
+          "tool-capability-review",
+          "archive-github-monthly"
+        ]
+      },
+      {
+        "id": "archive-catl-study",
+        "title": "宁德时代中长期报告｜2026年8月28日",
+        "kind": "archive",
+        "category": "archives",
+        "summary": "旧稿将业务、财务、增长、估值和反证组织成长期研究；大师视角是方法借鉴，不是真人背书。",
+        "research_date": "原报告：2026-08-28；本轮回读整理",
+        "status": "历史研究观点与验证边界",
+        "source_labels": [
+          "云端研究报告与执行记录｜2026-08-28"
+        ],
+        "keywords": [
+          "宁德时代中长期报告｜2026年8月28日",
+          "AI研究",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "取得的材料",
+            "paragraphs": [
+              "旧稿将业务、财务、增长、估值和反证组织成长期研究；大师视角是方法借鉴，不是真人背书。",
+              "本轮已读取报告正文及相应执行记录；执行记录中的完成状态不替代全部外部事实复验。"
+            ]
+          }
+        ],
+        "related": [
+          "stock-300750",
+          "catl-longterm-study",
+          "catl-valuation-method",
+          "catl-risk-scenarios",
+          "stock-ford-reference",
+          "stock-vw-reference",
+          "stock-bmw-reference",
+          "stock-mercedes-reference",
+          "stock-stellantis-reference",
+          "stock-honda-reference",
+          "stock-lges-reference",
+          "stock-panasonic-reference",
+          "stock-wuling-reference",
+          "stock-brunp-reference",
+          "stock-tesla",
+          "stock-002594"
+        ]
+      },
+      {
+        "id": "archive-fde-memo",
+        "title": "FDE市场进入备忘录｜2026年8月28日",
+        "kind": "archive",
+        "category": "archives",
+        "summary": "假说树、验证计划和预警表已取得，实际客户反馈和交付结果仍待证。",
+        "research_date": "原报告：2026-08-28；本轮回读整理",
+        "status": "历史研究观点与验证边界",
+        "source_labels": [
+          "云端研究报告与执行记录｜2026-08-28"
+        ],
+        "keywords": [
+          "FDE市场进入备忘录｜2026年8月28日",
+          "AI研究",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "取得的材料",
+            "paragraphs": [
+              "假说树、验证计划和预警表已取得，实际客户反馈和交付结果仍待证。",
+              "本轮已读取报告正文及相应执行记录；执行记录中的完成状态不替代全部外部事实复验。"
+            ]
+          }
+        ],
+        "related": [
+          "fde-market-entry",
+          "fde-hypothesis-tests",
+          "stock-openai-reference",
+          "stock-anthropic-reference",
+          "stock-blackstone-reference",
+          "stock-goldman-mention"
+        ]
+      },
+      {
+        "id": "archive-aging-search",
+        "title": "抗衰老文献检索报告｜2023至2026年",
+        "kind": "archive",
+        "category": "archives",
+        "summary": "热点与书目已展开，摘要、原论文和原稿置信标签分别保留。",
+        "research_date": "原报告：2026-08-28；本轮回读整理",
+        "status": "历史研究观点与验证边界",
+        "source_labels": [
+          "云端研究报告与执行记录｜2026-08-28"
+        ],
+        "keywords": [
+          "抗衰老文献检索报告｜2023至2026年",
+          "AI研究",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "取得的材料",
+            "paragraphs": [
+              "热点与书目已展开，摘要、原论文和原稿置信标签分别保留。",
+              "本轮已读取报告正文及相应执行记录；执行记录中的完成状态不替代全部外部事实复验。"
+            ]
+          }
+        ],
+        "related": [
+          "aging-literature-map",
+          "aging-translation-gaps",
+          "stock-altos-reference"
+        ]
+      },
+      {
+        "id": "archive-github-monthly",
+        "title": "开源月度趋势报告｜2026年8月快照",
+        "kind": "archive",
+        "category": "archives",
+        "summary": "网页榜单与选型建议作为历史记录保存，当前能力与当时数字需分别核对。",
+        "research_date": "原报告：2026-08-28；本轮回读整理",
+        "status": "历史研究观点与验证边界",
+        "source_labels": [
+          "云端研究报告与执行记录｜2026-08-28"
+        ],
+        "keywords": [
+          "开源月度趋势报告｜2026年8月快照",
+          "AI研究",
+          "研究方法"
+        ],
+        "sections": [
+          {
+            "heading": "取得的材料",
+            "paragraphs": [
+              "网页榜单与选型建议作为历史记录保存，当前能力与当时数字需分别核对。",
+              "本轮已读取报告正文及相应执行记录；执行记录中的完成状态不替代全部外部事实复验。"
+            ]
+          }
+        ],
+        "related": [
+          "github-trend-study",
+          "tool-capability-review",
+          "stock-microsoft-reference",
+          "stock-tencent-reference",
+          "stock-logitech-reference",
+          "stock-block-reference",
+          "stock-volcengine-reference",
+          "stock-basecamp-reference"
+        ]
+      },
+      {
         "id": "stock-tsmc-mention",
         "code": "tsmc-mention",
         "name": "台积电",
@@ -56329,7 +57627,9 @@
         "related": [
           "market-baseline-separation",
           "archive-early-run-20260821",
-          "research-source-freshness"
+          "research-source-freshness",
+          "fde-market-entry",
+          "archive-fde-memo"
         ]
       },
       {
