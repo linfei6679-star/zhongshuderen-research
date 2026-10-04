@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-04T16:15:37.764Z",
+  "checked_at": "2026-10-04T16:36:05.137Z",
   "intro": "从研究问题，到阶段判断与实际成果。每天核对研究记录，有变化就更新；想法还在验证时，也把依据和待解问题讲清楚。",
   "schedule": {
     "status": "preparing",
@@ -304,6 +304,48 @@
           "date": "2026-09-18",
           "type": "工程记录",
           "text": "完成真实作品的转写流程与重复任务检查，保留尚未验证的连续运行边界。"
+        }
+      ]
+    },
+    {
+      "id": "information-analysis",
+      "title": "广源信息发现与宏观方法研究",
+      "category": "信息与方法",
+      "stage": "语料整理与方法验证进行中",
+      "stage_key": "testing",
+      "claim_type": "方法研究与进度快照",
+      "source_updated_at": "2026-10-05",
+      "sources": [
+        "公开内容逐条分析记录",
+        "三步需求与宏观研究者方法账"
+      ],
+      "summary": "从公开内容中提炼信息选择、参与者约束、产业传导、情景与反证方法；整理数量、外核任务与实际模型增益分别评价。",
+      "progress": [
+        "本轮所读源快照累计顺序分析506/1077，待571；工作簿元数据标题同期为累计506条。",
+        "记录来源提及1160次、定向缺口501项、规则候选79；来源提及不是独立来源数量。",
+        "源记录21项外核任务，真实Agent对照仍0、采集器部署未完成；不将整理规模当成模型实效。"
+      ],
+      "results": [
+        "已形成宽源线索、行动者、共同瓶颈、库存利润、资产用途、量纲及预测更新等候选程序与反例。",
+        "保留原作者陈述、研究者推论、外部证据、来源依赖和语音疑点。",
+        "宏观开发追查将需求、采购、工厂、交付及利润主体分别核对，不预设国家或公司必然受益。"
+      ],
+      "judgment": "有实质研究资料与方法候选，但原进度只代表本轮读到的快照；系统能力、日常产品与独立预测验证尚不能由文字或结构检查证明。",
+      "next": [
+        "继续原材料整理与具体证据匹配，保持原观点和后续更正。",
+        "核对产业对象、来源依赖、未闭合前瞻与宏观供需传导。",
+        "用同预算基线、独立事件与误报漏报判断方法是否有实际增益。"
+      ],
+      "timeline": [
+        {
+          "date": "2026-09-16",
+          "type": "目标修正",
+          "text": "从人物高还原度转为广源信息发现、优秀方法提炼与组合实效验证，宏观产业需求优先。"
+        },
+        {
+          "date": "2026-10-05",
+          "type": "网站源快照整理",
+          "text": "本轮所读入口和工作簿记录506/1077，展开方法、反例与宏观研究入口；没有启动或改写原研究任务。"
         }
       ]
     }
@@ -47930,7 +47972,10 @@
             ]
           }
         ],
-        "related": []
+        "related": [
+          "us-china-equipment-chain",
+          "stock-jst-power-observation"
+        ]
       },
       {
         "id": "stock-920641",
@@ -50203,7 +50248,11 @@
         "keywords": [
           "住房、城市、产业与社会观察"
         ],
-        "related": []
+        "related": [
+          "asset-use-life-cycle",
+          "housing-realization-chain",
+          "linked-flows-analysis"
+        ]
       },
       {
         "id": "opportunity",
@@ -50262,31 +50311,33 @@
         "title": "00_大锅饭_实时记忆_唯一入口",
         "category": "archives",
         "kind": "archive",
-        "summary": "这份材料已取得可读正文，作为对应研究的历史记录与来源目录保留。",
-        "research_date": "资料更新时间：2026-10-04",
-        "status": "已取得材料，内容继续整理",
+        "summary": "最新入口快照已展开为信息、宏观与方法研究进度；本轮读取506/1077的记录，模型实效与部署仍分开。",
+        "research_date": "源入口更新折合北京时间2026-10-05；本轮只读快照",
+        "status": "源快照已展开；整理进度不等于全部外核",
         "source_labels": [
           "云端研究资料目录"
         ],
         "keywords": [],
         "sections": [
           {
-            "heading": "资料说明",
+            "heading": "目标与进度",
             "paragraphs": [
-              "这份材料已取得可读正文，作为对应研究的历史记录与来源目录保留。",
-              "资料更新时间不是全部研究结论的形成日期。历史工程与恢复记录不代表今天已完成相同操作。"
+              "原目标已从人物相似度转为有用的信息发现与分析程序。本轮所读入口记录顺序506/1077、79个规则候选、21个外核任务记录；0个真实Agent对照、采集部署未完成。"
             ]
           },
           {
-            "heading": "可继续阅读的线索",
+            "heading": "数字的范围",
             "paragraphs": [
-              "可通过对应主题和研究项目继续阅读。"
+              "来源提及次数不当独立来源数，开发阅读不当盲测。资料仍可继续形成新证据，本页引用本轮取得的快照而非实时保证。"
             ]
           }
         ],
         "related": [
           "housing",
-          "communication"
+          "communication",
+          "observation-progress",
+          "observation-method-transfer",
+          "archive-g1wvzj"
         ]
       },
       {
@@ -50360,7 +50411,7 @@
         "title": "09_大锅饭_第二批20条_0021-0040",
         "category": "archives",
         "kind": "archive",
-        "summary": "这份材料已取得可读正文，作为对应研究的历史记录与来源目录保留。",
+        "summary": "历史分批分析包含多次追加，不能把旧标题第二批20条当当前全部覆盖；聚合迁移、观点变化和方法候选已展开。",
         "research_date": "资料更新时间：2026-10-04",
         "status": "已取得材料，内容继续整理",
         "source_labels": [
@@ -50384,7 +50435,11 @@
         ],
         "related": [
           "housing",
-          "communication"
+          "communication",
+          "linked-flows-analysis",
+          "forecast-change-provenance",
+          "stance-and-counterexamples",
+          "observation-progress"
         ]
       },
       {
@@ -50392,9 +50447,9 @@
         "title": "11_大锅饭_三步研究主账_v0.2",
         "category": "archives",
         "kind": "archive",
-        "summary": "这份材料已取得可读正文，作为对应研究的历史记录与来源目录保留。",
+        "summary": "方法研究主账保存外部方法、专题证据卡和顺序分析；本轮展开了研究动作、反例与宏观开发问题。",
         "research_date": "资料更新时间：2026-10-04",
-        "status": "已取得材料，内容继续整理",
+        "status": "部分方法正文已展开，原记录继续更新",
         "source_labels": [
           "云端研究资料目录"
         ],
@@ -50416,17 +50471,21 @@
         ],
         "related": [
           "housing",
-          "communication"
+          "communication",
+          "observation-progress",
+          "multi-path-necessary-inputs",
+          "inventory-profit-layers",
+          "us-china-equipment-chain"
         ]
       },
       {
         "id": "archive-1c5e1wc",
-        "title": "08_大锅饭_逐条分析账本_累计356条",
+        "title": "08_公开内容逐条分析工作簿｜源标题累计506条",
         "category": "archives",
         "kind": "archive",
-        "summary": "这份材料已取得可读正文，作为对应研究的历史记录与来源目录保留。",
-        "research_date": "资料更新时间：2026-10-04",
-        "status": "已取得材料，内容继续整理",
+        "summary": "当前源元数据标题已到506条；逐条整理、来源、缺口和外部核验仍分别阅读。",
+        "research_date": "本轮读取：2026-10-05",
+        "status": "源标题和入口记录已核对，未把旧目录356当当前数",
         "source_labels": [
           "云端研究资料目录"
         ],
@@ -50448,7 +50507,10 @@
         ],
         "related": [
           "housing",
-          "communication"
+          "communication",
+          "observation-progress",
+          "linked-flows-analysis",
+          "forecast-change-provenance"
         ]
       },
       {
@@ -52320,31 +52382,33 @@
         "title": "03_大锅饭_项目需求与验收标准",
         "category": "archives",
         "kind": "archive",
-        "summary": "这份材料已取得可读正文，作为对应研究的历史记录与来源目录保留。",
+        "summary": "三步需求已展开：宽源发现、分析程序和实效验证；方法提炼目的优先于人物口吻与相似度。",
         "research_date": "资料更新时间：2026-09-16",
-        "status": "已取得材料，内容继续整理",
+        "status": "需求正文已整理；产品完成另需实证",
         "source_labels": [
           "云端研究资料目录"
         ],
         "keywords": [],
         "sections": [
           {
-            "heading": "资料说明",
+            "heading": "原需求的三步",
             "paragraphs": [
-              "这份材料已取得可读正文，作为对应研究的历史记录与来源目录保留。",
-              "资料更新时间不是全部研究结论的形成日期。历史工程与恢复记录不代表今天已完成相同操作。"
+              "公开或授权线索发现、可复用分析程序、与普通检索分析匹配预算的对照分别验证。未知和相反证据进入记录，不用主观评分或文件结构替代实际能力。"
             ]
           },
           {
-            "heading": "可继续阅读的线索",
+            "heading": "专业边界",
             "paragraphs": [
-              "可通过对应主题和研究项目继续阅读。"
+              "原需求要求问题处于实际持续讨论的宏观与经营专业圈，技术材料可以补证，不以此声称掌握陌生工程设计。原研究者没有在本网站任务中继续执行原实验。"
             ]
           }
         ],
         "related": [
           "housing",
-          "communication"
+          "communication",
+          "observation-method-transfer",
+          "observation-progress",
+          "us-china-equipment-chain"
         ]
       },
       {
@@ -63959,6 +64023,750 @@
         "related": [
           "robotics",
           "method-evidence"
+        ]
+      },
+      {
+        "id": "observation-method-transfer",
+        "title": "从人物模仿到优秀方法：信息发现、分析与验证",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "保留公开内容中的有效思考动作，方法有用与像作者是不同目标。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "从人物模仿到优秀方法：信息发现、分析与验证",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "目标怎样改变",
+            "paragraphs": [
+              "原研究明确从高还原度模仿转为宽源发现、优秀方法提炼和组合实效验证。口吻、人物标签和复现错误不再作为最终奖励。"
+            ]
+          },
+          {
+            "heading": "提炼的单位",
+            "paragraphs": [
+              "候选程序记录触发、输入、信息选择、行动者约束、因果链、替代解释、反例及更新条件。研究者改进应与作者原话分开。"
+            ]
+          },
+          {
+            "heading": "怎样知道有帮助",
+            "paragraphs": [
+              "需要与普通检索及通用分析在相同证据和预算下比较。方法文件、论文成绩、模型自评和整理数量不能自行证明能力增益。"
+            ]
+          }
+        ],
+        "related": [
+          "observation-progress",
+          "wide-source-method",
+          "mat-001"
+        ]
+      },
+      {
+        "id": "participant-constraints",
+        "title": "解释行动者：资源、约束与复杂组织",
+        "kind": "topic",
+        "category": "philosophy",
+        "summary": "把国家、公司或群体拆成行动者与约束，理解动机不等于已证事实。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "解释行动者：资源、约束与复杂组织",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "复杂主体不是单一人格",
+            "paragraphs": [
+              "原分析提出分开不同角色、目标、资源、权限与冲突，再观察整体行为。同步行动不自动证明共同策划。"
+            ]
+          },
+          {
+            "heading": "动机要能被行为挑战",
+            "paragraphs": [
+              "参与者为什么可能这样做是一种解释，需要竞争解释与可观察结果。无依据的个人或群体动机指控、刻板标签不作为事实变量。"
+            ]
+          },
+          {
+            "heading": "保留人的情境",
+            "paragraphs": [
+              "同一人在不同条件下的判断与偏好可能变化；不能用一次表达冻结人格，也不通过模仿语言宣称复制其经历。"
+            ]
+          }
+        ],
+        "related": [
+          "mat-004",
+          "mat-007",
+          "observation-method-transfer"
+        ]
+      },
+      {
+        "id": "community-signal-panels",
+        "title": "社区与一线信号：样本、基线与后续核验",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "评论、投票、招聘和经营体感可以打开线索，不能直接替代总体统计。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "社区与一线信号：样本、基线与后续核验",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "发现层允许陌生入口",
+            "paragraphs": [
+              "研究允许论坛、博客、评论与从业者痕迹先进入线索，核验针对具体主张，而非只按域名名气判断。"
+            ]
+          },
+          {
+            "heading": "样本可能被观察者影响",
+            "paragraphs": [
+              "固定群体投票或重复询问的结果受选择、作者影响与观察行为影响。需要明确字段、基线、轮换或对照，不能直接外推市场比例。"
+            ]
+          },
+          {
+            "heading": "验证下一步是什么",
+            "paragraphs": [
+              "寻找不同生成机制的证据和后续硬结果，记录命中、误报、漏报与关系漂移。获得作者私人网络的自述不等于本系统已能访问。"
+            ]
+          }
+        ],
+        "related": [
+          "wide-source-method",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "multi-path-necessary-inputs",
+        "title": "多路径分析：共同环节与可替代路线",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "先列多个合理场景，再查共同必要投入、替代性和价值捕获。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "多路径分析：共同环节与可替代路线",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "保留多个剧本",
+            "paragraphs": [
+              "原专题分析以产业路径为例，寻找不同结果都依赖的材料、能力或瓶颈，不以唯一故事压掉其他路径。"
+            ]
+          },
+          {
+            "heading": "共同需求仍不等于利润",
+            "paragraphs": [
+              "用量、供应弹性、客户认证、替代性、定价与资本投入决定谁能捕获价值。需求增加可能只增加竞争或资金占用。"
+            ]
+          },
+          {
+            "heading": "失效条件要写在前面",
+            "paragraphs": [
+              "出现更便宜替代、产能快速回来、路线不需要该投入或无法按时交付，都可能推翻共同受益判断。"
+            ]
+          }
+        ],
+        "related": [
+          "tech-ai-infrastructure",
+          "tech-solid-state",
+          "method-industry"
+        ]
+      },
+      {
+        "id": "inventory-profit-layers",
+        "title": "库存与盈利研究：低成本存货和持续业务",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "把库存红利、补货成本、售价与客户优势分开，解释利润能否持续。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "库存与盈利研究：低成本存货和持续业务",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "原专题的问题",
+            "paragraphs": [
+              "分析者从存储产业讨论提炼历史低成本库存与持续盈利的区别，保留原稿引用缺口及原文时点。"
+            ]
+          },
+          {
+            "heading": "按经营过程拆",
+            "paragraphs": [
+              "销量与售价、库存成本层、采购价、周转、渠道和客户条件分别观察，比较库存释放前后现金与利润。"
+            ]
+          },
+          {
+            "heading": "不押单一结局",
+            "paragraphs": [
+              "库存消耗不能自动推出企业没有未来；有库存利润也不证明永久定价权。技术、渠道、客户和替代性可以改变结果。"
+            ]
+          }
+        ],
+        "related": [
+          "hbm-supply-claims",
+          "method-evidence",
+          "robotics-valuation-inputs"
+        ]
+      },
+      {
+        "id": "asset-use-life-cycle",
+        "title": "资产用途研究：使用价值、投资回报与时间",
+        "kind": "topic",
+        "category": "social",
+        "summary": "自住、经营和投资回答不同问题，长期使用也需要面对成本和可退出时间。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "资产用途研究：使用价值、投资回报与时间",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "用途不是价格结论",
+            "paragraphs": [
+              "原公开内容分析区分使用效用、财务回报和偿付安全。低月供不证明资产差，高负担也不证明未来收益高。"
+            ]
+          },
+          {
+            "heading": "生命周期与退出",
+            "paragraphs": [
+              "维护、可靠性、保修、残值、交付和合法可交易时点影响实际结果。市场曾经到过高价，不表示持有人当时可以实现收益。"
+            ]
+          },
+          {
+            "heading": "条件可以改变",
+            "paragraphs": [
+              "未来迁移、收入中断、经营目的或替代品会改变取舍。不能用职业、阶层或家庭标签预设所有人的最优选择。"
+            ]
+          }
+        ],
+        "related": [
+          "housing",
+          "participant-constraints"
+        ]
+      },
+      {
+        "id": "macro-measurement-units",
+        "title": "宏观量纲研究：市值、成交、现金与债务",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "数量变化需要对应单位、主体与时间，不把名义值变化都当成真实资金流。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "宏观量纲研究：市值、成交、现金与债务",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "先问测的是什么",
+            "paragraphs": [
+              "资产市值、成交额、融资、现金收入、货币发行和GDP是不同概念。一个比率或总额变化不能自行说明另一个变量的变化。"
+            ]
+          },
+          {
+            "heading": "分母效应的算例",
+            "paragraphs": [
+              "在纯算术例子中，资产500、债务100时比率20%；资产变300而债务不变时约33.33%。它说明分母作用，不证明所有家庭或社会总体杠杆都同样变化。"
+            ]
+          },
+          {
+            "heading": "会计与意图分开",
+            "paragraphs": [
+              "统计修订、报价或账面变动本身不识别操纵意图。需先核数据生成、正常修订、对象与口径，再找能区分解释的证据。"
+            ]
+          }
+        ],
+        "related": [
+          "linked-flows-analysis",
+          "robotics-valuation-inputs"
+        ]
+      },
+      {
+        "id": "linked-flows-analysis",
+        "title": "总量比例与真实迁移：不能用三比一证明三换一",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "聚合成交比率不能单独识别同一主体的交易链，产业归属也需要项目匹配。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "总量比例与真实迁移：不能用三比一证明三换一",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "一个简单反例",
+            "paragraphs": [
+              "300套二手与100套新房若由不同人群成交，也呈三比一，却没有任何家庭卖三套再买一套。总量比率与个体迁移不能互相替换。"
+            ]
+          },
+          {
+            "heading": "真实链条如何匹配",
+            "paragraphs": [
+              "先核同时间、同区域、同单位及类别定义，再查匿名化匹配、先售后买比例、间隔和净现金；不收集或公开不必要的第三方私人财务。"
+            ]
+          },
+          {
+            "heading": "迁移到产业研究",
+            "paragraphs": [
+              "美国总订单增加与某工厂扩产不能直接拼成该工厂获得这些订单。需要匹配客户、产品、合同、制造实体、交付与回款。"
+            ]
+          }
+        ],
+        "related": [
+          "us-china-equipment-chain",
+          "macro-measurement-units",
+          "housing"
+        ]
+      },
+      {
+        "id": "us-china-equipment-chain",
+        "title": "中美设备需求研究：所有权、制造地与利润归属",
+        "kind": "topic",
+        "category": "industries",
+        "summary": "从产业投入到采购、工厂、交付与回款逐段核验，保留替代供应与项目延期。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "中美设备需求研究：所有权、制造地与利润归属",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "原研究的方向",
+            "paragraphs": [
+              "源记录强调宏观环境与美国产业需求，经设备材料制造传导到企业价值。AI电力只是切口，不能替代全部宏观观察面，也不预设谁必然受益。"
+            ]
+          },
+          {
+            "heading": "具体对象的分化",
+            "paragraphs": [
+              "原开发追查涉及伊顿、JST及金盘。一个分部订单指标不能当纯AI需求，工厂规划不能当当期产量，股权、产地和最终利润主体需要分别核对。"
+            ]
+          },
+          {
+            "heading": "本轮核对的一条原文",
+            "paragraphs": [
+              "JST公司2026年6月5日声明停止追求新的BESS机会，并保留现有安装的服务、保修和配件支持，继续核心电力业务。这不能外推为所有关联企业或整个储能行业都退出。"
+            ],
+            "links": [
+              {
+                "label": "JST公司原声明｜2026年6月5日",
+                "url": "https://jstpower.com/news/discontinues-bess-product_line/"
+              }
+            ]
+          },
+          {
+            "heading": "待继续的证据",
+            "paragraphs": [
+              "工厂实际交付、客户采购验收、股权归属及源记录中的计划年份冲突仍需对应原始文件，不能只把订单和产能两个总量相接。"
+            ]
+          }
+        ],
+        "related": [
+          "stock-eaton-observation",
+          "stock-jst-power-observation",
+          "stock-688676",
+          "linked-flows-analysis"
+        ]
+      },
+      {
+        "id": "forecast-change-provenance",
+        "title": "预测研究：事前记录、修订条件与事后叙事",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "保留原预测、条件和错误，不因后来结果已知就补造早先精确命中。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "预测研究：事前记录、修订条件与事后叙事",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "预测需要可编码",
+            "paragraphs": [
+              "对象、方向、时间窗口、信息截止及确认推翻条件应在结果出现前记录；模糊提醒不能事后升级成精确日期。"
+            ]
+          },
+          {
+            "heading": "观点变化是资料",
+            "paragraphs": [
+              "分析中出现看好、暂不推荐、承认难判断或增加条件等变化，应按各自时点保留。只挑后来赢的表述会改变原样本。"
+            ]
+          },
+          {
+            "heading": "成绩各自证明什么",
+            "paragraphs": [
+              "作者自述收益、案例叙事、样本整理和独立预测验证是不同证据。外部结果缺失或规则后改时，不能用结构检查填补。"
+            ]
+          }
+        ],
+        "related": [
+          "research-race-results",
+          "method-evidence",
+          "observation-progress"
+        ]
+      },
+      {
+        "id": "stance-and-counterexamples",
+        "title": "理解观点变化：反例、利益与边界",
+        "kind": "topic",
+        "category": "philosophy",
+        "summary": "方法研究保留变化与张力，不能把作者固定为永远正确或永远错误的人。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "理解观点变化：反例、利益与边界",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "变化不需要被抹平",
+            "paragraphs": [
+              "同一对象在不同价格、用途、资金与环境下可能得到不同判断。原分析保留明确例外与反向表述，不为统一人格而删去。"
+            ]
+          },
+          {
+            "heading": "解释不等于认同",
+            "paragraphs": [
+              "公开内容作者的利益位置、自述与观点需要分开。无证据的人物、群体或操纵指控不应成为确定判断，也不因口吻相似获得奖励。"
+            ]
+          },
+          {
+            "heading": "复用的是可检验程序",
+            "paragraphs": [
+              "信息选择、约束拆分、竞争解释和更正条件可作为候选方法。真正有用需要在新事件上比较，不以作者相似度证明。"
+            ]
+          }
+        ],
+        "related": [
+          "participant-constraints",
+          "mat-001",
+          "observation-method-transfer"
+        ]
+      },
+      {
+        "id": "housing-realization-chain",
+        "title": "住房与城市观察：规划、稀缺与真实兑现",
+        "kind": "topic",
+        "category": "social",
+        "summary": "历史案例从使用与供需解释资产价值，规划与交易、资格和资金需分层。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "住房与城市观察：规划、稀缺与真实兑现",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "原案例的观察点",
+            "paragraphs": [
+              "地段、配套、产品、库存、客户需求与城市集聚被放进同一研究框架；它们只是待核变量，不是任一产品或城市必涨保证。"
+            ]
+          },
+          {
+            "heading": "规划需要变成行为",
+            "paragraphs": [
+              "规划、建设、交付、服务可达、经营或租金及价格分别发生。供应变化、迁移、维护与替代品可能改变原设想。"
+            ]
+          },
+          {
+            "heading": "住房制度与产品类别",
+            "paragraphs": [
+              "资格、产权、流转与实际执行覆盖不能只凭口头消息推断。历史政策讨论不作为今天购房、借贷或资格操作指导。"
+            ]
+          }
+        ],
+        "related": [
+          "asset-use-life-cycle",
+          "linked-flows-analysis",
+          "housing"
+        ]
+      },
+      {
+        "id": "sqqq-periods",
+        "title": "指数与反向产品研究：SQQQ的日目标与持有期",
+        "kind": "topic",
+        "category": "methods",
+        "summary": "从原语料资产混用问题区分指数和产品，本轮回发行人核对日目标。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "指数与反向产品研究：SQQQ的日目标与持有期",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "本轮核对的定义",
+            "paragraphs": [
+              "发行人页面将SQQQ目标定义为费用前对纳斯达克100指数单日表现的负三倍。它是ETF产品，不能把代码直接当成该指数本身。"
+            ],
+            "links": [
+              {
+                "label": "ProShares官方SQQQ页面",
+                "url": "https://www.proshares.com/our-etfs/leveraged-and-inverse/sqqq"
+              }
+            ]
+          },
+          {
+            "heading": "周期要对应",
+            "paragraphs": [
+              "发行人说明超过一日的持有结果可能显著偏离日目标。长期指数变化与反向产品变化不能简单乘负三倍，也不能混同净值、市场价与个人税费后结果。"
+            ]
+          },
+          {
+            "heading": "研究用途",
+            "paragraphs": [
+              "旧材料中提及只构成资产研究入口，本页不重建作者的交易成绩，也不建议任何持仓或杠杆操作。"
+            ]
+          }
+        ],
+        "related": [
+          "macro-measurement-units",
+          "forecast-change-provenance"
+        ]
+      },
+      {
+        "id": "observation-progress",
+        "title": "广源信息与宏观方法研究：本轮进度快照",
+        "kind": "topic",
+        "category": "social",
+        "summary": "源记录已有506条顺序整理，但方法增益、独立来源与采集部署另有边界。",
+        "status": "研究者方法整理与候选，原观点和外核分层",
+        "research_date": "历史讨论与研究记录；进度快照读取于2026-10-05",
+        "source_labels": [
+          "公开内容分析｜三步需求与研究者记录",
+          "宏观方法研究｜本轮读取的源快照"
+        ],
+        "keywords": [
+          "广源信息与宏观方法研究：本轮进度快照",
+          "宏观分析",
+          "研究方法",
+          "信息发现"
+        ],
+        "sections": [
+          {
+            "heading": "本轮读取的记录",
+            "paragraphs": [
+              "2026年10月5日读取的入口记录：顺序分析506/1077，待571；来源提及1160次，定向缺口501项，规则候选79，外部核验任务记录21项。这些数字引用源快照，不表示本网站本轮重新审读506条。"
+            ]
+          },
+          {
+            "heading": "不能相加的数量",
+            "paragraphs": [
+              "专题样本、顺序分析、同一事件的连续内容、来源提及和独立支持各自计数。原视频编号与正向分析序号不同，不用标题或索引号混改进度。"
+            ]
+          },
+          {
+            "heading": "真实验证仍开放",
+            "paragraphs": [
+              "源快照的真实Agent对照仍为0，采集器部署未完成。研究方法文件、整理数量和有限外核不证明日常成品或预测能力已全部验证。"
+            ]
+          },
+          {
+            "heading": "继续阅读",
+            "paragraphs": [
+              "广源线索、行动者约束、情景、库存盈利、资产用途、宏观量纲、产业归属和预测修订分别有阅读入口；原任务没有在本轮启动或写回。"
+            ]
+          }
+        ],
+        "related": [
+          "observation-method-transfer",
+          "community-signal-panels",
+          "multi-path-necessary-inputs",
+          "inventory-profit-layers",
+          "asset-use-life-cycle",
+          "macro-measurement-units",
+          "linked-flows-analysis",
+          "us-china-equipment-chain",
+          "forecast-change-provenance",
+          "stance-and-counterexamples",
+          "housing-realization-chain"
+        ]
+      },
+      {
+        "id": "stock-eaton-observation",
+        "code": "eaton-observation",
+        "name": "伊顿（Eaton）",
+        "title": "伊顿（Eaton）｜宏观研究提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原宏观开发追查的电力设备需求对象，具体交付和利润仍需对应证据。",
+        "status": "企业提及，证券及归属关系未在本轮全部核验",
+        "research_date": "原研究记录：2026年9月；本轮回读",
+        "source_labels": [
+          "公开内容方法研究｜宏观开发追查"
+        ],
+        "keywords": [
+          "伊顿（Eaton）",
+          "设备需求",
+          "宏观传导"
+        ],
+        "sections": [
+          {
+            "heading": "研究角色",
+            "paragraphs": [
+              "原宏观开发追查的电力设备需求对象。原材料的订单、股权及经营范围不能由名称或工厂地点自动推出。",
+              "网址标识用于定位，不是交易代码；需求、采购、生产、验收、回款和收益主体需要继续匹配。"
+            ]
+          }
+        ],
+        "related": [
+          "us-china-equipment-chain",
+          "linked-flows-analysis",
+          "observation-progress"
+        ]
+      },
+      {
+        "id": "stock-jst-power-observation",
+        "code": "jst-power-observation",
+        "name": "JST Power Equipment",
+        "title": "JST Power Equipment｜宏观研究提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原追查的工厂与产品线对象，不能与其他同名JST自动合并，具体交付和利润仍需对应证据。",
+        "status": "企业提及，证券及归属关系未在本轮全部核验",
+        "research_date": "原研究记录：2026年9月；本轮回读",
+        "source_labels": [
+          "公开内容方法研究｜宏观开发追查"
+        ],
+        "keywords": [
+          "JST Power Equipment",
+          "设备需求",
+          "宏观传导"
+        ],
+        "sections": [
+          {
+            "heading": "研究角色",
+            "paragraphs": [
+              "原追查的工厂与产品线对象，不能与其他同名JST自动合并。原材料的订单、股权及经营范围不能由名称或工厂地点自动推出。",
+              "网址标识用于定位，不是交易代码；需求、采购、生产、验收、回款和收益主体需要继续匹配。"
+            ]
+          }
+        ],
+        "related": [
+          "us-china-equipment-chain",
+          "linked-flows-analysis",
+          "observation-progress"
+        ]
+      },
+      {
+        "id": "stock-boeing-observation",
+        "code": "boeing-observation",
+        "name": "波音",
+        "title": "波音｜宏观研究提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原宏观案例中的订单背景，具体交付和利润仍需对应证据。",
+        "status": "企业提及，证券及归属关系未在本轮全部核验",
+        "research_date": "原研究记录：2026年9月；本轮回读",
+        "source_labels": [
+          "公开内容方法研究｜宏观开发追查"
+        ],
+        "keywords": [
+          "波音",
+          "设备需求",
+          "宏观传导"
+        ],
+        "sections": [
+          {
+            "heading": "研究角色",
+            "paragraphs": [
+              "原宏观案例中的订单背景。原材料的订单、股权及经营范围不能由名称或工厂地点自动推出。",
+              "网址标识用于定位，不是交易代码；需求、采购、生产、验收、回款和收益主体需要继续匹配。"
+            ]
+          }
+        ],
+        "related": [
+          "us-china-equipment-chain",
+          "linked-flows-analysis",
+          "observation-progress"
         ]
       },
       {
