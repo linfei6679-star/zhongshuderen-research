@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-04T16:11:48.961Z",
+  "checked_at": "2026-10-04T16:15:37.764Z",
   "intro": "从研究问题，到阶段判断与实际成果。每天核对研究记录，有变化就更新；想法还在验证时，也把依据和待解问题讲清楚。",
   "schedule": {
     "status": "preparing",
@@ -1488,7 +1488,8 @@
         "related": [
           "method-loans",
           "method-evidence",
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-ai-speed"
         ]
       },
       {
@@ -1988,7 +1989,8 @@
         "related": [
           "method-loans",
           "method-evidence",
-          "news-ai-network"
+          "news-ai-network",
+          "archive-ai-speed"
         ]
       },
       {
@@ -4486,6 +4488,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：300699；名称：光威复材。关联观察面：低空经济eVTOL。",
+              "原报告对该对象的业务角色解释：碳纤维（轻量化材料）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -4493,7 +4496,8 @@
         "related": [
           "method-loans",
           "method-evidence",
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -7194,6 +7198,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：002085；名称：万丰奥威。关联观察面：低空经济eVTOL。",
+              "原报告对该对象的业务角色解释：eVTOL 整机（钻石飞机协同）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -7201,7 +7206,8 @@
         "related": [
           "method-loans",
           "method-evidence",
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -8168,7 +8174,9 @@
         "related": [
           "method-loans",
           "method-evidence",
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-ai-speed",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -19243,6 +19251,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：603200；名称：上海洗霸。关联观察面：固态电池。",
+              "原报告对该对象的业务角色解释：固态电解质（概念弹性标的）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -19250,7 +19259,8 @@
         "related": [
           "method-loans",
           "method-evidence",
-          "tech-solid-state"
+          "tech-solid-state",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -20427,6 +20437,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：002837；名称：英维克。关联观察面：AI算力硬件。",
+              "原报告对该对象的业务角色解释：液冷温控龙头。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -20434,7 +20445,8 @@
         "related": [
           "method-loans",
           "method-evidence",
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -27733,6 +27745,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：002466；名称：天齐锂业。关联观察面：固态电池。",
+              "原报告对该对象的业务角色解释：锂资源，估值低位。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -27740,7 +27753,8 @@
         "related": [
           "industry-801056",
           "method-industry",
-          "tech-solid-state"
+          "tech-solid-state",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -28036,7 +28050,9 @@
         "related": [
           "industry-801083",
           "method-industry",
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-ai-speed",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -28134,6 +28150,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：600183；名称：生益科技。关联观察面：AI算力硬件。",
+              "原报告对该对象的业务角色解释：CCL 覆铜板，AI 服务器基材。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -28141,7 +28158,8 @@
         "related": [
           "industry-801083",
           "method-industry",
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -30236,7 +30254,8 @@
           "industry-801081",
           "method-industry",
           "cybersecurity",
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-ai-speed"
         ]
       },
       {
@@ -30341,7 +30360,8 @@
         "related": [
           "industry-801081",
           "method-industry",
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-ai-speed"
         ]
       },
       {
@@ -39998,6 +40018,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：000099；名称：中信海直。关联观察面：低空经济eVTOL。",
+              "原报告对该对象的业务角色解释：低空运营（通航龙头）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -40005,7 +40026,8 @@
         "related": [
           "industry-801991",
           "method-industry",
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -47184,12 +47206,15 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：300502；名称：新易盛。关联观察面：AI算力硬件、GPU与算力。",
+              "原报告对该对象的业务角色解释：光模块头部，高速率放量。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool",
+          "archive-ai-speed"
         ]
       },
       {
@@ -47280,6 +47305,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：300750；名称：宁德时代。关联观察面：固态电池。",
+              "原报告对该对象的业务角色解释：电池龙头，硫化物全固态领跑。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -47289,7 +47315,8 @@
           "catl-valuation-method",
           "catl-risk-scenarios",
           "archive-catl-study",
-          "tech-solid-state"
+          "tech-solid-state",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -47330,7 +47357,8 @@
           }
         ],
         "related": [
-          "news-domestic-models"
+          "news-domestic-models",
+          "archive-ai-speed"
         ]
       },
       {
@@ -47555,13 +47583,16 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：603728；名称：鸣志电器。关联观察面：人形机器人核心零部件、人形机器人。",
+              "原报告对该对象的业务角色解释：空心杯电机（灵巧手核心）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
           "robotics",
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-tech-path-pool",
+          "archive-ai-speed"
         ]
       },
       {
@@ -47601,7 +47632,8 @@
           }
         ],
         "related": [
-          "news-edge-ai"
+          "news-edge-ai",
+          "archive-ai-speed"
         ]
       },
       {
@@ -47680,7 +47712,8 @@
         "related": [
           "cybersecurity",
           "method-evidence",
-          "news-ai-safety"
+          "news-ai-safety",
+          "archive-ai-speed"
         ]
       },
       {
@@ -47723,7 +47756,8 @@
           }
         ],
         "related": [
-          "news-office-agents"
+          "news-office-agents",
+          "archive-ai-speed"
         ]
       },
       {
@@ -48625,12 +48659,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：688235；名称：百济神州。关联观察面：创新药A。",
+              "原报告对该对象的业务角色解释：全球化创新药龙头。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -59597,7 +59633,8 @@
           "archive-1v9k2a3",
           "humanoid-supply-chain",
           "humanoid-valuation",
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-ai-speed"
         ]
       },
       {
@@ -59695,6 +59732,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：003021；名称：兆威机电。关联观察面：人形机器人核心零部件。",
+              "原报告对该对象的业务角色解释：微型传动/灵巧手。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -59703,7 +59741,8 @@
           "archive-1v9k2a3",
           "humanoid-supply-chain",
           "humanoid-valuation",
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -59802,6 +59841,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：601689；名称：拓普集团。关联观察面：人形机器人核心零部件、人形机器人。",
+              "原报告对该对象的业务角色解释：执行器总成（车+机器人协同）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -59810,7 +59850,9 @@
           "archive-1v9k2a3",
           "humanoid-supply-chain",
           "humanoid-valuation",
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-tech-path-pool",
+          "archive-ai-speed"
         ]
       },
       {
@@ -59862,6 +59904,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：002050；名称：三花智控。关联观察面：人形机器人核心零部件、人形机器人。",
+              "原报告对该对象的业务角色解释：热管理+执行器。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -59870,7 +59913,9 @@
           "archive-1v9k2a3",
           "humanoid-supply-chain",
           "humanoid-valuation",
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-tech-path-pool",
+          "archive-ai-speed"
         ]
       },
       {
@@ -62590,7 +62635,8 @@
         "related": [
           "cybersecurity",
           "method-evidence",
-          "news-ai-safety"
+          "news-ai-safety",
+          "archive-ai-speed"
         ]
       },
       {
@@ -62633,7 +62679,8 @@
         "related": [
           "cybersecurity",
           "method-evidence",
-          "news-ai-safety"
+          "news-ai-safety",
+          "archive-ai-speed"
         ]
       },
       {
@@ -63227,7 +63274,8 @@
         "related": [
           "wearable-infrastructure",
           "method-evidence",
-          "news-edge-ai"
+          "news-edge-ai",
+          "archive-ai-speed"
         ]
       },
       {
@@ -63376,6 +63424,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：688322；名称：奥比中光-W。关联观察面：人形机器人核心零部件。",
+              "原报告对该对象的业务角色解释：3D 视觉感知。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -63383,7 +63432,8 @@
         "related": [
           "wearable-infrastructure",
           "method-evidence",
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -63429,7 +63479,8 @@
         "related": [
           "robotics",
           "method-evidence",
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -63610,6 +63661,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：603662；名称：柯力传感。关联观察面：人形机器人核心零部件、人形机器人。",
+              "原报告对该对象的业务角色解释：力/力矩传感器。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -63617,7 +63669,9 @@
         "related": [
           "robotics",
           "method-evidence",
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-tech-path-pool",
+          "archive-ai-speed"
         ]
       },
       {
@@ -63728,6 +63782,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：688017；名称：绿的谐波。关联观察面：人形机器人核心零部件、人形机器人。",
+              "原报告对该对象的业务角色解释：谐波减速器国产龙头。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -63735,7 +63790,9 @@
         "related": [
           "robotics",
           "method-evidence",
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-tech-path-pool",
+          "archive-ai-speed"
         ]
       },
       {
@@ -63774,6 +63831,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：603009；名称：北特科技。关联观察面：人形机器人核心零部件。",
+              "原报告对该对象的业务角色解释：丝杠+底盘件。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -63781,7 +63839,8 @@
         "related": [
           "robotics",
           "method-evidence",
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -63820,6 +63879,7 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：603667；名称：五洲新春。关联观察面：人形机器人核心零部件。",
+              "原报告对该对象的业务角色解释：行星滚柱丝杠。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
@@ -63827,7 +63887,8 @@
         "related": [
           "robotics",
           "method-evidence",
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -64860,12 +64921,15 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：300308；名称：中际旭创。关联观察面：AI算力硬件、GPU与算力。",
+              "原报告对该对象的业务角色解释：800G/1.6T 光模块全球龙头。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool",
+          "archive-ai-speed"
         ]
       },
       {
@@ -64892,12 +64956,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：002281；名称：光迅科技。关联观察面：AI算力硬件。",
+              "原报告对该对象的业务角色解释：光芯片+模块，国产替代。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -64924,12 +64990,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：688498；名称：源杰科技。关联观察面：AI算力硬件。",
+              "原报告对该对象的业务角色解释：光芯片（激光器芯片）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -64961,7 +65029,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -64993,7 +65062,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65020,12 +65090,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：600160；名称：巨化股份。关联观察面：AI算力硬件。",
+              "原报告对该对象的业务角色解释：数据中心冷却液（氟化液）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65054,12 +65126,15 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：601138；名称：工业富联。关联观察面：AI算力硬件、GPU与算力。",
+              "原报告对该对象的业务角色解释：AI 服务器 ODM 龙头。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool",
+          "archive-ai-speed"
         ]
       },
       {
@@ -65086,12 +65161,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：000977；名称：浪潮信息。关联观察面：AI算力硬件。",
+              "原报告对该对象的业务角色解释：服务器，液冷方案。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65118,12 +65195,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：002156；名称：通富微电。关联观察面：AI算力硬件。",
+              "原报告对该对象的业务角色解释：先进封装（Chiplet）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65155,7 +65234,8 @@
           }
         ],
         "related": [
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65187,7 +65267,8 @@
           }
         ],
         "related": [
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65219,7 +65300,8 @@
           }
         ],
         "related": [
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65246,12 +65328,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：002460；名称：赣锋锂业。关联观察面：固态电池。",
+              "原报告对该对象的业务角色解释：固态电解质+金属锂负极布局。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-solid-state"
+          "tech-solid-state",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65278,12 +65362,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：300014；名称：亿纬锂能。关联观察面：固态电池。",
+              "原报告对该对象的业务角色解释：半固态+大圆柱。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-solid-state"
+          "tech-solid-state",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65310,12 +65396,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：300073；名称：当升科技。关联观察面：固态电池。",
+              "原报告对该对象的业务角色解释：固态正极材料。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-solid-state"
+          "tech-solid-state",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65342,12 +65430,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：688005；名称：容百科技。关联观察面：固态电池。",
+              "原报告对该对象的业务角色解释：高镍/固态正极。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-solid-state"
+          "tech-solid-state",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65374,12 +65464,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：300450；名称：先导智能。关联观察面：固态电池。",
+              "原报告对该对象的业务角色解释：固态电池整线设备。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-solid-state"
+          "tech-solid-state",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65411,7 +65503,8 @@
           }
         ],
         "related": [
-          "tech-solid-state"
+          "tech-solid-state",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65443,7 +65536,8 @@
           }
         ],
         "related": [
-          "tech-solid-state"
+          "tech-solid-state",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65470,12 +65564,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：603663；名称：三祥新材。关联观察面：固态电池。",
+              "原报告对该对象的业务角色解释：锆系固态电解质材料。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-solid-state"
+          "tech-solid-state",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65502,12 +65598,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：001696；名称：宗申动力。关联观察面：低空经济eVTOL。",
+              "原报告对该对象的业务角色解释：航空发动机/动力。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65534,12 +65632,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：688631；名称：莱斯信息。关联观察面：低空经济eVTOL。",
+              "原报告对该对象的业务角色解释：空管系统。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65566,12 +65666,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：000801；名称：四川九洲。关联观察面：低空经济eVTOL。",
+              "原报告对该对象的业务角色解释：空管+北斗。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65603,7 +65705,8 @@
           }
         ],
         "related": [
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65630,12 +65733,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：600038；名称：中直股份。关联观察面：低空经济eVTOL。",
+              "原报告对该对象的业务角色解释：直升机整机。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65662,12 +65767,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：688295；名称：中复神鹰。关联观察面：低空经济eVTOL。",
+              "原报告对该对象的业务角色解释：碳纤维原丝。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65694,12 +65801,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：600276；名称：恒瑞医药。关联观察面：创新药A。",
+              "原报告对该对象的业务角色解释：国内创新药龙头，出海加速。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65726,12 +65835,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：688331；名称：荣昌生物。关联观察面：创新药A。",
+              "原报告对该对象的业务角色解释：ADC（维迪西妥单抗）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65758,12 +65869,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：688506；名称：百利天恒。关联观察面：创新药A。",
+              "原报告对该对象的业务角色解释：ADC（与 BMS 大额授权）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65795,7 +65908,8 @@
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65822,12 +65936,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：A股；代码：688578；名称：艾力斯。关联观察面：创新药A。",
+              "原报告对该对象的业务角色解释：肺癌靶向药。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65859,7 +65975,8 @@
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65891,7 +66008,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65923,7 +66041,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65955,7 +66074,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -65987,7 +66107,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66019,7 +66140,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66051,7 +66173,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66083,7 +66206,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66115,7 +66239,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66147,7 +66272,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66179,7 +66305,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66211,7 +66338,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66238,12 +66366,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：港股；代码：01801；名称：信达生物。关联观察面：港股创新药18A。",
+              "原报告对该对象的业务角色解释：管线+出海双强。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66275,7 +66405,8 @@
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66302,12 +66433,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：港股；代码：09926；名称：康方生物。关联观察面：港股创新药18A。",
+              "原报告对该对象的业务角色解释：双抗（依沃西全球授权）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66334,12 +66467,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：港股；代码：09995；名称：荣昌生物。关联观察面：港股创新药18A。",
+              "原报告对该对象的业务角色解释：ADC（H 股折价明显）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66366,12 +66501,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：港股；代码：09688；名称：再鼎医药。关联观察面：港股创新药18A。",
+              "原报告对该对象的业务角色解释：license-in 商业化。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66403,7 +66540,8 @@
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66435,7 +66573,8 @@
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66462,12 +66601,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：港股；代码：02269；名称：药明生物。关联观察面：港股创新药18A。",
+              "原报告对该对象的业务角色解释：生物药 CDMO 龙头。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66499,7 +66640,8 @@
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66526,12 +66668,14 @@
             "heading": "8月27日技术资料中的提及",
             "paragraphs": [
               "原资料市场：港股；代码：06990；名称：科伦博泰生物。关联观察面：港股创新药18A。",
+              "原报告对该对象的业务角色解释：ADC 平台（SKB 系列）。这是当时的研究映射；具体产品、客户、供货和利润贡献仍按后续证据验证。",
               "这属于历史初筛、概念映射或延伸观察，不表示公司受益、订单、临床、技术指标和当前估值已经逐项验证。旧价格、市值、PE及PB没有当作今天数据使用。"
             ]
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66563,7 +66707,8 @@
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66595,7 +66740,8 @@
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66627,7 +66773,8 @@
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66659,7 +66806,8 @@
           }
         ],
         "related": [
-          "tech-drug-assets"
+          "tech-drug-assets",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66691,7 +66839,8 @@
           }
         ],
         "related": [
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66723,7 +66872,8 @@
           }
         ],
         "related": [
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66755,7 +66905,8 @@
           }
         ],
         "related": [
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66787,7 +66938,8 @@
           }
         ],
         "related": [
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66819,7 +66971,8 @@
           }
         ],
         "related": [
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66851,7 +67004,8 @@
           }
         ],
         "related": [
-          "tech-low-altitude"
+          "tech-low-altitude",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -66883,7 +67037,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-ai-speed"
         ]
       },
       {
@@ -66915,7 +67070,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-ai-speed"
         ]
       },
       {
@@ -66947,7 +67103,8 @@
           }
         ],
         "related": [
-          "news-domestic-models"
+          "news-domestic-models",
+          "archive-ai-speed"
         ]
       },
       {
@@ -66979,7 +67136,8 @@
           }
         ],
         "related": [
-          "news-domestic-models"
+          "news-domestic-models",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67013,7 +67171,8 @@
         ],
         "related": [
           "news-domestic-models",
-          "news-ai-safety"
+          "news-ai-safety",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67045,7 +67204,8 @@
           }
         ],
         "related": [
-          "news-domestic-models"
+          "news-domestic-models",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67077,7 +67237,8 @@
           }
         ],
         "related": [
-          "news-domestic-models"
+          "news-domestic-models",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67109,7 +67270,8 @@
           }
         ],
         "related": [
-          "news-domestic-models"
+          "news-domestic-models",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67141,7 +67303,8 @@
           }
         ],
         "related": [
-          "news-medical-ai"
+          "news-medical-ai",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67173,7 +67336,8 @@
           }
         ],
         "related": [
-          "news-medical-ai"
+          "news-medical-ai",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67205,7 +67369,8 @@
           }
         ],
         "related": [
-          "news-medical-ai"
+          "news-medical-ai",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67237,7 +67402,8 @@
           }
         ],
         "related": [
-          "news-medical-ai"
+          "news-medical-ai",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67269,7 +67435,8 @@
           }
         ],
         "related": [
-          "news-weather-ai"
+          "news-weather-ai",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67301,7 +67468,8 @@
           }
         ],
         "related": [
-          "news-weather-ai"
+          "news-weather-ai",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67333,7 +67501,8 @@
           }
         ],
         "related": [
-          "news-weather-ai"
+          "news-weather-ai",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67367,7 +67536,9 @@
           }
         ],
         "related": [
-          "tech-robot-parts"
+          "tech-robot-parts",
+          "archive-ai-speed",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -67399,7 +67570,8 @@
           }
         ],
         "related": [
-          "news-office-agents"
+          "news-office-agents",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67431,7 +67603,8 @@
           }
         ],
         "related": [
-          "news-office-agents"
+          "news-office-agents",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67463,7 +67636,8 @@
           }
         ],
         "related": [
-          "news-office-agents"
+          "news-office-agents",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67495,7 +67669,8 @@
           }
         ],
         "related": [
-          "news-edge-ai"
+          "news-edge-ai",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67527,7 +67702,8 @@
           }
         ],
         "related": [
-          "news-edge-ai"
+          "news-edge-ai",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67559,7 +67735,8 @@
           }
         ],
         "related": [
-          "news-edge-ai"
+          "news-edge-ai",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67591,7 +67768,8 @@
           }
         ],
         "related": [
-          "news-ai-network"
+          "news-ai-network",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67623,7 +67801,8 @@
           }
         ],
         "related": [
-          "news-ai-network"
+          "news-ai-network",
+          "archive-ai-speed"
         ]
       },
       {
@@ -67655,7 +67834,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -67687,7 +67867,8 @@
           }
         ],
         "related": [
-          "tech-ai-infrastructure"
+          "tech-ai-infrastructure",
+          "archive-tech-path-pool"
         ]
       },
       {
@@ -67719,7 +67900,8 @@
           }
         ],
         "related": [
-          "tech-solid-state"
+          "tech-solid-state",
+          "archive-tech-path-pool"
         ]
       }
     ]
