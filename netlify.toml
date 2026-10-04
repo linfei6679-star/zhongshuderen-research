@@ -1,0 +1,24 @@
+[build]
+command = "python3 -m zipfile -e website-source.zip . && node scripts/generate-static.cjs site && node scripts/prepare-edge-seed.cjs"
+publish = "site"
+ignore = "node ignore-data-only.cjs"
+
+[[edge_functions]]
+function = "research"
+path = "/research.json"
+
+[[edge_functions]]
+function = "research"
+path = "/api/research"
+
+[[edge_functions]]
+function = "research"
+path = "/research/*"
+
+[[edge_functions]]
+function = "research"
+path = "/topics/*"
+
+[[edge_functions]]
+function = "research"
+path = "/sitemap.xml"
