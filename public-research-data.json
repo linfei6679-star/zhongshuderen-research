@@ -1,6 +1,6 @@
 {
   "schema_version": 1,
-  "checked_at": "2026-10-04T15:25:19.396Z",
+  "checked_at": "2026-10-04T15:33:05.107Z",
   "intro": "从研究问题，到阶段判断与实际成果。每天核对研究记录，有变化就更新；想法还在验证时，也把依据和待解问题讲清楚。",
   "schedule": {
     "status": "preparing",
@@ -55991,6 +55991,348 @@
         "related": []
       },
       {
+        "id": "stock-tsmc-mention",
+        "code": "tsmc-mention",
+        "name": "台积电",
+        "title": "台积电｜早期材料额外提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料在半导体产能和设备投入背景中提及，作为背景对象单独保存。",
+        "status": "背景或合作对象提及，非原14个直接映射候选",
+        "research_date": "原报告：2026-08-21",
+        "source_labels": [
+          "早期运行产物｜正文及取数摘要"
+        ],
+        "keywords": [
+          "台积电",
+          "半导体产能和设备投入背景"
+        ],
+        "sections": [
+          {
+            "heading": "为什么保留这个对象",
+            "paragraphs": [
+              "原材料把该对象用于半导体产能和设备投入背景。它没有进入那份14个直接股票映射清单，不能把背景、合作方或观点来源自动改成推荐标的。"
+            ]
+          },
+          {
+            "heading": "身份与证据仍需对应",
+            "paragraphs": [
+              "本页保留原材料中的名称与角色，简称、技术主体及证券身份仍按对应官方资料核对。网址名称标识用于定位，不是交易代码。",
+              "原报告中的金额、价格、涨幅或预测没有在本轮全部回源；后续应核对具体日期、公司行为和原始条件，不沿用未经核验的强断言。"
+            ]
+          }
+        ],
+        "related": [
+          "cpo-commercial-evidence",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-msd-mention",
+        "code": "msd-mention",
+        "name": "默沙东",
+        "title": "默沙东｜早期材料额外提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料在医药合作与临床叙事背景中提及，作为背景对象单独保存。",
+        "status": "背景或合作对象提及，非原14个直接映射候选",
+        "research_date": "原报告：2026-08-21",
+        "source_labels": [
+          "早期运行产物｜正文及取数摘要"
+        ],
+        "keywords": [
+          "默沙东",
+          "医药合作与临床叙事背景"
+        ],
+        "sections": [
+          {
+            "heading": "为什么保留这个对象",
+            "paragraphs": [
+              "原材料把该对象用于医药合作与临床叙事背景。它没有进入那份14个直接股票映射清单，不能把背景、合作方或观点来源自动改成推荐标的。"
+            ]
+          },
+          {
+            "heading": "身份与证据仍需对应",
+            "paragraphs": [
+              "本页保留原材料中的名称与角色，简称、技术主体及证券身份仍按对应官方资料核对。网址名称标识用于定位，不是交易代码。",
+              "原报告中的金额、价格、涨幅或预测没有在本轮全部回源；后续应核对具体日期、公司行为和原始条件，不沿用未经核验的强断言。"
+            ]
+          }
+        ],
+        "related": [
+          "pharma-translation-chain",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-takeda-mention",
+        "code": "takeda-mention",
+        "name": "武田",
+        "title": "武田｜早期材料额外提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料在英矽智能合作方中提及，作为背景对象单独保存。",
+        "status": "背景或合作对象提及，非原14个直接映射候选",
+        "research_date": "原报告：2026-08-21",
+        "source_labels": [
+          "早期运行产物｜正文及取数摘要"
+        ],
+        "keywords": [
+          "武田",
+          "英矽智能合作方"
+        ],
+        "sections": [
+          {
+            "heading": "为什么保留这个对象",
+            "paragraphs": [
+              "原材料把该对象用于英矽智能合作方。它没有进入那份14个直接股票映射清单，不能把背景、合作方或观点来源自动改成推荐标的。"
+            ]
+          },
+          {
+            "heading": "身份与证据仍需对应",
+            "paragraphs": [
+              "本页保留原材料中的名称与角色，简称、技术主体及证券身份仍按对应官方资料核对。网址名称标识用于定位，不是交易代码。",
+              "原报告中的金额、价格、涨幅或预测没有在本轮全部回源；后续应核对具体日期、公司行为和原始条件，不沿用未经核验的强断言。"
+            ]
+          }
+        ],
+        "related": [
+          "pharma-translation-chain",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-shanjin-mention",
+        "code": "shanjin-mention",
+        "name": "山金国际",
+        "title": "山金国际｜早期材料额外提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料在贵金属板块背景中提及，作为背景对象单独保存。",
+        "status": "背景或合作对象提及，非原14个直接映射候选",
+        "research_date": "原报告：2026-08-21",
+        "source_labels": [
+          "早期运行产物｜正文及取数摘要"
+        ],
+        "keywords": [
+          "山金国际",
+          "贵金属板块背景"
+        ],
+        "sections": [
+          {
+            "heading": "为什么保留这个对象",
+            "paragraphs": [
+              "原材料把该对象用于贵金属板块背景。它没有进入那份14个直接股票映射清单，不能把背景、合作方或观点来源自动改成推荐标的。"
+            ]
+          },
+          {
+            "heading": "身份与证据仍需对应",
+            "paragraphs": [
+              "本页保留原材料中的名称与角色，简称、技术主体及证券身份仍按对应官方资料核对。网址名称标识用于定位，不是交易代码。",
+              "原报告中的金额、价格、涨幅或预测没有在本轮全部回源；后续应核对具体日期、公司行为和原始条件，不沿用未经核验的强断言。"
+            ]
+          }
+        ],
+        "related": [
+          "precious-metals-transmission",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-shenhua-mention",
+        "code": "shenhua-mention",
+        "name": "神华（原报告简称）",
+        "title": "神华（原报告简称）｜早期材料额外提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料在煤炭防御背景，具体证券身份待回源中提及，作为背景对象单独保存。",
+        "status": "背景或合作对象提及，非原14个直接映射候选",
+        "research_date": "原报告：2026-08-21",
+        "source_labels": [
+          "早期运行产物｜正文及取数摘要"
+        ],
+        "keywords": [
+          "神华（原报告简称）",
+          "煤炭防御背景，具体证券身份待回源"
+        ],
+        "sections": [
+          {
+            "heading": "为什么保留这个对象",
+            "paragraphs": [
+              "原材料把该对象用于煤炭防御背景，具体证券身份待回源。它没有进入那份14个直接股票映射清单，不能把背景、合作方或观点来源自动改成推荐标的。"
+            ]
+          },
+          {
+            "heading": "身份与证据仍需对应",
+            "paragraphs": [
+              "本页保留原材料中的名称与角色，简称、技术主体及证券身份仍按对应官方资料核对。网址名称标识用于定位，不是交易代码。",
+              "原报告中的金额、价格、涨幅或预测没有在本轮全部回源；后续应核对具体日期、公司行为和原始条件，不沿用未经核验的强断言。"
+            ]
+          }
+        ],
+        "related": [
+          "market-baseline-separation",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-hayao-mention",
+        "code": "hayao-mention",
+        "name": "哈药（原报告简称）",
+        "title": "哈药（原报告简称）｜早期材料额外提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料在医药板块背景，具体证券身份待回源中提及，作为背景对象单独保存。",
+        "status": "背景或合作对象提及，非原14个直接映射候选",
+        "research_date": "原报告：2026-08-21",
+        "source_labels": [
+          "早期运行产物｜正文及取数摘要"
+        ],
+        "keywords": [
+          "哈药（原报告简称）",
+          "医药板块背景，具体证券身份待回源"
+        ],
+        "sections": [
+          {
+            "heading": "为什么保留这个对象",
+            "paragraphs": [
+              "原材料把该对象用于医药板块背景，具体证券身份待回源。它没有进入那份14个直接股票映射清单，不能把背景、合作方或观点来源自动改成推荐标的。"
+            ]
+          },
+          {
+            "heading": "身份与证据仍需对应",
+            "paragraphs": [
+              "本页保留原材料中的名称与角色，简称、技术主体及证券身份仍按对应官方资料核对。网址名称标识用于定位，不是交易代码。",
+              "原报告中的金额、价格、涨幅或预测没有在本轮全部回源；后续应核对具体日期、公司行为和原始条件，不沿用未经核验的强断言。"
+            ]
+          }
+        ],
+        "related": [
+          "pharma-translation-chain",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-zaiding-mention",
+        "code": "zaiding-mention",
+        "name": "再鼎（原报告简称）",
+        "title": "再鼎（原报告简称）｜早期材料额外提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料在创新药出海背景，具体证券身份待回源中提及，作为背景对象单独保存。",
+        "status": "背景或合作对象提及，非原14个直接映射候选",
+        "research_date": "原报告：2026-08-21",
+        "source_labels": [
+          "早期运行产物｜正文及取数摘要"
+        ],
+        "keywords": [
+          "再鼎（原报告简称）",
+          "创新药出海背景，具体证券身份待回源"
+        ],
+        "sections": [
+          {
+            "heading": "为什么保留这个对象",
+            "paragraphs": [
+              "原材料把该对象用于创新药出海背景，具体证券身份待回源。它没有进入那份14个直接股票映射清单，不能把背景、合作方或观点来源自动改成推荐标的。"
+            ]
+          },
+          {
+            "heading": "身份与证据仍需对应",
+            "paragraphs": [
+              "本页保留原材料中的名称与角色，简称、技术主体及证券身份仍按对应官方资料核对。网址名称标识用于定位，不是交易代码。",
+              "原报告中的金额、价格、涨幅或预测没有在本轮全部回源；后续应核对具体日期、公司行为和原始条件，不沿用未经核验的强断言。"
+            ]
+          }
+        ],
+        "related": [
+          "pharma-translation-chain",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-google-mention",
+        "code": "google-mention",
+        "name": "谷歌",
+        "title": "谷歌｜早期材料额外提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料在具身智能技术背景，技术主体与上市证券区分中提及，作为背景对象单独保存。",
+        "status": "背景或合作对象提及，非原14个直接映射候选",
+        "research_date": "原报告：2026-08-21",
+        "source_labels": [
+          "早期运行产物｜正文及取数摘要"
+        ],
+        "keywords": [
+          "谷歌",
+          "具身智能技术背景，技术主体与上市证券区分"
+        ],
+        "sections": [
+          {
+            "heading": "为什么保留这个对象",
+            "paragraphs": [
+              "原材料把该对象用于具身智能技术背景，技术主体与上市证券区分。它没有进入那份14个直接股票映射清单，不能把背景、合作方或观点来源自动改成推荐标的。"
+            ]
+          },
+          {
+            "heading": "身份与证据仍需对应",
+            "paragraphs": [
+              "本页保留原材料中的名称与角色，简称、技术主体及证券身份仍按对应官方资料核对。网址名称标识用于定位，不是交易代码。",
+              "原报告中的金额、价格、涨幅或预测没有在本轮全部回源；后续应核对具体日期、公司行为和原始条件，不沿用未经核验的强断言。"
+            ]
+          }
+        ],
+        "related": [
+          "robotics-cooling-materials",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
+        "id": "stock-goldman-mention",
+        "code": "goldman-mention",
+        "name": "高盛",
+        "title": "高盛｜早期材料额外提及",
+        "kind": "stock",
+        "category": "stocks",
+        "summary": "原材料在行业预测来源，不作为投资候选中提及，作为背景对象单独保存。",
+        "status": "背景或合作对象提及，非原14个直接映射候选",
+        "research_date": "原报告：2026-08-21",
+        "source_labels": [
+          "早期运行产物｜正文及取数摘要"
+        ],
+        "keywords": [
+          "高盛",
+          "行业预测来源，不作为投资候选"
+        ],
+        "sections": [
+          {
+            "heading": "为什么保留这个对象",
+            "paragraphs": [
+              "原材料把该对象用于行业预测来源，不作为投资候选。它没有进入那份14个直接股票映射清单，不能把背景、合作方或观点来源自动改成推荐标的。"
+            ]
+          },
+          {
+            "heading": "身份与证据仍需对应",
+            "paragraphs": [
+              "本页保留原材料中的名称与角色，简称、技术主体及证券身份仍按对应官方资料核对。网址名称标识用于定位，不是交易代码。",
+              "原报告中的金额、价格、涨幅或预测没有在本轮全部回源；后续应核对具体日期、公司行为和原始条件，不沿用未经核验的强断言。"
+            ]
+          }
+        ],
+        "related": [
+          "market-baseline-separation",
+          "archive-early-run-20260821",
+          "research-source-freshness"
+        ]
+      },
+      {
         "id": "pharma-translation-chain",
         "title": "mRNA与AI制药研究：临床、授权合作与商业兑现",
         "kind": "topic",
@@ -56304,6 +56646,12 @@
             "paragraphs": [
               "原报告市场认知全部未知，具体临床、订单与收入缺口尚待核验。部分时效标签与材料日期之间有张力，运行成功不能替代这些验证。"
             ]
+          },
+          {
+            "heading": "直接映射与背景对象分开",
+            "paragraphs": [
+              "原直接映射清单仍为14个；正文另有合作方、技术公司、板块对象和机构预测来源，均以额外提及身份链接，未加入原候选数量。简称与当前证券身份的缺口继续保留。"
+            ]
           }
         ],
         "related": [
@@ -56326,7 +56674,21 @@
           "stock-002716",
           "stock-601212",
           "stock-002536",
-          "stock-002886"
+          "stock-002886",
+          "stock-tsmc-mention",
+          "stock-msd-mention",
+          "stock-takeda-mention",
+          "stock-shanjin-mention",
+          "stock-shenhua-mention",
+          "stock-hayao-mention",
+          "stock-zaiding-mention",
+          "stock-google-mention",
+          "stock-goldman-mention",
+          "stock-nvidia",
+          "stock-sk-hynix",
+          "stock-moderna",
+          "stock-tesla",
+          "stock-unitree"
         ]
       },
       {
