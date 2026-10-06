@@ -30,3 +30,15 @@ path = "/stocks/*"
 [[edge_functions]]
 function = "research"
 path = "/sitemap.xml"
+
+[[edge_functions]]
+function = "research"
+path = "/knowledge-index.json"
+
+[[edge_functions]]
+function = "research"
+path = "/llms.txt"
+
+[[edge_functions]]
+function = "research"
+path = "/explore/*"
