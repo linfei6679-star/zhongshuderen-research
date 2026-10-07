@@ -42,3 +42,7 @@ path = "/llms.txt"
 [[edge_functions]]
 function = "research"
 path = "/explore/*"
+
+[[edge_functions]]
+function = "research"
+path = "/visitor-stats.json"
