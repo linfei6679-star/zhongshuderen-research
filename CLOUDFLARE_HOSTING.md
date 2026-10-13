@@ -1,6 +1,6 @@
 # Cloudflare 免费托管接续
 
-正式入口以 `site-config.json` 和私有发布回执的已验收状态为准。迁移期间原 Netlify 网站保留；测试页通过不能代替完整网站验收。Cloudflare 项目为 `zhongshuderen`，固定候选入口 `https://zhongshuderen.pages.dev`。不升级付费、不创建令牌或提取浏览器凭据。
+正式入口为 `https://zhongshuderen.pages.dev`，Cloudflare项目为 `zhongshuderen`。2026-10-13正式网址大陆三网HTTP GET测试261/267节点正常（97.75%），达到用户75%标准；原Netlify网站保留为历史入口。以 `site-config.json` 和私有验收回执为准，测试页结果不能替代正式网址结果。不升级付费、不创建令牌或提取浏览器凭据。
 
 ## 发布与数据更新
 

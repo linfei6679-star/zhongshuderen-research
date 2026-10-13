@@ -1,10 +1,10 @@
 # 种树的人网站共用规则
 
-正式入口为 https://zhongshuderen-research.netlify.app/ 。唯一公开仓库为 `linfei6679-star/zhongshuderen-research` 的 `main`；不得把旧 Sites 远端当作当前发布目标。
+正式入口为 https://zhongshuderen.pages.dev/ ，2026-10-13大陆三网261/267节点正常，按用户75%标准通过。旧Netlify地址保留为历史入口。唯一公开仓库为 `linfei6679-star/zhongshuderen-research` 的 `main`；不得把旧 Sites 或旧Netlify当作当前发布验收基线。
 
 - 用户已确认简洁交互 C：**首页为个人形象、搜索/探索、联系、真实访客小字，以及用户明确要求的贷款扩张/涨价题材专属入口**。禁止资料更新顺带添加文章摘要、推荐卡、项目进度或数量到首页。
 - 搜索和专题是第二级；独立研究正文是第三级。旧文章 URL、正文、来源、日期、反例及未知状态保留；HTML、Markdown、目录及机器索引由统一公开数据生成。
-- 必须先读 `docs/CONTENT_PIPELINE.md`。资料增加后自动进入搜索，常规日更只写 `public-research-data.json` 或 `data/visitor-stats.json`，跳过源码构建。
+- 必须先读 `docs/CONTENT_PIPELINE.md` 和 `docs/CLOUDFLARE_HOSTING.md`。资料仍只写统一公开JSON；Cloudflare研究采用已验证部署快照，有实质增量后由主控原位生成唯一小型上传包并发布，回读后进入搜索，不改首页布局。公开问答独立刷新；新站访客统计直接取真实D1聚合，不为数字另作源码部署。旧Netlify保留跳过构建规则。
 - 原研究工程只读，不执行源工程代码，不训练/回测/派工。不得把源码完成、程序运行、原项目复核、历史假设混成一种成果。
 - 更新前重读线上数据与待更新条目；按稳定 ID 去重并做基线哈希校验。保留未涉及内容，旧观点的更正需保留原语境和更正证据。
 - 发布前运行 `scripts/validate-content-intake.mjs`；读取 `private/publication-coordination.json`，另一入口持有发布窗口时仅准备增量候选。
