@@ -46,3 +46,15 @@ path = "/explore/*"
 [[edge_functions]]
 function = "research"
 path = "/visitor-stats.json"
+
+[[edge_functions]]
+function = "questions"
+path = "/ask/*"
+
+[[edge_functions]]
+function = "questions"
+path = "/ask"
+
+[[edge_functions]]
+function = "questions"
+path = "/questions.json"
