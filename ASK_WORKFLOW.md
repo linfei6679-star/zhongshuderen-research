@@ -6,7 +6,7 @@
 
 - 首页只增加一个小入口，二级页面 `/ask/` 承担提问和公开问答。成功页 `/ask/received/` 只确认收件，不表示已经答复。
 - 当前新入口的表单服务为 Cloudflare 私有D1，表单名 `master-questions`、绑定 `QUESTIONS_DB`。实际提供方、控制台与启用状态以私有 `ask-workflow.json` 为准。网站提交、真实数据库记录与回执已核对后才标记 `accepting_submissions=true`、`live_form_verified=true`。旧Netlify方案保留为历史状态，不能继续从旧后台找新站留言。部署接续见 `docs/CLOUDFLARE_HOSTING.md`。
-- “大师古法手解 留言与答疑”只维护 `private/ask-inbox.json`、`private/ask-publication-candidate.json`。网站设计主控维护前端、公开数据、发布与验收。第三条接收对话不取得源码或发布权限。
+- “大师古法手解 留言与答疑”只维护 `private/ask-inbox.json`、`private/ask-publication-candidate.json`，候选直接交“网站建设”（01a0fd56-0f81-7040-bc75-b1fdc915d32f）执行主控审阅、加工、发布与验收，不经设计对话中转。“网站建设 网站设计”负责页面设计和位置规则，由执行主控实施。下文“主控”均指“网站建设”；留言接收对话不取得源码或发布权限。
 - 接收检查每天北京时间09:00一次，依赖本机与Codex在线；不宣传即时或关机提醒。未部署时只保留等待上线状态，不产生虚构留言。
 
 ## 接收

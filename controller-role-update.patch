@@ -1,0 +1,168 @@
+diff --git a/AGENTS.md b/AGENTS.md
+index 49a2344..ed9877e 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -9,7 +9,7 @@
+ - 更新前重读线上数据与待更新条目；按稳定 ID 去重并做基线哈希校验。保留未涉及内容，旧观点的更正需保留原语境和更正证据。
+ - 发布前运行 `scripts/validate-content-intake.mjs`；读取 `private/publication-coordination.json`，另一入口持有发布窗口时仅准备增量候选。
+ - 沿用已有来源登记、日更游标和访问统计。成功读回公开结果前不能推进游标。无实质变化不提交；旧材料补记不冒充今日成果。
+-- 数据对话不能修改 `lib/home-page.js`、`lib/site-chrome.js`、`public/site-ui.*`、部署规则或源码包。样式/检索工程变更由设计维护入口处理并做适用测试。
++- “网站建设”执行主控按设计对话已确认的指令实施样式、检索及部署工程变更，并做适用测试；常规资料入库不改首页、风格或布局。云端资料线和留言接收对话不能修改 `lib/home-page.js`、`lib/site-chrome.js`、`public/site-ui.*`、部署规则或源码包。
+ - 零新增现金，不扩展权限、提取令牌、创建凭据或升级服务。不能发布内部路径、账号、凭据、雇主或未筛选原文。
+ - 本地只维护唯一共享输入和必要源码/回执；不复制完整工程、依赖、行情或原始文档。已拒绝的清理不能换工具重试。
+ - 其他项目的已审成果归属项目/专题和独立正文，并通过 `scripts/prepare-content-release.mjs` 同步到“成果更新”目录；首页保留小导航与已确认的项目专属链接。未审材料登记私有接收状态。GitHub 根目录的 `CONTENT_PIPELINE.md` 与解包源码中的 `docs/CONTENT_PIPELINE.md` 是同一规则。
+@@ -17,16 +17,18 @@
+ - 股票研究成果按项目搜索表展示，默认先显示原报告标为潜在受益或扩张观察的股票，按报告更新时间倒序；同一时间再参考资料发布日期。支持全部成果、风险待判断、日期与关键词筛选。同一股票的不同事项与相反方向不能因归并而消失。
+ - 表格直接读取已公开、已复核报告的稳定日期/原因/方向字段与段落，不发布原项目全部台账、月结控制或待核队列；新增合格成果通过数据更新自动进入表格。
+ 
+-## 唯一发布主控与两条资料线
++## 设计负责人、唯一执行发布主控与来源对话
+ 
+-按用户最新分工，网站设计对话统一负责派工、接收加工、合并、验收和正式发布。“网站建设”是项目成果/结构化台账资料线；现名“云端 Docs 研究成果整理”的资料线以 ChatGPT dot 的已有研究任务、进展和成果为主，文档/历史文字作为载体或补充来源。两条资料线只在自己的私有交接区准备增量、日期、依据、目标哈希及合并建议，不直接写共享公开快照、知识库、成果索引、GitHub、发布协调文件或自动任务。公开候选由网站设计主控统一加工，不等同于直接发布。
++按用户2026-10-14最新分工，“网站建设 网站设计”（01a13311-22d8-7a61-92e3-1e7a1b122104）只负责设计、风格、草图和资料位置规则。“网站建设”（01a0fd56-0f81-7040-bc75-b1fdc915d32f）是唯一执行与发布主控，直接接收资料、审阅加工、去重合并、实施、验收和正式发布，并承担北京时间09:00、21:00维护。设计对话以后给出放置与页面指令，执行主控按指令自主处理，不再把常规资料送回设计对话，也不要求同批材料反复传递。新的结构或设计决策才交给设计负责人；资料入库不自动改变布局。
++
++“云端 Docs 研究成果整理”以 ChatGPT dot 的已有研究任务、进展和成果为主，文档/历史文字作为载体或补充来源。云端线和留言接收对话只在自己的私有交接区准备增量、日期、依据、目标哈希及建议，由“网站建设”直接读取；不写共享公开快照、源码、知识库、成果索引、GitHub、发布协调或发布游标。下文“主控”均指“网站建设”执行主控。原有发布窗口、目标哈希和公开回读约束继续生效。
+ 
+ “云端”主要指 dot；须核对具体 dot、任务及成果的关联，普通云端对话与 Docs 候选不能自动视为 dot 成果。只读接收既有成果，不向 dot 发起或恢复研究；访问缺口照实登记。
+ 
+ ## 统一图形与交互素材
+ 
+-新增配图或交互先读 `docs/DESIGN_LIBRARY.md`，沿用 `lib/visual-library.js` 的稳定编号与用途。可在 `public/design-library/index.html` 离线预览13幅插画和6组交互。资料线只建议题材或已有素材编号，网站设计主控决定选图与位置；素材不足先补库再引用。不要随资料入库随机下载图片、添加研究JSON字段或向首页堆图。图库是设计工作台，不进入研究检索或成果更新。
++新增配图或交互先读 `docs/DESIGN_LIBRARY.md`，沿用 `lib/visual-library.js` 的稳定编号与用途。可在 `public/design-library/index.html` 离线预览13幅插画和6组交互。资料线只建议题材或已有素材编号，设计负责人确定风格和位置规则，由执行主控实施；素材不足先补库再引用。讨论阶段先用SVG简笔稿，用户确认后才生成正式图，当前首页、贷款页和列子背景讨论稿不自动上线。不要随资料入库随机下载图片、添加研究JSON字段或向首页堆图。图库是设计工作台，不进入研究检索或成果更新。
+ 
+ ## 大师古法手解
+ 
+-用户新增公开答疑板块，首页仅保留小入口，正文与表单位于 `/ask/`。先读 `docs/ASK_WORKFLOW.md`。“大师古法手解 留言与答疑”专用对话只接收、脱敏、请用户答复并交候选；网站设计主控发布。私有收件及联系方式不能进入GitHub，公开问答仅用根目录 `outputs/public-questions.json` 对应远端 `public-questions.json`。真实用户答复与访客公开知情必须核对；不编问答或自动署名回答。上线、表单识别和真实收件回读均通过前，不标记收件可用。该对话不获源码、部署或原研究权限。
++用户新增公开答疑板块，首页仅保留小入口，正文与表单位于 `/ask/`。先读 `docs/ASK_WORKFLOW.md`。“大师古法手解 留言与答疑”专用对话只接收、脱敏、请用户答复，候选直接交“网站建设”执行主控发布。私有收件及联系方式不能进入GitHub，公开问答仅用根目录 `outputs/public-questions.json` 对应远端 `public-questions.json`。真实用户答复与访客公开知情必须核对；不编问答或自动署名回答。上线、表单识别和真实收件回读均通过前，不标记收件可用。留言对话不获源码、部署或原研究权限。
+diff --git a/docs/ASK_WORKFLOW.md b/docs/ASK_WORKFLOW.md
+index 40c6c40..cbfc07d 100644
+--- a/docs/ASK_WORKFLOW.md
++++ b/docs/ASK_WORKFLOW.md
+@@ -6,7 +6,7 @@
+ 
+ - 首页只增加一个小入口，二级页面 `/ask/` 承担提问和公开问答。成功页 `/ask/received/` 只确认收件，不表示已经答复。
+ - 当前新入口的表单服务为 Cloudflare 私有D1，表单名 `master-questions`、绑定 `QUESTIONS_DB`。实际提供方、控制台与启用状态以私有 `ask-workflow.json` 为准。网站提交、真实数据库记录与回执已核对后才标记 `accepting_submissions=true`、`live_form_verified=true`。旧Netlify方案保留为历史状态，不能继续从旧后台找新站留言。部署接续见 `docs/CLOUDFLARE_HOSTING.md`。
+-- “大师古法手解 留言与答疑”只维护 `private/ask-inbox.json`、`private/ask-publication-candidate.json`。网站设计主控维护前端、公开数据、发布与验收。第三条接收对话不取得源码或发布权限。
++- “大师古法手解 留言与答疑”只维护 `private/ask-inbox.json`、`private/ask-publication-candidate.json`，候选直接交“网站建设”（01a0fd56-0f81-7040-bc75-b1fdc915d32f）执行主控审阅、加工、发布与验收，不经设计对话中转。“网站建设 网站设计”负责页面设计和位置规则，由执行主控实施。下文“主控”均指“网站建设”；留言接收对话不取得源码或发布权限。
+ - 接收检查每天北京时间09:00一次，依赖本机与Codex在线；不宣传即时或关机提醒。未部署时只保留等待上线状态，不产生虚构留言。
+ 
+ ## 接收
+diff --git a/docs/CLOUDFLARE_HOSTING.md b/docs/CLOUDFLARE_HOSTING.md
+index 18d6d61..e4c8474 100644
+--- a/docs/CLOUDFLARE_HOSTING.md
++++ b/docs/CLOUDFLARE_HOSTING.md
+@@ -4,7 +4,7 @@
+ 
+ ## 发布与数据更新
+ 
+-源码在现用工程原位维护，资料仍以任务根 `outputs/public-research-data.json` 为唯一共享输入，公开问答仍为 `outputs/public-questions.json`。先读发布协调、回读官网和GitHub当前数据，按稳定ID与哈希审阅合并。网站设计对话是唯一发布主控。
++源码在现用工程原位维护，资料仍以任务根 `outputs/public-research-data.json` 为唯一共享输入，公开问答仍为 `outputs/public-questions.json`。先读发布协调、回读官网和GitHub当前数据，按稳定ID与哈希审阅合并。按用户2026-10-14最新分工，“网站建设”是唯一执行与发布主控；“网站建设 网站设计”负责设计及放置指令，常规资料不再向设计对话中转。
+ 
+ Cloudflare 这一版为了控制免费请求CPU，研究资料使用经过验证的部署快照；公开问答是小型数据，继续从已授权GitHub仓库刷新。研究JSON、索引、站点地图构建时生成；正文和搜索复用既有实现。`/publication-status.json` 提供当前研究哈希、材料日期及是否发现更新，不能把GitHub提交成功当成新站更新成功。
+ 
+diff --git a/docs/CONTENT_PIPELINE.md b/docs/CONTENT_PIPELINE.md
+index ff1a85f..934e3cc 100644
+--- a/docs/CONTENT_PIPELINE.md
++++ b/docs/CONTENT_PIPELINE.md
+@@ -1,6 +1,6 @@
+ # 资料如何进入种树的人网站
+ 
+-规则版本：2026-10-13。适用于网站建设、设计维护、云端成果接收、资料整理及研究日更。
++规则版本：2026-10-14。适用于网站建设、设计维护、云端成果接收、资料整理及研究日更。下文“主控”指“网站建设”执行与发布对话；“网站建设 网站设计”只负责设计及放置规则。
+ 
+ 正式入口现为 `https://zhongshuderen.pages.dev/`，大陆三网261/267节点返回正常，超过75%验收线。以此站公开JSON为当前基线；旧Netlify仅保留历史入口。维护脚本通过 `lib/publication-origin.js` 读取 `site-config.json` 的正式地址，不在日更脚本里另写旧域名。
+ 
+@@ -47,8 +47,8 @@
+ 
+ ## 发布责任与并发
+ 
+-- 网站设计维护入口是唯一编排与发布主控：派发有界资料任务，接收、审阅、加工、去重、合并和发布；同时维护界面、检索代码与公共格式。
+-- 资料线A“网站建设”负责项目已批准交付和结构化台账（含既有Google Sheets账本）；资料线B现名“云端 Docs 研究成果整理”，主要负责 ChatGPT dot 的已有研究任务、进展与成果，文档及历史文字作为载体或补充来源。两线只维护各自增量交接文件，不写网站共享输入或正式仓库。来源任务和批次由主控安排，同一来源登记一名负责人，避免重复。
++- “网站建设 网站设计”负责设计、风格、草图、素材与资料位置规则；“网站建设”是唯一执行与发布主控，直接接收、审阅、加工、去重、合并、实施和发布，按已确认设计维护界面、检索代码与公共格式。日常资料处理不需设计对话逐条中转；仅新结构或设计决策提交设计负责人。
++- “网站建设”直接处理项目已批准交付和结构化台账（含既有Google Sheets账本）；“云端 Docs 研究成果整理”主要负责 ChatGPT dot 的已有研究任务、进展与成果，文档及历史文字作为载体或补充来源。云端线和留言接收对话只维护各自私有增量，直接由“网站建设”接收，不写网站共享输入或正式仓库。来源任务和批次由执行主控安排，同一来源登记一名负责人，同一批只接收一次，不再经设计对话反复传递。
+ - 使用同一私有 `publication-coordination.json` 记录持有者、范围、基线和状态。`SOURCE_UPGRADE` 或 `DATA_PUBLISHING` 时，其他入口只准备候选。发布窗口结束后重读官网，不将等待前的整库直接提交。
+ - 原项目研究不会因为网页入库而自动恢复。跨对话消息只用于用户授权的网站协调，不构成对新研究的授权。
+ 
+@@ -74,10 +74,10 @@
+ 
+ 来源线在各自对话交付文件路径、哈希、读取范围、材料日期、原结论状态及建议归属，主控主动读取接收；发送任务不要求资料线跨对话自行回发。主控先检查已有任务状态和已有交接，避免对正在运行的同一批次重复派工。收到多个补丁时逐批重读最新基线，冲突先审阅，不并行整库覆盖。只有主控可以把通过审阅的内容写入共享候选、生成成果更新记录、执行公开回读和更新已发布状态。
+ 
+-既有北京时间09:00、21:00维护由网站设计主控承接：优先处理已交付候选与访客小字，需要新材料时向两条既有资料线发送明确范围的只读整理任务；不新建对话、不恢复原研究、不扩大权限。任务未完成时保持待收，不编造更新。
++既有北京时间09:00、21:00维护由“网站建设”执行主控承接：优先处理已交付候选与访客小字，需要新材料时向既有云端资料线发送明确范围的只读整理任务，本地来源由执行主控直接整理；不新建对话、不恢复原研究、不扩大权限。任务未完成时保持待收，不编造更新。设计对话不再定时接收或转发整批资料。首页、贷款页及列子背景SVG当前仍是讨论稿，用户确认前不生成正式图片或把草图上线。
+ 
+ 用户进一步明确，“云端”主要指 ChatGPT dot 功能。资料线B先核对已有 dot 的身份、活动/研究任务及可访问成果，并记录任务标题、原始标识、材料日期、实际结果、失败或待验证状态、交付文件和实际阅读范围。任务显示完成不能替代成果核验。普通 ChatGPT Work 云端对话、Docs 或云盘文件只有确有来源关联时才标作 dot 交付；先前已收文档候选保留原来源。访问不到就登记缺口，不提取凭据或绕过权限，不启动、恢复或改动 dot 的研究。
+ 
+ ## 资料与设计素材的衔接
+ 
+-资料整理后由设计主控按 `docs/DESIGN_LIBRARY.md` 与 `lib/visual-library.js` 选用已有素材。来源线可以在私有交接中建议主题或稳定素材编号，不能往研究JSON添加未支持的图片字段、自行把图挂到首页或引入一套新风格。专题、正文和表格标题区按用途配置，正文保留可检索文字；示意插画不冒充实际数据。新题材确无合适素材时先由设计主控补充注册表和目录，再上线。素材库及交互样板不计为研究成果，不混入成果更新、研究索引或首页导航。
++设计负责人按 `docs/DESIGN_LIBRARY.md` 与 `lib/visual-library.js` 确定素材风格和位置规则，资料整理后由“网站建设”执行主控据此选用已有素材并落位。来源线可以在私有交接中建议主题或稳定素材编号，不能往研究JSON添加未支持的图片字段、自行把图挂到首页或引入一套新风格。专题、正文和表格标题区按用途配置，正文保留可检索文字；示意插画不冒充实际数据。新题材确无合适素材时先由设计负责人补充注册表和目录，再交执行主控实施。素材库及交互样板不计为研究成果，不混入成果更新、研究索引或首页导航。
+diff --git a/docs/DESIGN_LIBRARY.md b/docs/DESIGN_LIBRARY.md
+index 07c1f42..3a880b0 100644
+--- a/docs/DESIGN_LIBRARY.md
++++ b/docs/DESIGN_LIBRARY.md
+@@ -34,7 +34,7 @@
+ | 手记、资料更新 | journal | 更新目录、记录页 |
+ | 风险、反例 | risk | 条件与风险说明 |
+ 
+-选择顺序：主控已审主题 → 精确专题ID → 标题/关键词 → 研究主体类型 → 中性证据图。不要扫描正文里偶然出现的热门词就换图。`selectVisualForResearch()` 返回素材与选择理由；来源对话可以建议主题，最终选择由网站设计主控决定。
++选择顺序：执行主控已审主题 → 精确专题ID → 标题/关键词 → 研究主体类型 → 中性证据图。不要扫描正文里偶然出现的热门词就换图。`selectVisualForResearch()` 返回素材与选择理由；来源对话可以建议主题，设计负责人确定风格与位置规则，“网站建设”按规则选择和实施，常规配图不回传整批资料。新意境先用SVG简笔稿，用户确认后再生成正式图。
+ 
+ 现有研究JSON严格字段校验保持不变，不向条目私自增加 `cover`、`visual` 或图片路径。视觉关系由注册表和页面渲染器维护。新资料正常入库不触发源码打包，也不重排首页。
+ 
+diff --git a/scripts/curate-ledger-followup.mjs b/scripts/curate-ledger-followup.mjs
+index 78fe187..de2488a 100644
+--- a/scripts/curate-ledger-followup.mjs
++++ b/scripts/curate-ledger-followup.mjs
+@@ -311,5 +311,5 @@ if(process.argv.includes('--candidate-only')||!process.argv.includes('--apply-re
+  fs.writeFileSync('private/creator-ledger-publication.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({...report,added:added.length,updated:updated.length}));process.exit(0);
+ }
+ const coordination=read('private/publication-coordination.json');
+-if(coordination.status!=='DATA_PUBLISHING'||coordination.owner_thread!=='01a13311-22d8-7a61-92e3-1e7a1b122104'||coordination.baseline_sha256!==baseline_hash)throw Error('Acquire the reviewed data publication window after source rollout; shared files unchanged');
++if(coordination.status!=='DATA_PUBLISHING'||coordination.owner_thread!=='01a0fd56-0f81-7040-bc75-b1fdc915d32f'||coordination.baseline_sha256!==baseline_hash)throw Error('Acquire the reviewed data publication window after source rollout; shared files unchanged');
+ const r=await fetch(origin+'/research.json',{signal:AbortSignal.timeout(25000)});if(!r.ok||hash(validatePublicSnapshot(await r.json()))!==baseline_hash)throw Error('Live baseline changed');fs.writeFileSync(file,JSON.stringify(data)+'\n');fs.writeFileSync('content/knowledge.json',JSON.stringify(data.knowledge,null,2)+'\n');fs.writeFileSync('private/creator-ledger-publication.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({...report,added:added.length,updated:updated.length}));
+diff --git a/scripts/prepare-questions-release.mjs b/scripts/prepare-questions-release.mjs
+index cca41b2..b16f869 100644
+--- a/scripts/prepare-questions-release.mjs
++++ b/scripts/prepare-questions-release.mjs
+@@ -3,13 +3,13 @@ import path from 'node:path';
+ import crypto from 'node:crypto';
+ import {fileURLToPath} from 'node:url';
+ import {validatePublicQuestions,publicQuestionsDataUrl} from '../lib/public-questions.js';
+-const owner='01a13311-22d8-7a61-92e3-1e7a1b122104',answerThread='01a13452-521a-75e3-96f8-64dc1133a877';
++const owner='01a0fd56-0f81-7040-bc75-b1fdc915d32f',answerThread='01a13452-521a-75e3-96f8-64dc1133a877';
+ const sha=value=>crypto.createHash('sha256').update(typeof value==='string'||Buffer.isBuffer(value)?value:JSON.stringify(value)).digest('hex');
+ export function prepareQuestionsRelease(baseline,proposal,review,observedAt){
+  validatePublicQuestions(baseline);
+  if(proposal.schema_version!==1||!Array.isArray(proposal.items))throw Error('Invalid private question handoff');
+  if(!proposal.items.length)return {data:baseline,changed:[],state:'NO_CHANGE'};
+- if(review?.reviewer_thread!==owner||!Array.isArray(review.items)||!Number.isFinite(Date.parse(review.reviewed_at)))throw Error('Design controller review required');
++ if(review?.reviewer_thread!==owner||!Array.isArray(review.items)||!Number.isFinite(Date.parse(review.reviewed_at)))throw Error('Execution controller review required');
+  const next=structuredClone(baseline),changed=[];
+  for(const item of proposal.items){
+   const entry=item.public_entry,checked=review.items.find(r=>r.id===entry?.id);
+diff --git a/scripts/stock-results-intake.mjs b/scripts/stock-results-intake.mjs
+index 22389d7..798d74e 100644
+--- a/scripts/stock-results-intake.mjs
++++ b/scripts/stock-results-intake.mjs
+@@ -79,7 +79,7 @@ async function main(){
+  const file='../../outputs/public-research-data.json',baseline=validatePublicSnapshot(JSON.parse(fs.readFileSync(file,'utf8'))),source=readApprovedStockDelivery(),receipt=JSON.parse(fs.readFileSync('private/stock-results-intake-receipt.json','utf8'));
+   const {data,report}=buildStockResultsIntake(baseline,source,receipt);if(report.changed===false){console.log(JSON.stringify(report));return;}
+  if(!process.argv.includes('--apply')){console.log(JSON.stringify({...report,added:report.added.length,updated:report.updated.length,written:false}));return;}
+- const coord=JSON.parse(fs.readFileSync('private/publication-coordination.json','utf8'));if(coord.status!=='DATA_PUBLISHING'||coord.owner_thread!=='01a13311-22d8-7a61-92e3-1e7a1b122104'||coord.baseline_sha256!==hash(baseline))throw Error('Acquire reviewed data publication window first');
++ const coord=JSON.parse(fs.readFileSync('private/publication-coordination.json','utf8'));if(coord.status!=='DATA_PUBLISHING'||coord.owner_thread!=='01a0fd56-0f81-7040-bc75-b1fdc915d32f'||coord.baseline_sha256!==hash(baseline))throw Error('Acquire reviewed data publication window first');
+  const response=await fetch(origin+'/research.json',{signal:AbortSignal.timeout(25000)});if(!response.ok||hash(validatePublicSnapshot(await response.json()))!==hash(baseline))throw Error('Live baseline changed');
+  fs.writeFileSync(file,JSON.stringify(data)+'\n');fs.writeFileSync('content/knowledge.json',JSON.stringify(data.knowledge,null,2)+'\n');fs.writeFileSync('private/stock-results-publication.json',JSON.stringify(report,null,2)+'\n');console.log(JSON.stringify({...report,added:report.added.length,updated:report.updated.length,written:true}));
+ }
+diff --git a/tests/questions-release.test.js b/tests/questions-release.test.js
+index 2904e76..4d1380a 100644
+--- a/tests/questions-release.test.js
++++ b/tests/questions-release.test.js
+@@ -2,7 +2,7 @@ import test from 'node:test';
+ import assert from 'node:assert/strict';
+ import crypto from 'node:crypto';
+ import {prepareQuestionsRelease} from '../scripts/prepare-questions-release.mjs';
+-const at='2026-10-13T08:30:00.000Z',owner='01a13311-22d8-7a61-92e3-1e7a1b122104',answerThread='01a13452-521a-75e3-96f8-64dc1133a877';
++const at='2026-10-13T08:30:00.000Z',owner='01a0fd56-0f81-7040-bc75-b1fdc915d32f',answerThread='01a13452-521a-75e3-96f8-64dc1133a877';
+ const baseline={schema_version:1,updated_at:at,items:[]};
+ const waiting={id:'qa-test-fixture',title:'测试夹具问题',question:'这是一条仅用于自动检查的虚构问题。',display_name:'测试化名',submitted_at:at,published_at:at,status:'awaiting_answer',answer:null,answered_at:null};
+ const proposed=e=>({schema_version:1,items:[{public_entry:e,privacy_reviewed:true,publication_consent:true}]});

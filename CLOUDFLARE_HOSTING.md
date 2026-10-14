@@ -4,7 +4,7 @@
 
 ## 发布与数据更新
 
-源码在现用工程原位维护，资料仍以任务根 `outputs/public-research-data.json` 为唯一共享输入，公开问答仍为 `outputs/public-questions.json`。先读发布协调、回读官网和GitHub当前数据，按稳定ID与哈希审阅合并。网站设计对话是唯一发布主控。
+源码在现用工程原位维护，资料仍以任务根 `outputs/public-research-data.json` 为唯一共享输入，公开问答仍为 `outputs/public-questions.json`。先读发布协调、回读官网和GitHub当前数据，按稳定ID与哈希审阅合并。按用户2026-10-14最新分工，“网站建设”是唯一执行与发布主控；“网站建设 网站设计”负责设计及放置指令，常规资料不再向设计对话中转。
 
 Cloudflare 这一版为了控制免费请求CPU，研究资料使用经过验证的部署快照；公开问答是小型数据，继续从已授权GitHub仓库刷新。研究JSON、索引、站点地图构建时生成；正文和搜索复用既有实现。`/publication-status.json` 提供当前研究哈希、材料日期及是否发现更新，不能把GitHub提交成功当成新站更新成功。
 
