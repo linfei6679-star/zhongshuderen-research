@@ -1,0 +1,241 @@
+diff --git a/AGENTS.md b/AGENTS.md
+index 68a78cb..8d1cbf6 100644
+--- a/AGENTS.md
++++ b/AGENTS.md
+@@ -1,10 +1,10 @@
+ # 种树的人网站共用规则
+ 
+-正式入口为 https://zhongshuderen.pages.dev/ ，2026-10-13大陆三网261/267节点正常，按用户75%标准通过。旧Netlify地址保留为历史入口。唯一公开仓库为 `linfei6679-star/zhongshuderen-research` 的 `main`；不得把旧 Sites 或旧Netlify当作当前发布验收基线。
++正式入口为 https://zhongshuderen.pages.dev/ ，2026-10-13大陆三网261/267节点正常，按用户75%标准通过。旧Netlify地址仅保留直接跳转职责，禁止继续作为历史内容站运营；生效状态以旧入口收拢回执为准。唯一公开仓库为 `linfei6679-star/zhongshuderen-research` 的 `main`；不得把旧 Sites 或旧Netlify当作当前发布验收基线。
+ 
+ - 用户2026-10-18已授权全面升级：**首页为个人识别、搜索、七研究花朵、独立答疑、微信聊聊与真实累计访客小字；贷款与涨价合并入口**。禁止资料更新顺带添加文章摘要、推荐卡、项目进度或数量到首页。
+ - 第二级保持列子意境和简洁搜索入口；第三级为分区可筛选仓库，独立正文保持清晰纸面。旧文章 URL、正文、来源、日期、反例及未知状态保留；HTML、Markdown、目录及机器索引由统一公开数据生成。
+-- 必须先读 `docs/CONTENT_PIPELINE.md` 和 `docs/CLOUDFLARE_HOSTING.md`。资料仍只写统一公开JSON；Cloudflare研究采用已验证部署快照，有实质增量后由主控原位生成唯一小型上传包并发布，回读后进入搜索，不改首页布局。公开问答独立刷新；新站访客统计直接取真实D1聚合，不为数字另作源码部署。旧Netlify保留跳过构建规则。
++- 必须先读 `docs/CONTENT_PIPELINE.md` 和 `docs/CLOUDFLARE_HOSTING.md`。资料仍只写统一公开JSON；Cloudflare研究采用已验证部署快照，有实质增量后由主控原位生成唯一小型上传包并发布，回读后进入搜索，不改首页布局。公开问答独立刷新；新站访客统计直接取真实D1聚合，不为数字另作源码部署。旧Netlify保留数据变更跳过构建，只允许重定向配置，不再重发旧正文。
+ - 原研究工程只读，不执行源工程代码，不训练/回测/派工。不得把源码完成、程序运行、原项目复核、历史假设混成一种成果。
+ - 更新前重读线上数据与待更新条目；按稳定 ID 去重并做基线哈希校验。保留未涉及内容，旧观点的更正需保留原语境和更正证据。
+ - 发布前运行 `scripts/validate-content-intake.mjs`；读取 `private/publication-coordination.json`，另一入口持有发布窗口时仅准备增量候选。
+@@ -32,3 +32,10 @@
+ ## 大师古法手解
+ 
+ 用户新增公开答疑板块，首页仅保留小入口，二级意境入口位于 `/ask/`，表单位于 `/ask/new/`、可检索问答仓库位于 `/ask/search/`。先读 `docs/ASK_WORKFLOW.md`。“大师古法手解 留言与答疑”专用对话只接收、脱敏、请用户答复，候选直接交“网站建设”执行主控发布。私有收件及联系方式不能进入GitHub，公开问答仅用根目录 `outputs/public-questions.json` 对应远端 `public-questions.json`。真实用户答复与访客公开知情必须核对；不编问答或自动署名回答。上线、表单识别和真实收件回读均通过前，不标记收件可用。留言对话不获源码、部署或原研究权限。
++
++
++## 2026-10-18唯一正式入口与旧域名退场
++
++2026-10-18用户要求旧入口直接并入唯一正式站 https://zhongshuderen.pages.dev/：以后设计、功能和内容只在既有Cloudflare zhongshuderen生产项目原位更新，替换线上旧版，不新建并列站点或让用户更换网址。平台自动部署记录可保留用于恢复，不作为另一个网站运营；旧研究正文、证据、固定URL及原项目保留。旧Netlify和最早Sites域名仅承担直接301/308导流，尽可能保留路径与查询参数，不显示旧页、提示条或倒计时。未实际验证跳转时不得标完成；当前阻碍与HTTP结果见private/legacy-entry-convergence-latest.json。
++
++旧域名整体退出独立搜索入口：先让旧URL永久跳转至对应新正文，再由搜索平台重新抓取和替换规范网址；不继续提交或宣传旧站导航/地图，不以robots.txt全面Disallow阻止爬虫看见迁移信号，也不把旧站noindex套到新正式站。只使用已有站长权限，不新增账号或权限；未提交/仍等待自然刷新须分开登记，不承诺搜索缓存立即消失。
+diff --git a/docs/CLOUDFLARE_HOSTING.md b/docs/CLOUDFLARE_HOSTING.md
+index 07b3e10..0b2a391 100644
+--- a/docs/CLOUDFLARE_HOSTING.md
++++ b/docs/CLOUDFLARE_HOSTING.md
+@@ -1,6 +1,6 @@
+ # Cloudflare 免费托管接续
+ 
+-正式入口为 `https://zhongshuderen.pages.dev`，Cloudflare项目为 `zhongshuderen`。2026-10-13正式网址大陆三网HTTP GET测试261/267节点正常（97.75%），达到用户75%标准；原Netlify网站保留为历史入口。以 `site-config.json` 和私有验收回执为准，测试页结果不能替代正式网址结果。不升级付费、不创建令牌或提取浏览器凭据。
++正式入口为 `https://zhongshuderen.pages.dev`，Cloudflare项目为 `zhongshuderen`。2026-10-13正式网址大陆三网HTTP GET测试261/267节点正常（97.75%），达到用户75%标准；旧Netlify入口改为只直接跳转，尚未验证时不得声称旧页已退出。以 `site-config.json` 和私有验收回执为准，测试页结果不能替代正式网址结果。不升级付费、不创建令牌或提取浏览器凭据。
+ 
+ ## 发布与数据更新
+ 
+@@ -17,7 +17,7 @@ node scripts/build-cloudflare.mjs --origin https://zhongshuderen.pages.dev --wri
+ 
+ 第一条只报告清单，第二条只原位生成任务根 `outputs/cloudflare-site.zip` 与小型私有构建清单。通过现有Cloudflare登录，在此项目创建部署并上传该ZIP。包中不得包含私有清单、收件表或研究来源原文；不生成整库正文目录或复制完整工程、依赖。上传成功后回读新站JSON哈希、变更正文、Markdown、查询、机器索引及站点地图，一致才推进发布成功游标。无实质变化不打包、不重复部署。
+ 
+-此规则仅替代新站的研究数据部署步骤；旧Netlify数据提交仍沿用跳过构建，不能再因迁移尝试付费升级。问答单独数据发布仍无需整站部署。发布包验证后按原位体积规则处理必要上传包；已被拒绝的清理动作不重试。
++此规则仅替代新站的研究数据部署步骤；旧Netlify只承担直接重定向，数据提交继续跳过构建，禁止重新发布旧研究页面，不能再因迁移尝试付费升级。问答单独数据发布仍无需整站部署。发布包验证后按原位体积规则处理必要上传包；已被拒绝的清理动作不重试。
+ 
+ ## 私有收件
+ 
+@@ -38,3 +38,10 @@ node scripts/build-cloudflare.mjs --origin https://zhongshuderen.pages.dev --wri
+ 本次用户明确授权SOURCE_UPGRADE，允许主控同步必要源码、统一素材及部署包；不改变后续日更只更新资料、不改设计的边界。首页七研究花朵加独立答疑，二级简洁意境、三级分区仓库，旧正文与检索URL保留。
+ 
+ 首页`/visitor-totals.json`使用私有持久化去重表跨日统计，与`/visitor-stats.json`原七字段滚动24小时统计独立。累计起点以原始保留记录实际最早时间及私有验收为准，不拼接旧Netlify或累加日UV；含机器人与验收访问，不称实名客户。持久化去重表不随原始请求七日清理删除，只返回聚合字段。切换源码后须补核过渡期原始请求并读回累计数；不能把接口不存在或失败补成0。
++
++
++## 2026-10-18唯一正式入口与旧域名退场
++
++2026-10-18用户要求旧入口直接并入唯一正式站 https://zhongshuderen.pages.dev/：以后设计、功能和内容只在既有Cloudflare zhongshuderen生产项目原位更新，替换线上旧版，不新建并列站点或让用户更换网址。平台自动部署记录可保留用于恢复，不作为另一个网站运营；旧研究正文、证据、固定URL及原项目保留。旧Netlify和最早Sites域名仅承担直接301/308导流，尽可能保留路径与查询参数，不显示旧页、提示条或倒计时。未实际验证跳转时不得标完成；当前阻碍与HTTP结果见private/legacy-entry-convergence-latest.json。
++
++旧域名整体退出独立搜索入口：先让旧URL永久跳转至对应新正文，再由搜索平台重新抓取和替换规范网址；不继续提交或宣传旧站导航/地图，不以robots.txt全面Disallow阻止爬虫看见迁移信号，也不把旧站noindex套到新正式站。只使用已有站长权限，不新增账号或权限；未提交/仍等待自然刷新须分开登记，不承诺搜索缓存立即消失。
+diff --git a/docs/CONTENT_PIPELINE.md b/docs/CONTENT_PIPELINE.md
+index 35ba669..0c59b98 100644
+--- a/docs/CONTENT_PIPELINE.md
++++ b/docs/CONTENT_PIPELINE.md
+@@ -2,7 +2,7 @@
+ 
+ 规则版本：2026-10-18（保持原资料接收与发布分工，仅更新已授权页面设计）。适用于网站建设、设计维护、云端成果接收、资料整理及研究日更。下文“主控”指“网站建设”执行与发布对话；“网站建设 网站设计”只负责设计及放置规则。
+ 
+-正式入口现为 `https://zhongshuderen.pages.dev/`，大陆三网261/267节点返回正常，超过75%验收线。以此站公开JSON为当前基线；旧Netlify仅保留历史入口。维护脚本通过 `lib/publication-origin.js` 读取 `site-config.json` 的正式地址，不在日更脚本里另写旧域名。
++正式入口现为 `https://zhongshuderen.pages.dev/`，大陆三网261/267节点返回正常，超过75%验收线。以此站公开JSON为当前基线；旧Netlify改为仅直接跳转，不再运营旧正文；实际阻碍及生效结果以收拢回执为准。维护脚本通过 `lib/publication-origin.js` 读取 `site-config.json` 的正式地址，不在日更脚本里另写旧域名。
+ 
+ ## 页面分工
+ 
+@@ -90,3 +90,10 @@
+ ## 2026-10-18三级主题书库
+ 
+ 用户明确三级保留搜索和大量资料，可以更丰富，不受二级少字/左下留白限制。分区、问答、全库、类别、股票工作台与旧目录采用同系列静态主题画卷，题字与出处以HTML重排；已有WebP通过明确SVG窗口裁切，不显示半截烧字或遮盖数据正文。下方允许真实结果数量、侧筛选、分类分组、摘要、日期/状态及分页。原数据、归属、网址和查询/文字版/返回状态不因视觉升级改变。手机将筛选与结果实际重排，股票表转成逐股卡片，保留同股归并、原关注分层及证据弹窗。资料正文继续清晰纸面；资料日更不自行改布局。
++
++
++## 2026-10-18唯一正式入口与旧域名退场
++
++2026-10-18用户要求旧入口直接并入唯一正式站 https://zhongshuderen.pages.dev/：以后设计、功能和内容只在既有Cloudflare zhongshuderen生产项目原位更新，替换线上旧版，不新建并列站点或让用户更换网址。平台自动部署记录可保留用于恢复，不作为另一个网站运营；旧研究正文、证据、固定URL及原项目保留。旧Netlify和最早Sites域名仅承担直接301/308导流，尽可能保留路径与查询参数，不显示旧页、提示条或倒计时。未实际验证跳转时不得标完成；当前阻碍与HTTP结果见private/legacy-entry-convergence-latest.json。
++
++旧域名整体退出独立搜索入口：先让旧URL永久跳转至对应新正文，再由搜索平台重新抓取和替换规范网址；不继续提交或宣传旧站导航/地图，不以robots.txt全面Disallow阻止爬虫看见迁移信号，也不把旧站noindex套到新正式站。只使用已有站长权限，不新增账号或权限；未提交/仍等待自然刷新须分开登记，不承诺搜索缓存立即消失。
+diff --git a/legacy-entry-redirects/_redirects b/legacy-entry-redirects/_redirects
+new file mode 100644
+index 0000000..2a7b188
+--- /dev/null
++++ b/legacy-entry-redirects/_redirects
+@@ -0,0 +1 @@
++/* https://zhongshuderen.pages.dev/:splat 301!
+diff --git a/legacy-entry-redirects/index.html b/legacy-entry-redirects/index.html
+new file mode 100644
+index 0000000..a961868
+--- /dev/null
++++ b/legacy-entry-redirects/index.html
+@@ -0,0 +1 @@
++<!doctype html><html lang="zh-CN"><meta charset="utf-8"><title></title><body></body></html>
+diff --git a/legacy-entry-redirects/sites-worker.js b/legacy-entry-redirects/sites-worker.js
+new file mode 100644
+index 0000000..daf1a8b
+--- /dev/null
++++ b/legacy-entry-redirects/sites-worker.js
+@@ -0,0 +1,9 @@
++// Prepared legacy Sites handler. Not deployed without authorized source push.
++// No page, banner, countdown or new site.
++export function redirectLegacyRequest(request){
++ const incoming=new URL(request.url),target=new URL('https://zhongshuderen.pages.dev');
++ target.pathname=incoming.pathname;
++ target.search=incoming.search;
++ return new Response(null,{status:308,headers:{Location:target.href,'Cache-Control':'public, max-age=300'}});
++}
++export default {fetch:redirectLegacyRequest};
+diff --git a/netlify.toml b/netlify.toml
+index 03af7a4..889f64d 100644
+--- a/netlify.toml
++++ b/netlify.toml
+@@ -1,47 +1,11 @@
++# Legacy Netlify entry only. Cloudflare is the sole production site.
+ [build]
+-command = "node scripts/generate-static.cjs site && node scripts/prepare-edge-seed.cjs"
+-publish = "site"
+-ignore = "git diff --quiet $CACHED_COMMIT_REF $COMMIT_REF -- . ':(exclude)data/**'"
+-
+-[[edge_functions]]
+-function = "research"
+-path = "/research.json"
+-
+-[[edge_functions]]
+-function = "research"
+-path = "/api/research"
+-
+-[[edge_functions]]
+-function = "research"
+-path = "/research/*"
+-
+-[[edge_functions]]
+-function = "research"
+-path = "/topics/*"
+-
+-[[edge_functions]]
+-function = "research"
+-path = "/library/*"
+-
+-[[edge_functions]]
+-function = "research"
+-path = "/stocks/*"
+-
+-[[edge_functions]]
+-function = "research"
+-path = "/sitemap.xml"
+-[[edge_functions]]
+-function = "research"
+-path = "/knowledge-index.json"
+-
+-[[edge_functions]]
+-function = "research"
+-path = "/llms.txt"
+-
+-[[edge_functions]]
+-function = "research"
+-path = "/explore/*"
+-
+-[[edge_functions]]
+-function = "research"
+-path = "/visitor-stats.json"
++command = "python3 -m zipfile -e legacy-entry-redirect.zip legacy-netlify"
++publish = "legacy-netlify"
++ignore = "node ignore-data-only.cjs"
++
++[[redirects]]
++from = "/*"
++to = "https://zhongshuderen.pages.dev/:splat"
++status = 301
++force = true
+diff --git a/site-config.json b/site-config.json
+index 0311ff4..1aa2d55 100644
+--- a/site-config.json
++++ b/site-config.json
+@@ -65,5 +65,31 @@
+     "selected_provider": "Cloudflare Pages Free"
+   },
+   "previous_public_origin": "https://zhongshuderen-research.netlify.app",
+-  "hosting_provider": "Cloudflare Pages Free"
++  "hosting_provider": "Cloudflare Pages Free",
++  "legacy_entry_policy": {
++    "requested_on": "2026-10-18",
++    "formal_origin": "https://zhongshuderen.pages.dev",
++    "mode": "direct_permanent_redirect_only",
++    "parallel_public_sites": false,
++    "preserve_paths": true,
++    "preserve_query_parameters": true,
++    "show_old_pages_or_notice": false,
++    "preserve_research_history_and_urls": true,
++    "netlify_state": "PENDING_PRODUCTION_CREDIT_AVAILABILITY",
++    "sites_state": "PENDING_EXISTING_SOURCE_AUTHENTICATION",
++    "receipt": "private/legacy-entry-convergence-latest.json"
++  },
++  "production_update_policy": {
++    "project": "zhongshuderen",
++    "provider": "Cloudflare Pages",
++    "same_origin_in_place": true,
++    "platform_version_history_for_recovery_only": true
++  },
++  "search_retirement_policy": {
++    "mode": "permanent_redirect_and_recrawl",
++    "do_not_block_old_crawlers_before_redirects": true,
++    "keep_formal_site_indexable": true,
++    "console_submission_status": "NOT_SUBMITTED_NO_EXISTING_VERIFIED_PROPERTIES",
++    "immediate_search_removal_guaranteed": false
++  }
+ }
+diff --git a/tests/legacy-redirects.test.js b/tests/legacy-redirects.test.js
+new file mode 100644
+index 0000000..9c26881
+--- /dev/null
++++ b/tests/legacy-redirects.test.js
+@@ -0,0 +1,23 @@
++import test from 'node:test';
++import assert from 'node:assert/strict';
++import fs from 'node:fs';
++import {redirectLegacyRequest} from '../legacy-entry-redirects/sites-worker.js';
++const formal='https://zhongshuderen.pages.dev';
++test('legacy request redirects immediately with path and query preserved and no HTML body',async()=>{
++ for(const path of ['/','/library/method-evidence/','/library/?q=%E9%87%8F%E5%8C%96&type=methods&page=2']){
++  const r=redirectLegacyRequest(new Request('https://zhongshu-research.fast-pearl-5182.chatgpt.site'+path));
++  assert.equal(r.status,308);assert.equal(r.headers.get('location'),formal+path);assert.equal(await r.text(),'');
++ }
++});
++test('a double-slash path cannot select a different destination origin',()=>{
++ const r=redirectLegacyRequest(new Request('https://zhongshu-research.fast-pearl-5182.chatgpt.site//untrusted.example/path?q=1'));
++ assert.equal(new URL(r.headers.get('location')).origin,formal);assert.equal(new URL(r.headers.get('location')).pathname,'//untrusted.example/path');
++});
++test('legacy Netlify only publishes a tiny redirect package and removes old edge routes',()=>{
++ const config=fs.readFileSync(new URL('../netlify.toml',import.meta.url),'utf8');
++ assert(config.includes('legacy-entry-redirect.zip legacy-netlify'));assert(config.includes('publish = "legacy-netlify"'));
++ assert(config.includes('from = "/*"'));assert(config.includes('to = "https://zhongshuderen.pages.dev/:splat"'));assert(config.includes('status = 301'));assert(config.includes('force = true'));
++ assert(!config.includes('[[edge_functions]]'));assert(!config.includes('website-source.zip'));
++ assert.equal(fs.readFileSync(new URL('../legacy-entry-redirects/_redirects',import.meta.url),'utf8').trim(),'/* https://zhongshuderen.pages.dev/:splat 301!');
++ const html=fs.readFileSync(new URL('../legacy-entry-redirects/index.html',import.meta.url),'utf8');assert(!html.includes('<script'));assert(!html.includes('refresh'));assert(html.includes('<body></body>'));
++});

@@ -1,60 +1,11 @@
+# Legacy Netlify entry only. Cloudflare is the sole production site.
 [build]
-command = "python3 -m zipfile -e website-source.zip . && node scripts/generate-static.cjs site && node scripts/prepare-edge-seed.cjs"
-publish = "site"
+command = "python3 -m zipfile -e legacy-entry-redirect.zip legacy-netlify"
+publish = "legacy-netlify"
 ignore = "node ignore-data-only.cjs"
 
-[[edge_functions]]
-function = "research"
-path = "/research.json"
-
-[[edge_functions]]
-function = "research"
-path = "/api/research"
-
-[[edge_functions]]
-function = "research"
-path = "/research/*"
-
-[[edge_functions]]
-function = "research"
-path = "/topics/*"
-
-[[edge_functions]]
-function = "research"
-path = "/library/*"
-
-[[edge_functions]]
-function = "research"
-path = "/stocks/*"
-
-[[edge_functions]]
-function = "research"
-path = "/sitemap.xml"
-
-[[edge_functions]]
-function = "research"
-path = "/knowledge-index.json"
-
-[[edge_functions]]
-function = "research"
-path = "/llms.txt"
-
-[[edge_functions]]
-function = "research"
-path = "/explore/*"
-
-[[edge_functions]]
-function = "research"
-path = "/visitor-stats.json"
-
-[[edge_functions]]
-function = "questions"
-path = "/ask/*"
-
-[[edge_functions]]
-function = "questions"
-path = "/ask"
-
-[[edge_functions]]
-function = "questions"
-path = "/questions.json"
+[[redirects]]
+from = "/*"
+to = "https://zhongshuderen.pages.dev/:splat"
+status = 301
+force = true

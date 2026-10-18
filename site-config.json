@@ -1,0 +1,95 @@
+{
+  "public_origin": "https://zhongshuderen.pages.dev",
+  "legacy_origin": "https://zhongshu-research.fast-pearl-5182.chatgpt.site",
+  "brand": "种树的人",
+  "domain_candidate": null,
+  "hosting_preference": "零新增现金、大陆普通网络访问优先；不绑定单一托管商，新平台先核现有账户与域名并实测通过再切换",
+  "netlify_project_id": "e230f708-e892-4503-8773-8a28928a5fda",
+  "additional_budget_CNY": 0,
+  "cost_policy": "零新增现金；使用免费硬限制，不升级、不启用按量付费、不创建凭据。",
+  "release_status": "Cloudflare正式域名大陆验收通过；研究、问答和聚合访客统计已核对",
+  "mainland_acceptance": {
+    "minimum_node_success_ratio": 0.75,
+    "passed": true,
+    "additional_node_testing_required": false,
+    "observed_at": "2026-10-13T11:02:52.832Z",
+    "tested_url": "https://zhongshuderen.pages.dev/",
+    "successful_nodes": 261,
+    "total_nodes": 267,
+    "ratio": 0.9775280898876404,
+    "receipt": "outputs/Cloudflare正式域名大陆验收_20261013.json"
+  },
+  "indexnow": {
+    "key": "fa410fe2c5da4c589e1648370075db28",
+    "purpose": "仅供IndexNow校验本站公开网址提交；不授予网站管理、账户或私人数据访问权限"
+  },
+  "exposure_strategy": {
+    "primary_goal": "搜索曝光量",
+    "audiences": [
+      "真人搜索",
+      "AI检索"
+    ],
+    "style_is_fixed": false,
+    "visual_readability_is_primary_acceptance": true,
+    "materials_scope": [
+      "ChatGPT历史与项目",
+      "Codex对话与工程成果",
+      "Google Drive研究材料",
+      "本地研究文档"
+    ],
+    "workflow": "对齐搜索需求与已有素材，完善可发现及可引用入口，同时改进识别、阅读、分享与渠道传播；用实际曝光、引用和访问验证",
+    "quant_keyword_is_example_only": true,
+    "updated_on": "2026-10-06",
+    "human_recognition_and_shareability": true
+  },
+  "public_data_repository": {
+    "owner": "linfei6679-star",
+    "name": "zhongshuderen-research",
+    "branch": "main",
+    "raw_url": "https://raw.githubusercontent.com/linfei6679-star/zhongshuderen-research/main/public-research-data.json",
+    "status": "cloudflare_snapshot_publication_active",
+    "contains_only_already_public_research": true,
+    "private_sources_excluded": true,
+    "data_file": "public-research-data.json",
+    "writer_authorization": "用户已授权仅此仓库读写，尚待代码工具实际接入核验"
+  },
+  "hosting_review": {
+    "state": "CLOUDFLARE_FORMALLY_ACCEPTED",
+    "existing_site_retained": true,
+    "budget_CNY": 0,
+    "preferred_if_owned_domain": "腾讯EdgeOne Makers免费档",
+    "candidate_without_owned_domain": "Cloudflare Pages免费档，需大陆节点验证",
+    "netlify_subscription_approval": false,
+    "candidate_functional_checks_passed": true,
+    "candidate_final_mainland_verified": true,
+    "selected_provider": "Cloudflare Pages Free"
+  },
+  "previous_public_origin": "https://zhongshuderen-research.netlify.app",
+  "hosting_provider": "Cloudflare Pages Free",
+  "legacy_entry_policy": {
+    "requested_on": "2026-10-18",
+    "formal_origin": "https://zhongshuderen.pages.dev",
+    "mode": "direct_permanent_redirect_only",
+    "parallel_public_sites": false,
+    "preserve_paths": true,
+    "preserve_query_parameters": true,
+    "show_old_pages_or_notice": false,
+    "preserve_research_history_and_urls": true,
+    "netlify_state": "PENDING_PRODUCTION_CREDIT_AVAILABILITY",
+    "sites_state": "PENDING_EXISTING_SOURCE_AUTHENTICATION",
+    "receipt": "private/legacy-entry-convergence-latest.json"
+  },
+  "production_update_policy": {
+    "project": "zhongshuderen",
+    "provider": "Cloudflare Pages",
+    "same_origin_in_place": true,
+    "platform_version_history_for_recovery_only": true
+  },
+  "search_retirement_policy": {
+    "mode": "permanent_redirect_and_recrawl",
+    "do_not_block_old_crawlers_before_redirects": true,
+    "keep_formal_site_indexable": true,
+    "console_submission_status": "NOT_SUBMITTED_NO_EXISTING_VERIFIED_PROPERTIES",
+    "immediate_search_removal_guaranteed": false
+  }
+}
