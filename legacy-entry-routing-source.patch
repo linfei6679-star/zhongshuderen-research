@@ -1,5 +1,5 @@
 diff --git a/AGENTS.md b/AGENTS.md
-index 68a78cb..8d1cbf6 100644
+index 68a78cb..ee1d385 100644
 --- a/AGENTS.md
 +++ b/AGENTS.md
 @@ -1,10 +1,10 @@
@@ -15,7 +15,7 @@ index 68a78cb..8d1cbf6 100644
  - 原研究工程只读，不执行源工程代码，不训练/回测/派工。不得把源码完成、程序运行、原项目复核、历史假设混成一种成果。
  - 更新前重读线上数据与待更新条目；按稳定 ID 去重并做基线哈希校验。保留未涉及内容，旧观点的更正需保留原语境和更正证据。
  - 发布前运行 `scripts/validate-content-intake.mjs`；读取 `private/publication-coordination.json`，另一入口持有发布窗口时仅准备增量候选。
-@@ -32,3 +32,10 @@
+@@ -32,3 +32,15 @@
  ## 大师古法手解
  
  用户新增公开答疑板块，首页仅保留小入口，二级意境入口位于 `/ask/`，表单位于 `/ask/new/`、可检索问答仓库位于 `/ask/search/`。先读 `docs/ASK_WORKFLOW.md`。“大师古法手解 留言与答疑”专用对话只接收、脱敏、请用户答复，候选直接交“网站建设”执行主控发布。私有收件及联系方式不能进入GitHub，公开问答仅用根目录 `outputs/public-questions.json` 对应远端 `public-questions.json`。真实用户答复与访客公开知情必须核对；不编问答或自动署名回答。上线、表单识别和真实收件回读均通过前，不标记收件可用。留言对话不获源码、部署或原研究权限。
@@ -26,8 +26,13 @@ index 68a78cb..8d1cbf6 100644
 +2026-10-18用户要求旧入口直接并入唯一正式站 https://zhongshuderen.pages.dev/：以后设计、功能和内容只在既有Cloudflare zhongshuderen生产项目原位更新，替换线上旧版，不新建并列站点或让用户更换网址。平台自动部署记录可保留用于恢复，不作为另一个网站运营；旧研究正文、证据、固定URL及原项目保留。旧Netlify和最早Sites域名仅承担直接301/308导流，尽可能保留路径与查询参数，不显示旧页、提示条或倒计时。未实际验证跳转时不得标完成；当前阻碍与HTTP结果见private/legacy-entry-convergence-latest.json。
 +
 +旧域名整体退出独立搜索入口：先让旧URL永久跳转至对应新正文，再由搜索平台重新抓取和替换规范网址；不继续提交或宣传旧站导航/地图，不以robots.txt全面Disallow阻止爬虫看见迁移信号，也不把旧站noindex套到新正式站。只使用已有站长权限，不新增账号或权限；未提交/仍等待自然刷新须分开登记，不承诺搜索缓存立即消失。
++
++
++### 旧入口当前实际状态：可逆退出公开展示
++
++2026-10-18后续用户明确允许删除旧地址。因旧平台正常发布入口受限，现采用可恢复措施：旧Netlify项目已停用，最早Sites站点已收紧为仅所有者（custom模式，仅owner）可见；无登录访问不再取得旧内容。此状态不等于301/308导流完成，搜索缓存仍待自然更新，未提交移除。保持唯一正式站正常公开，保留源码、历史研究和证据。未来只有在可受控发布已审永久重定向且不会重新公开旧正文时，才可重开旧入口；不能为普通维护自动Enable旧项目或改回public。
 diff --git a/docs/CLOUDFLARE_HOSTING.md b/docs/CLOUDFLARE_HOSTING.md
-index 07b3e10..0b2a391 100644
+index 07b3e10..d8fe9d4 100644
 --- a/docs/CLOUDFLARE_HOSTING.md
 +++ b/docs/CLOUDFLARE_HOSTING.md
 @@ -1,6 +1,6 @@
@@ -47,7 +52,7 @@ index 07b3e10..0b2a391 100644
  
  ## 私有收件
  
-@@ -38,3 +38,10 @@ node scripts/build-cloudflare.mjs --origin https://zhongshuderen.pages.dev --wri
+@@ -38,3 +38,15 @@ node scripts/build-cloudflare.mjs --origin https://zhongshuderen.pages.dev --wri
  本次用户明确授权SOURCE_UPGRADE，允许主控同步必要源码、统一素材及部署包；不改变后续日更只更新资料、不改设计的边界。首页七研究花朵加独立答疑，二级简洁意境、三级分区仓库，旧正文与检索URL保留。
  
  首页`/visitor-totals.json`使用私有持久化去重表跨日统计，与`/visitor-stats.json`原七字段滚动24小时统计独立。累计起点以原始保留记录实际最早时间及私有验收为准，不拼接旧Netlify或累加日UV；含机器人与验收访问，不称实名客户。持久化去重表不随原始请求七日清理删除，只返回聚合字段。切换源码后须补核过渡期原始请求并读回累计数；不能把接口不存在或失败补成0。
@@ -58,8 +63,13 @@ index 07b3e10..0b2a391 100644
 +2026-10-18用户要求旧入口直接并入唯一正式站 https://zhongshuderen.pages.dev/：以后设计、功能和内容只在既有Cloudflare zhongshuderen生产项目原位更新，替换线上旧版，不新建并列站点或让用户更换网址。平台自动部署记录可保留用于恢复，不作为另一个网站运营；旧研究正文、证据、固定URL及原项目保留。旧Netlify和最早Sites域名仅承担直接301/308导流，尽可能保留路径与查询参数，不显示旧页、提示条或倒计时。未实际验证跳转时不得标完成；当前阻碍与HTTP结果见private/legacy-entry-convergence-latest.json。
 +
 +旧域名整体退出独立搜索入口：先让旧URL永久跳转至对应新正文，再由搜索平台重新抓取和替换规范网址；不继续提交或宣传旧站导航/地图，不以robots.txt全面Disallow阻止爬虫看见迁移信号，也不把旧站noindex套到新正式站。只使用已有站长权限，不新增账号或权限；未提交/仍等待自然刷新须分开登记，不承诺搜索缓存立即消失。
++
++
++### 旧入口当前实际状态：可逆退出公开展示
++
++2026-10-18后续用户明确允许删除旧地址。因旧平台正常发布入口受限，现采用可恢复措施：旧Netlify项目已停用，最早Sites站点已收紧为仅所有者（custom模式，仅owner）可见；无登录访问不再取得旧内容。此状态不等于301/308导流完成，搜索缓存仍待自然更新，未提交移除。保持唯一正式站正常公开，保留源码、历史研究和证据。未来只有在可受控发布已审永久重定向且不会重新公开旧正文时，才可重开旧入口；不能为普通维护自动Enable旧项目或改回public。
 diff --git a/docs/CONTENT_PIPELINE.md b/docs/CONTENT_PIPELINE.md
-index 35ba669..0c59b98 100644
+index 35ba669..0f528bd 100644
 --- a/docs/CONTENT_PIPELINE.md
 +++ b/docs/CONTENT_PIPELINE.md
 @@ -2,7 +2,7 @@
@@ -71,7 +81,7 @@ index 35ba669..0c59b98 100644
  
  ## 页面分工
  
-@@ -90,3 +90,10 @@
+@@ -90,3 +90,15 @@
  ## 2026-10-18三级主题书库
  
  用户明确三级保留搜索和大量资料，可以更丰富，不受二级少字/左下留白限制。分区、问答、全库、类别、股票工作台与旧目录采用同系列静态主题画卷，题字与出处以HTML重排；已有WebP通过明确SVG窗口裁切，不显示半截烧字或遮盖数据正文。下方允许真实结果数量、侧筛选、分类分组、摘要、日期/状态及分页。原数据、归属、网址和查询/文字版/返回状态不因视觉升级改变。手机将筛选与结果实际重排，股票表转成逐股卡片，保留同股归并、原关注分层及证据弹窗。资料正文继续清晰纸面；资料日更不自行改布局。
@@ -82,6 +92,11 @@ index 35ba669..0c59b98 100644
 +2026-10-18用户要求旧入口直接并入唯一正式站 https://zhongshuderen.pages.dev/：以后设计、功能和内容只在既有Cloudflare zhongshuderen生产项目原位更新，替换线上旧版，不新建并列站点或让用户更换网址。平台自动部署记录可保留用于恢复，不作为另一个网站运营；旧研究正文、证据、固定URL及原项目保留。旧Netlify和最早Sites域名仅承担直接301/308导流，尽可能保留路径与查询参数，不显示旧页、提示条或倒计时。未实际验证跳转时不得标完成；当前阻碍与HTTP结果见private/legacy-entry-convergence-latest.json。
 +
 +旧域名整体退出独立搜索入口：先让旧URL永久跳转至对应新正文，再由搜索平台重新抓取和替换规范网址；不继续提交或宣传旧站导航/地图，不以robots.txt全面Disallow阻止爬虫看见迁移信号，也不把旧站noindex套到新正式站。只使用已有站长权限，不新增账号或权限；未提交/仍等待自然刷新须分开登记，不承诺搜索缓存立即消失。
++
++
++### 旧入口当前实际状态：可逆退出公开展示
++
++2026-10-18后续用户明确允许删除旧地址。因旧平台正常发布入口受限，现采用可恢复措施：旧Netlify项目已停用，最早Sites站点已收紧为仅所有者（custom模式，仅owner）可见；无登录访问不再取得旧内容。此状态不等于301/308导流完成，搜索缓存仍待自然更新，未提交移除。保持唯一正式站正常公开，保留源码、历史研究和证据。未来只有在可受控发布已审永久重定向且不会重新公开旧正文时，才可重开旧入口；不能为普通维护自动Enable旧项目或改回public。
 diff --git a/legacy-entry-redirects/_redirects b/legacy-entry-redirects/_redirects
 new file mode 100644
 index 0000000..2a7b188
@@ -174,10 +189,10 @@ index 03af7a4..889f64d 100644
 +status = 301
 +force = true
 diff --git a/site-config.json b/site-config.json
-index 0311ff4..1aa2d55 100644
+index 0311ff4..17c9152 100644
 --- a/site-config.json
 +++ b/site-config.json
-@@ -65,5 +65,31 @@
+@@ -65,5 +65,41 @@
      "selected_provider": "Cloudflare Pages Free"
    },
    "previous_public_origin": "https://zhongshuderen-research.netlify.app",
@@ -186,15 +201,20 @@ index 0311ff4..1aa2d55 100644
 +  "legacy_entry_policy": {
 +    "requested_on": "2026-10-18",
 +    "formal_origin": "https://zhongshuderen.pages.dev",
-+    "mode": "direct_permanent_redirect_only",
++    "mode": "reversible_retirement_until_permanent_redirect_available",
 +    "parallel_public_sites": false,
 +    "preserve_paths": true,
 +    "preserve_query_parameters": true,
 +    "show_old_pages_or_notice": false,
 +    "preserve_research_history_and_urls": true,
-+    "netlify_state": "PENDING_PRODUCTION_CREDIT_AVAILABILITY",
-+    "sites_state": "PENDING_EXISTING_SOURCE_AUTHENTICATION",
-+    "receipt": "private/legacy-entry-convergence-latest.json"
++    "netlify_state": "DISABLED_REVERSIBLY_VERIFIED",
++    "sites_state": "OWNER_ONLY_CUSTOM_VERIFIED",
++    "receipt": "private/legacy-entry-convergence-latest.json",
++    "eventual_goal_mode": "direct_permanent_redirect_only",
++    "public_legacy_content_retired": true,
++    "permanent_redirect_activated": false,
++    "restore_public_only_after_redirect_ready": true,
++    "do_not_restore_old_content": true
 +  },
 +  "production_update_policy": {
 +    "project": "zhongshuderen",
@@ -207,7 +227,12 @@ index 0311ff4..1aa2d55 100644
 +    "do_not_block_old_crawlers_before_redirects": true,
 +    "keep_formal_site_indexable": true,
 +    "console_submission_status": "NOT_SUBMITTED_NO_EXISTING_VERIFIED_PROPERTIES",
-+    "immediate_search_removal_guaranteed": false
++    "immediate_search_removal_guaranteed": false,
++    "current_old_public_responses": {
++      "netlify": 404,
++      "sites": 401
++    },
++    "cache_status": "PENDING_NATURAL_RECRAWL"
 +  }
  }
 diff --git a/tests/legacy-redirects.test.js b/tests/legacy-redirects.test.js

@@ -69,15 +69,20 @@
   "legacy_entry_policy": {
     "requested_on": "2026-10-18",
     "formal_origin": "https://zhongshuderen.pages.dev",
-    "mode": "direct_permanent_redirect_only",
+    "mode": "reversible_retirement_until_permanent_redirect_available",
     "parallel_public_sites": false,
     "preserve_paths": true,
     "preserve_query_parameters": true,
     "show_old_pages_or_notice": false,
     "preserve_research_history_and_urls": true,
-    "netlify_state": "PENDING_PRODUCTION_CREDIT_AVAILABILITY",
-    "sites_state": "PENDING_EXISTING_SOURCE_AUTHENTICATION",
-    "receipt": "private/legacy-entry-convergence-latest.json"
+    "netlify_state": "DISABLED_REVERSIBLY_VERIFIED",
+    "sites_state": "OWNER_ONLY_CUSTOM_VERIFIED",
+    "receipt": "private/legacy-entry-convergence-latest.json",
+    "eventual_goal_mode": "direct_permanent_redirect_only",
+    "public_legacy_content_retired": true,
+    "permanent_redirect_activated": false,
+    "restore_public_only_after_redirect_ready": true,
+    "do_not_restore_old_content": true
   },
   "production_update_policy": {
     "project": "zhongshuderen",
@@ -90,6 +95,11 @@
     "do_not_block_old_crawlers_before_redirects": true,
     "keep_formal_site_indexable": true,
     "console_submission_status": "NOT_SUBMITTED_NO_EXISTING_VERIFIED_PROPERTIES",
-    "immediate_search_removal_guaranteed": false
+    "immediate_search_removal_guaranteed": false,
+    "current_old_public_responses": {
+      "netlify": 404,
+      "sites": 401
+    },
+    "cache_status": "PENDING_NATURAL_RECRAWL"
   }
 }
