@@ -1,0 +1,281 @@
+diff --git a/docs/CONTENT_PIPELINE.md b/docs/CONTENT_PIPELINE.md
+index ccdbf10..62e712d 100644
+--- a/docs/CONTENT_PIPELINE.md
++++ b/docs/CONTENT_PIPELINE.md
+@@ -108,3 +108,8 @@
+ ### 旧入口当前实际状态：可逆退出公开展示
+ 
+ 2026-10-18后续用户明确允许删除旧地址。因旧平台正常发布入口受限，现采用可恢复措施：旧Netlify项目已停用，最早Sites站点已收紧为仅所有者（custom模式，仅owner）可见；无登录访问不再取得旧内容。此状态不等于301/308导流完成，搜索缓存仍待自然更新，未提交移除。保持唯一正式站正常公开，保留源码、历史研究和证据。未来只有在可受控发布已审永久重定向且不会重新公开旧正文时，才可重开旧入口；不能为普通维护自动Enable旧项目或改回public。
++
++
++## 2026-10-21 生物中试专题
++
++已批准schema1增量可使用“生物中试与上市公司映射”，与贷款、价格专题由lib/stock-research-topics.js共用白名单。独立子分组/library/stock-research-biopilot-mapping/，进入萌芽与公司研究仓库及统一股票成果检索；不得以二选一回退到价格分组。历史中试阶段、同控关系、权益和交易期间分别保留，限制性报告不标成已确认产品收益。现有报告、固定URL、首页设计、schema1哈希与发布门禁不变。
+diff --git a/lib/knowledge-library.js b/lib/knowledge-library.js
+index dca727e..fd8b63e 100644
+--- a/lib/knowledge-library.js
++++ b/lib/knowledge-library.js
+@@ -53,11 +53,11 @@ export function renderKnowledge(data,url,origin,context={}){
+   return shell(entry.title,entry.summary,body,origin,entryPath(entry),'CollectionPage',origin+entryPath(entry)+'index.md');
+  }
+  if(entry){
+-  const reportVisual=isApprovedStockReport(entry)?renderResearchVisual(entry,{topic:entry.keywords.includes('贷款与业务扩张')?'loan-expansion':entry.keywords.includes('全球价格变化与A股映射')?'price-mapping':undefined,placement:'article-header',caption:true}):'';
++  const reportVisual=isApprovedStockReport(entry)?renderResearchVisual(entry,{topic:entry.keywords.includes('贷款与业务扩张')?'loan-expansion':entry.keywords.includes('全球价格变化与A股映射')?'price-mapping':entry.keywords.includes('生物中试与上市公司映射')?'evidence':undefined,placement:'article-header',caption:true}):'';
+   const related=(entry.related??[]).map(id=>data.entries.find(p=>p.id===id)).filter(Boolean),incoming=data.entries.filter(p=>p.id!==entry.id&&(p.related||[]).includes(entry.id)).slice(0,8);
+   const merged=[...new Map([...related,...incoming].map(e=>[e.id,e])).values()];
+   const from=(url.searchParams.get('from')||'').slice(0,100),type=url.searchParams.get('type')||'';
+-  const backParams=new URLSearchParams();if(from)backParams.set('q',from);if(data.categories.some(c=>c.id===type))backParams.set('type',type);const board=url.searchParams.get('board');if(board&&stockBoardPaths[board]){for(const key of ['level','sort','date'])if(url.searchParams.has(key))backParams.set(key,url.searchParams.get(key));const topic=url.searchParams.get('topic');if(board==='all'&&['loan','price'].includes(topic))backParams.set('topic',topic);}else{const page=Number(url.searchParams.get('page'));if(Number.isSafeInteger(page)&&page>1)backParams.set('page',String(page));}const back=(board&&stockBoardPaths[board]||'/library/')+(backParams.size?'?'+backParams:'');
++  const backParams=new URLSearchParams();if(from)backParams.set('q',from);if(data.categories.some(c=>c.id===type))backParams.set('type',type);const board=url.searchParams.get('board');if(board&&stockBoardPaths[board]){for(const key of ['level','sort','date'])if(url.searchParams.has(key))backParams.set(key,url.searchParams.get(key));const topic=url.searchParams.get('topic');if(board==='all'&&['loan','price','bio'].includes(topic))backParams.set('topic',topic);}else{const page=Number(url.searchParams.get('page'));if(Number.isSafeInteger(page)&&page>1)backParams.set('page',String(page));}const back=(board&&stockBoardPaths[board]||'/library/')+(backParams.size?'?'+backParams:'');
+   const sections=entry.sections.map((s,i)=>'<section id="section-'+i+'"><h2>'+esc(s.heading)+'</h2><p>'+esc(s.paragraphs[0]||'')+'</p>'+((s.paragraphs.length>1||s.links?.length)?'<details class="section-details"><summary>展开依据和细节</summary>'+s.paragraphs.slice(1).map(p=>'<p>'+esc(p)+'</p>').join('')+(s.links?.length?'<div class="links">'+s.links.map(l=>'<p><a href="'+esc(l.url)+'" rel="noopener noreferrer">'+esc(l.label)+' ↗</a></p>').join('')+'</div>':'')+'</details>':'')+'</section>').join('');
+   const links=items=>items.map(p=>'<a href="'+esc(entryPath(p))+'">'+esc(p.title)+'</a>').join('');
+   const toc='<aside class="toc"><details class="reader-toc" open><summary>这篇研究讲什么</summary>'+entry.sections.map((s,i)=>'<a href="#section-'+i+'">'+esc(s.heading)+'</a>').join('')+'</details></aside>';
+diff --git a/lib/section-registry.js b/lib/section-registry.js
+index 7f0af61..9ea2558 100644
+--- a/lib/section-registry.js
++++ b/lib/section-registry.js
+@@ -27,10 +27,11 @@ const prefixes={
+  'ai-tools':['tool-arsenal-','research-tool-','three-role-']
+ };
+ const profileCache=new WeakMap();
+-function loanProfileIds(snapshot){const key=snapshot.knowledge;if(!key)return new Set();if(!profileCache.has(key))profileCache.set(key,new Set(key.entries.filter(e=>e.category==='stock-results').flatMap(e=>e.related||[])));return profileCache.get(key);}
++function loanProfileIds(snapshot){const key=snapshot.knowledge;if(!key)return new Set();if(!profileCache.has(key))profileCache.set(key,new Set(key.entries.filter(e=>e.category==='stock-results'&&!e.keywords?.includes('生物中试与上市公司映射')).flatMap(e=>e.related||[])));return profileCache.get(key);}
+ export function entrySectionIds(entry,snapshot={}){
+  const id=entry.id;if(/^(?:research-log-|research-daily-journal$|research-updates$)/.test(id))return [];
+- if(entry.category==='stock-results')return ['loan-price'];
++ if(entry.category==='stock-results')return entry.keywords?.includes('生物中试与上市公司映射')?['mengya-company']:['loan-price'];
++ if(id==='stock-research-biopilot-mapping')return ['mengya-company'];
+  if(supplementalAreas[id])return supplementalAreas[id];
+  for(const s of sections)if(exact[s.id]?.includes(id)||prefixes[s.id]?.some(p=>id.startsWith(p)))return [s.id];
+  if(entry.kind==='stock'){
+diff --git a/lib/stock-research-table.js b/lib/stock-research-table.js
+index e84c0f6..3229e56 100644
+--- a/lib/stock-research-table.js
++++ b/lib/stock-research-table.js
+@@ -1,7 +1,8 @@
+ import {warehousePage,renderWarehouseHero} from './warehouse-theme.js';
+ import {sitePage,escapeText as esc} from './site-chrome.js';
+ import {renderResearchVisual} from './visual-library.js';
+-export const stockBoardPaths={all:'/library/stock-research-results/',loan:'/library/stock-research-loan-expansion/',price:'/library/stock-research-price-mapping/'};
++import {stockResearchTopics,stockTopicById,stockTopicForEntry} from './stock-research-topics.js';
++export const stockBoardPaths={all:'/library/stock-research-results/',...Object.fromEntries(stockResearchTopics.map(t=>[t.id,'/library/'+t.entryId+'/']))};
+ const section=(e,heading)=>e.sections.find(s=>s.heading===heading)?.paragraphs||[];
+ const after=(lines,prefix)=>lines.find(s=>s.startsWith(prefix))?.slice(prefix.length).trim()||'';
+ const timestamp=s=>Number.isFinite(Date.parse(s))?Date.parse(s):0;
+@@ -12,13 +13,13 @@ export function stockReports(knowledge){
+  return knowledge.entries.filter(isApprovedStockReport).map(e=>{
+   const identity=section(e,'股票、专题与结论强度'),dates=section(e,'日期与信息覆盖期间');
+   const direction=identity.join(' ').match(/方向标签：([^。]+)/)?.[1]?.trim()||'未标注';
+-  const topic=e.keywords.includes('贷款与业务扩张')?'loan':e.keywords.includes('全球价格变化与A股映射')?'price':'other';
++  const topic=stockTopicForEntry(e)?.id||'other';
+   const updated=after(dates,'报告最新更新日期：'),completed=after(dates,'研究完成日期：'),sourceDates=after(dates,'来源发布日期（原包记录）：');
+   const dateMatches=sourceDates.match(/\d{4}[-/]\d{2}[-/]\d{2}(?:T[^、；\s]+)?/g)||[];
+   const reason=section(e,'为什么研究这家公司').join(' ')||e.summary;
+   const subject=e.title.split('｜').slice(1).join('｜')||e.title;
+   const focus=['潜在受益','扩张观察'].includes(direction);
+-  return {entry:e,id:e.id,code:e.code,name:(e.name||e.title.split('（')[0]).replace(/\s/g,''),topic,direction,focus,updated,completed,updatedMs:timestamp(updated),sourceMs:Math.max(0,...dateMatches.map(s=>timestamp(s.replaceAll('/','-')))),reason,subject,sourceDates,periods:after(dates,'信息覆盖期间（原报告记录）：'),facts:section(e,'已核事实（研究主管核验）'),materiality:section(e,'规模、金额与重要性边界'),conditions:section(e,'条件推断与成立条件'),unknowns:section(e,'关键未知'),counterevidence:section(e,'反证与失效条件'),search:compact([e.code,e.name,e.title,e.summary,...e.keywords,...e.sections.flatMap(s=>s.paragraphs)].join(' '))};
++  return {entry:e,id:e.id,code:e.code,name:(e.name||e.title.split('（')[0]).replace(/\s/g,''),topic,topicLabel:stockTopicById(topic)?.label||'未归类研究',direction,focus,updated,completed,updatedMs:timestamp(updated),sourceMs:Math.max(0,...dateMatches.map(s=>timestamp(s.replaceAll('/','-')))),reason,subject,sourceDates,periods:after(dates,'信息覆盖期间（原报告记录）：'),facts:section(e,'已核事实（研究主管核验）'),materiality:section(e,'规模、金额与重要性边界'),conditions:section(e,'条件推断与成立条件'),unknowns:section(e,'关键未知'),counterevidence:section(e,'反证与失效条件'),search:compact([e.code,e.name,e.title,e.summary,...e.keywords,...e.sections.flatMap(s=>s.paragraphs)].join(' '))};
+  });
+ }
+ export function compareStockReports(a,b,sort='latest'){
+@@ -39,22 +40,22 @@ const reportPath=r=>'/library/'+r.id+'/';
+ const list=items=>'<ul>'+items.map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul>';
+ export function renderStockBoard(knowledge,url,origin,fixedTopic='all'){
+  const reports=stockReports(knowledge).filter(r=>fixedTopic==='all'||r.topic===fixedTopic),query=(url.searchParams.get('q')||'').trim().slice(0,100);
+- const topic=fixedTopic!=='all'?fixedTopic:['all','loan','price'].includes(url.searchParams.get('topic'))?url.searchParams.get('topic'):'all';
++ const topic=fixedTopic!=='all'?fixedTopic:['all',...stockResearchTopics.map(t=>t.id)].includes(url.searchParams.get('topic'))?url.searchParams.get('topic'):'all';
+  const level=['focus','all','risk'].includes(url.searchParams.get('level'))?url.searchParams.get('level'):'focus',sort=url.searchParams.get('sort')==='source'?'source':'latest',date=/^\d{4}-\d{2}-\d{2}$/.test(url.searchParams.get('date')||'')?url.searchParams.get('date'):'';
+  const visible=selectStockGroups(reports,{topic,level,q:query,date,sort}),shownCodes=new Set(visible.map(g=>g.code)),groups=[...visible,...groupStockReports(reports,sort).filter(g=>!shownCodes.has(g.code))];
+  const descriptor=knowledge.entries.find(e=>e.id===stockBoardPaths[fixedTopic].split('/')[2]);
+  const title=descriptor?.title||(fixedTopic==='loan'?'贷款扩张研究':fixedTopic==='price'?'涨价题材研究':'股票研究工作台');
+- const description=fixedTopic==='loan'?'从融资、具体项目和实际用款，找到值得跟进的公司。':fixedTopic==='price'?'从产品售价、原料成本与公司业务，追踪价格变化的影响。':'按项目查看最新研究，先看股票与原因，再展开事实、条件与证据。';
++ const description=fixedTopic==='bio'?stockTopicById('bio').description:fixedTopic==='loan'?'从融资、具体项目和实际用款，找到值得跟进的公司。':fixedTopic==='price'?'从产品售价、原料成本与公司业务，追踪价格变化的影响。':'按项目查看最新研究，先看股票与原因，再展开事实、条件与证据。';
+  const options=(values,current)=>values.map(([v,l])=>'<option value="'+v+'"'+(v===current?' selected':'')+'>'+l+'</option>').join('');
+  const rowHtml=g=>{
+   const selected=visible.find(x=>x.code===g.code),cases=selected?.cases||g.cases,first=cases[0];
+-  return '<tr class="stock-row" data-code="'+g.code+'"'+(shownCodes.has(g.code)?'':' hidden')+'><td data-label="最新更新"><time data-row-date>'+esc(dateLabel(first.updated))+'</time><span class="sub" data-row-period>资料期间：'+esc(short(first.periods||'见原报告',45))+'</span></td><td data-label="股票与事项"><button class="open-item" type="button" data-stock="'+g.code+'">'+esc(g.name)+'<span class="stock-code">'+g.code+'</span></button><span class="sub" data-row-count>'+cases.length+' 项研究</span><span class="sub" data-row-subject>'+esc(short(first.subject,85))+'</span></td><td data-label="为什么关注"><p class="stock-reason" data-row-reason>'+esc(short(first.reason,145))+'</p><span class="sub" data-row-more>'+(cases.length>1?'同一股票的各项业务分别保留，点名称展开。':'')+'</span></td><td data-label="原报告方向"><span class="direction" data-row-direction>'+esc([...new Set(cases.map(r=>r.direction))].join(' / '))+'</span><span class="sub">条件研究，结论边界见原文</span></td><td data-label="依据与详情"><button type="button" class="stock-detail-button" data-stock="'+g.code+'">查看理由与证据 ↗</button><a class="sub report-link" data-primary-report href="'+reportPath(first)+'?'+esc(new URLSearchParams({board:fixedTopic,from:query,level,sort,...(fixedTopic==='all'&&['loan','price'].includes(topic)?{topic}:{}),...(date?{date}:{})}).toString())+'">完整报告</a></td></tr>';
++  return '<tr class="stock-row" data-code="'+g.code+'"'+(shownCodes.has(g.code)?'':' hidden')+'><td data-label="最新更新"><time data-row-date>'+esc(dateLabel(first.updated))+'</time><span class="sub" data-row-period>资料期间：'+esc(short(first.periods||'见原报告',45))+'</span></td><td data-label="股票与事项"><button class="open-item" type="button" data-stock="'+g.code+'">'+esc(g.name)+'<span class="stock-code">'+g.code+'</span></button><span class="sub" data-row-count>'+cases.length+' 项研究</span><span class="sub" data-row-subject>'+esc(short(first.subject,85))+'</span></td><td data-label="为什么关注"><p class="stock-reason" data-row-reason>'+esc(short(first.reason,145))+'</p><span class="sub" data-row-more>'+(cases.length>1?'同一股票的各项业务分别保留，点名称展开。':'')+'</span></td><td data-label="原报告方向"><span class="direction" data-row-direction>'+esc([...new Set(cases.map(r=>r.direction))].join(' / '))+'</span><span class="sub">条件研究，结论边界见原文</span></td><td data-label="依据与详情"><button type="button" class="stock-detail-button" data-stock="'+g.code+'">查看理由与证据 ↗</button><a class="sub report-link" data-primary-report href="'+reportPath(first)+'?'+esc(new URLSearchParams({board:fixedTopic,from:query,level,sort,...(fixedTopic==='all'&&stockResearchTopics.some(t=>t.id===topic)?{topic}:{}),...(date?{date}:{})}).toString())+'">完整报告</a></td></tr>';
+  };
+- const templates=reports.map(r=>'<template id="stock-case-'+r.id+'"><section class="stock-case" data-case-id="'+r.id+'"><p class="result-meta">'+esc(r.topic==='loan'?'贷款与业务扩张':'全球价格变化与A股映射')+' · '+esc(r.direction)+'</p><h3>'+esc(r.subject)+'</h3><p class="detail-reason">'+esc(r.reason)+'</p><dl class="stock-date-grid"><div><dt>报告更新</dt><dd>'+esc(dateLabel(r.updated))+'</dd></div><div><dt>信息期间</dt><dd>'+esc(r.periods||'未知')+'</dd></div><div><dt>来源发布日期</dt><dd>'+esc(r.sourceDates||'未知')+'</dd></div></dl><h4>已核事实与阶段</h4>'+list(r.facts)+'<h4>金额或价格口径</h4>'+list(r.materiality)+'<h4>成立条件</h4>'+list(r.conditions)+'<details><summary>未知、反证和失效条件</summary>'+list([...r.unknowns,...r.counterevidence])+'</details><div class="stock-evidence">'+(r.entry.sections.find(s=>s.heading==='证据链接与页码')?.links||[]).map(l=>'<a href="'+esc(l.url)+'" target="_blank" rel="noopener noreferrer">'+esc(l.label)+' ↗</a>').join('')+'</div><a class="report-link" href="'+reportPath(r)+'">打开完整研究报告 ↗</a></section></template>').join('');
++ const templates=reports.map(r=>'<template id="stock-case-'+r.id+'"><section class="stock-case" data-case-id="'+r.id+'"><p class="result-meta">'+esc(r.topicLabel)+' · '+esc(r.direction)+'</p><h3>'+esc(r.subject)+'</h3><p class="detail-reason">'+esc(r.reason)+'</p><dl class="stock-date-grid"><div><dt>报告更新</dt><dd>'+esc(dateLabel(r.updated))+'</dd></div><div><dt>信息期间</dt><dd>'+esc(r.periods||'未知')+'</dd></div><div><dt>来源发布日期</dt><dd>'+esc(r.sourceDates||'未知')+'</dd></div></dl><h4>已核事实与阶段</h4>'+list(r.facts)+'<h4>金额或价格口径</h4>'+list(r.materiality)+'<h4>成立条件</h4>'+list(r.conditions)+'<details><summary>未知、反证和失效条件</summary>'+list([...r.unknowns,...r.counterevidence])+'</details><div class="stock-evidence">'+(r.entry.sections.find(s=>s.heading==='证据链接与页码')?.links||[]).map(l=>'<a href="'+esc(l.url)+'" target="_blank" rel="noopener noreferrer">'+esc(l.label)+' ↗</a>').join('')+'</div><a class="report-link" href="'+reportPath(r)+'">打开完整研究报告 ↗</a></section></template>').join('');
+  const payload=reports.map(({entry,facts,materiality,conditions,unknowns,counterevidence,...r})=>r);
+  const preserved=descriptor?'<details class="stock-archive"><summary>项目范围与原目录说明</summary>'+descriptor.sections.map(s=>'<h3>'+esc(s.heading)+'</h3>'+s.paragraphs.map(p=>'<p>'+esc(p)+'</p>').join('')+(s.links||[]).map(l=>'<a href="'+esc(l.url)+'">'+esc(l.label)+'</a>').join('')).join('')+'</details>':'';
+- const body='<section class="stock-board" data-fixed-topic="'+fixedTopic+'"><nav class="stock-topic-nav" aria-label="股票研究专题">'+[['all','全部股票研究'],['loan','贷款扩张'],['price','涨价题材']].map(([id,label])=>'<a href="'+stockBoardPaths[id]+'"'+(id===fixedTopic?' aria-current="page"':'')+'>'+label+'</a>').join('')+'</nav><form class="stock-controls" method="get" action="'+stockBoardPaths[fixedTopic]+'"><label class="stock-query"><span>搜索股票或业务</span><input id="stock-search" name="q" value="'+esc(query)+'" placeholder="代码、公司、产品、项目或原因" maxlength="100"></label>'+(fixedTopic==='all'?'<label><span>研究专题</span><select id="stock-topic" name="topic">'+options([['all','全部专题'],['loan','贷款与业务扩张'],['price','价格变化与A股映射']],topic)+'</select></label>':'')+'<label><span>关注范围</span><select id="stock-level" name="level">'+options([['focus','最新重点关注'],['all','全部已交付成果'],['risk','风险及待判断']],level)+'</select></label><label><span>排序</span><select id="stock-sort" name="sort">'+options([['latest','研究更新：新 → 旧'],['source','资料发布：新 → 旧']],sort)+'</select></label><label><span>报告更新日期</span><input type="date" id="stock-date" name="date" value="'+date+'"></label><button class="stock-filter-submit" type="submit">检索</button></form><div class="stock-table-meta"><p id="stock-visible" role="status">当前显示 '+visible.length+' 家股票 · '+visible.reduce((n,g)=>n+g.cases.length,0)+' 项研究</p><span>重点关注沿用原报告的“潜在受益 / 扩张观察”标记；同一更新时点再按资料日期排序。</span></div><div class="stock-table-scroll" role="region" aria-label="股票研究搜索表格" tabindex="0"><table class="stock-table"><thead><tr><th scope="col">报告最新更新</th><th scope="col">股票与事项</th><th scope="col">为什么关注</th><th scope="col">方向与状态</th><th scope="col">理由与证据</th></tr></thead><tbody id="stock-rows">'+groups.map(rowHtml).join('')+'</tbody></table></div><p id="stock-empty"'+(visible.length?' hidden':'')+'>当前筛选没有匹配，可切换“全部已交付成果”或换一个关键词。</p><p class="stock-board-foot">沿用原项目的股票检索、关注分层、事项表及证据展开方式。本表接入已完成复核并交付网站的成果；报告更新时间与业务、资料日期分别显示。</p>'+preserved+'<nav class="topic-links"><a href="/library/research-updates/">查看成果更新</a><a href="/library/">搜索其他研究</a></nav></section><dialog class="stock-dialog" id="stock-detail" aria-labelledby="stock-detail-title"><header><div><span class="eyebrow">股票与业务事项</span><h2 id="stock-detail-title"></h2></div><button id="stock-detail-close" type="button" aria-label="关闭股票详情">×</button></header><div id="stock-detail-body"></div></dialog>'+templates+'<script type="application/json" id="stock-table-data">'+JSON.stringify(payload).replace(/</g,'\\u003c')+'</script><script src="/stock-board.js?v=20261018b" defer></script>';
+- const hero=renderWarehouseHero({id:'stock',title,queryTitle:'',searchHtml:'',note:description,breadcrumbs:[{label:'贷款与涨价研究',href:'/areas/loan-price/'},{label:'股票研究工作台'}]});
++ const body='<section class="stock-board" data-fixed-topic="'+fixedTopic+'"><nav class="stock-topic-nav" aria-label="股票研究专题">'+[['all','全部股票研究'],...stockResearchTopics.map(t=>[t.id,t.shortLabel])].map(([id,label])=>'<a href="'+stockBoardPaths[id]+'"'+(id===fixedTopic?' aria-current="page"':'')+'>'+label+'</a>').join('')+'</nav><form class="stock-controls" method="get" action="'+stockBoardPaths[fixedTopic]+'"><label class="stock-query"><span>搜索股票或业务</span><input id="stock-search" name="q" value="'+esc(query)+'" placeholder="代码、公司、产品、项目或原因" maxlength="100"></label>'+(fixedTopic==='all'?'<label><span>研究专题</span><select id="stock-topic" name="topic">'+options([['all','全部专题'],...stockResearchTopics.map(t=>[t.id,t.label])],topic)+'</select></label>':'')+'<label><span>关注范围</span><select id="stock-level" name="level">'+options([['focus','最新重点关注'],['all','全部已交付成果'],['risk','风险及待判断']],level)+'</select></label><label><span>排序</span><select id="stock-sort" name="sort">'+options([['latest','研究更新：新 → 旧'],['source','资料发布：新 → 旧']],sort)+'</select></label><label><span>报告更新日期</span><input type="date" id="stock-date" name="date" value="'+date+'"></label><button class="stock-filter-submit" type="submit">检索</button></form><div class="stock-table-meta"><p id="stock-visible" role="status">当前显示 '+visible.length+' 家股票 · '+visible.reduce((n,g)=>n+g.cases.length,0)+' 项研究</p><span>重点关注沿用原报告的“潜在受益 / 扩张观察”标记；同一更新时点再按资料日期排序。</span></div><div class="stock-table-scroll" role="region" aria-label="股票研究搜索表格" tabindex="0"><table class="stock-table"><thead><tr><th scope="col">报告最新更新</th><th scope="col">股票与事项</th><th scope="col">为什么关注</th><th scope="col">方向与状态</th><th scope="col">理由与证据</th></tr></thead><tbody id="stock-rows">'+groups.map(rowHtml).join('')+'</tbody></table></div><p id="stock-empty"'+(visible.length?' hidden':'')+'>当前筛选没有匹配，可切换“全部已交付成果”或换一个关键词。</p><p class="stock-board-foot">沿用原项目的股票检索、关注分层、事项表及证据展开方式。本表接入已完成复核并交付网站的成果；报告更新时间与业务、资料日期分别显示。</p>'+preserved+'<nav class="topic-links"><a href="/library/research-updates/">查看成果更新</a><a href="/library/">搜索其他研究</a></nav></section><dialog class="stock-dialog" id="stock-detail" aria-labelledby="stock-detail-title"><header><div><span class="eyebrow">股票与业务事项</span><h2 id="stock-detail-title"></h2></div><button id="stock-detail-close" type="button" aria-label="关闭股票详情">×</button></header><div id="stock-detail-body"></div></dialog>'+templates+'<script type="application/json" id="stock-table-data">'+JSON.stringify(payload).replace(/</g,'\\u003c')+'</script><script src="/stock-board.js?v=20261021-bio" defer></script>';
++ const hero=renderWarehouseHero({id:'stock',title,queryTitle:'',searchHtml:'',note:description,breadcrumbs:[{label:fixedTopic==='bio'?'萌芽与公司研究':'贷款与涨价研究',href:fixedTopic==='bio'?'/areas/mengya-company/':'/areas/loan-price/'},{label:'股票研究工作台'}]});
+  const themedBody=hero+'<div class="warehouse-main warehouse-stock-paper">'+body+'</div>';
+  return warehousePage({title,description,body:themedBody,origin,path:stockBoardPaths[fixedTopic],type:'CollectionPage'});
+ }
+diff --git a/lib/stock-research-topics.js b/lib/stock-research-topics.js
+new file mode 100644
+index 0000000..46aff57
+--- /dev/null
++++ b/lib/stock-research-topics.js
+@@ -0,0 +1,9 @@
++// Approved business topics share one mapping across intake, filters and routes.
++export const stockResearchTopics = [
++ {id:'loan',label:'贷款与业务扩张',shortLabel:'贷款扩张',entryId:'stock-research-loan-expansion',area:'loan-price',project:'loan-audit',description:'实际用款、拟融资、担保与存量额度分别记录，研究完成不等于项目已经盈利。'},
++ {id:'price',label:'全球价格变化与A股映射',shortLabel:'涨价题材',entryId:'stock-research-price-mapping',area:'loan-price',project:'company-research',description:'先分清销售、采购和加工角色，再核价差、合同、库存与盈利条件。'},
++ {id:'bio',label:'生物中试与上市公司映射',shortLabel:'生物中试映射',entryId:'stock-research-biopilot-mapping',area:'mengya-company',project:'company-research',description:'分别核对历史项目阶段、主体关系、权益和交易期间；同控、平台服务或历史往来不等于上市公司拥有产品权益或当期收益。'}
++];
++export const stockTopicById = id => stockResearchTopics.find(t=>t.id===id);
++export const stockTopicByLabel = label => stockResearchTopics.find(t=>t.label===label);
++export const stockTopicForEntry = entry => stockResearchTopics.find(t=>entry.keywords?.includes(t.label));
+diff --git a/public/stock-board.js b/public/stock-board.js
+index 7810fd8..880d1c5 100644
+--- a/public/stock-board.js
++++ b/public/stock-board.js
+@@ -6,7 +6,7 @@
+  const format=s=>Number.isFinite(Date.parse(s))?new Intl.DateTimeFormat('zh-CN',{timeZone:'Asia/Shanghai',year:'numeric',month:'2-digit',day:'2-digit',hour:'2-digit',minute:'2-digit',hourCycle:'h23'}).format(new Date(s)):'更新时间未提供';
+  let shown=new Map();
+  const order=(a,b)=>sort.value==='source'?b.sourceMs-a.sourceMs||b.updatedMs-a.updatedMs||a.code.localeCompare(b.code):b.updatedMs-a.updatedMs||b.sourceMs-a.sourceMs||a.code.localeCompare(b.code);
+- function reportLink(r){return '/library/'+r.id+'/?'+new URLSearchParams({board:fixed,from:q.value.trim(),level:level.value,sort:sort.value,...(fixed==='all'&&['loan','price'].includes(topic?.value)?{topic:topic.value}:{}),...(date.value?{date:date.value}:{})});}
++ function reportLink(r){return '/library/'+r.id+'/?'+new URLSearchParams({board:fixed,from:q.value.trim(),level:level.value,sort:sort.value,...(fixed==='all'&&['loan','price','bio'].includes(topic?.value)?{topic:topic.value}:{}),...(date.value?{date:date.value}:{})});}
+  function filter(){
+   const query=compact(q.value),selectedTopic=topic?.value||fixed;
+   const filtered=records.filter(r=>(selectedTopic==='all'||r.topic===selectedTopic)&&(!query||r.search.includes(query))&&(!date.value||r.updated.slice(0,10)===date.value));
+diff --git a/scripts/stock-results-intake.mjs b/scripts/stock-results-intake.mjs
+index 6f6e5c7..898b8bc 100644
+--- a/scripts/stock-results-intake.mjs
++++ b/scripts/stock-results-intake.mjs
+@@ -6,6 +6,7 @@ import {validatePublicSnapshot} from '../lib/public-research-reader.js';
+ import {entryPath} from '../lib/knowledge-library.js';
+ import {isApprovedStockReport} from '../lib/stock-research-table.js';
+ import {publicationOrigin as origin} from '../lib/publication-origin.js';
++import {stockResearchTopics,stockTopicByLabel} from '../lib/stock-research-topics.js';
+ const root='stock-research-results',loan='stock-research-loan-expansion',price='stock-research-price-mapping';
+ export const deliveryPath='C:/Users/Administrator/Documents/ChatGPT/股票研究/website_delivery.json';
+ const canonical=v=>Array.isArray(v)?v.map(canonical):v&&typeof v==='object'?Object.fromEntries(Object.keys(v).sort().map(k=>[k,canonical(v[k])])):v;
+@@ -17,7 +18,7 @@ export function readApprovedStockDelivery(){
+  if(d.schema_version!==1||d.delivery_status!=='APPROVED_FOR_WEBSITE_INTAKE'||!Array.isArray(d.entries)||!Array.isArray(d.status_corrections))throw Error('Delivery not approved or unknown schema');
+  if(contentHash({section:d.section,entries:d.entries,status_corrections:d.status_corrections})!==d.content_sha256||d.batch_id!=='stock-research-'+d.content_sha256.slice(0,16))throw Error('Delivery content hash differs');
+  const seen=new Set();for(const e of d.entries){
+-  if(!/^[a-z0-9-]{1,100}$/.test(e.id)||seen.has(e.id)||e.report_status!=='已完成研究报告并经主管复核'||e.stock?.market!=='A股'||!/^\d{6}$/.test(e.stock.code)||!['贷款与业务扩张','全球价格变化与A股映射'].includes(e.topic))throw Error('Invalid completed result identity');seen.add(e.id);
++  if(!/^[a-z0-9-]{1,100}$/.test(e.id)||seen.has(e.id)||e.report_status!=='已完成研究报告并经主管复核'||e.stock?.market!=='A股'||!/^\d{6}$/.test(e.stock.code)||!stockTopicByLabel(e.topic))throw Error('Invalid completed result identity');seen.add(e.id);
+   for(const key of ['verified_facts','conditional_reasoning','unknowns','counterevidence','sources'])if(!Array.isArray(e[key])||!e[key].length)throw Error('Missing completed result evidence '+e.id+' '+key);
+   if(!e.title||!e.research_reason||!e.next_verification||!e.conclusion_status||!Number.isFinite(Date.parse(e.dates?.research_completed_at))||!e.dates?.first_observed_at)throw Error('Missing result dates or reasons');
+   for(const s of e.sources){const u=new URL(s.url);if(u.protocol!=='https:'||['docs.google.com','drive.google.com'].includes(u.host)||!s.locator)throw Error('Invalid public evidence source');}
+@@ -56,9 +57,10 @@ export function buildStockResultsIntake(baseline,source,receipt={}){
+    company=put({id,code,name,title:name+'（'+code+'）｜公司研究档案',kind:'stock',category:'stocks',summary:e.research_reason,research_date:'身份资料见正文；本站整理：'+siteDay,status:packetIdentity?'公开交付包身份映射｜经营结论按各报告证据范围阅读':'A股主体身份窄核｜经营结论按各报告证据范围阅读',source_labels:[packetIdentity?'主管批准的公开报告身份映射':'发行人公开披露中的身份信息','股票研究主线已验收交付'],keywords:[name,code,identity.legal_name||name,'股票研究成果'],sections:[{heading:'公司主体与身份范围',paragraphs:[packetIdentity?'主管批准的公开交付包将本报告对应到A股'+name+'（'+code+'）。本站只核对该公开包与已有入口，不冒称另行核验了发行人法定全称、完整财报或当前交易状态。':identity.legal_name+'。所列披露材料明确对应简称'+name+'及证券代码'+code+'；本轮只窄核身份，不宣称读完全部财报或核对当前交易状态。',identity.scope],links:[{label:'发行人披露｜身份依据',url:identity.url}]},{heading:'在本批研究中的位置',paragraphs:[e.research_reason,e.publication_boundary]}],related:[root]});
+   }family.set(code,company);
+  }
+- const labels={basis:'金额与阶段口径',currency:'币种',financing_amount:'融资相关金额（元，口径见说明）',profit_base:'利润比较基数',project_investment_total:'项目总投资（元，不等于贷款）',deal_value_yuan:'交易对价（元，不等于贷款）',loan_contract_limit:'合同或担保上限（元，原报告口径）'};
+- for(const e of d.entries){const name=e.stock.name.replace(/\s/g,''),dates=e.dates,company=family.get(e.stock.code),branch=e.topic==='贷款与业务扩张'?loan:price;
++ const labels={ownership_basis:'权益与主体关系口径',period:'关系与交易资料期间',product_revenue_or_profit:'产品收入或利润（未核不估算）',basis:'金额与阶段口径',currency:'币种',financing_amount:'融资相关金额（元，口径见说明）',profit_base:'利润比较基数',project_investment_total:'项目总投资（元，不等于贷款）',deal_value_yuan:'交易对价（元，不等于贷款）',loan_contract_limit:'合同或担保上限（元，原报告口径）'};
++ for(const e of d.entries){const name=e.stock.name.replace(/\s/g,''),dates=e.dates,company=family.get(e.stock.code),branch=stockTopicByLabel(e.topic)?.entryId;
+   const retain=receipt.preserve_existing_reports_content_sha256===d.content_sha256?receipt.preserve_existing_report_ids?.find(x=>x.id===e.id):null;if(retain){const prior=get(e.id);if(!prior||prior.code!==e.stock.code||hash(prior)!==retain.expected_public_sha256)throw Error('Existing report preservation guard differs '+e.id);continue;}
++  if(!branch)throw Error('Unknown approved topic '+e.topic);
+   const size=typeof e.materiality==='object'?Object.entries(e.materiality).map(([k,v])=>(k==='financing_amount'&&!before.has(e.id)&&e.materiality.currency&&e.materiality.currency!=='人民币'?'融资相关金额（'+e.materiality.currency+'，口径见说明）':labels[k]||k)+'：'+join(v)):[String(e.materiality)];
+   const report={id:e.id,code:e.stock.code,name,title:e.title,kind:'topic',category:'stock-results',summary:dates.research_completed_at.slice(0,10)+'完成研究｜'+e.topic+'｜'+e.research_reason,research_date:'研究完成：'+dates.research_completed_at+'；信息期间：'+join(dates.information_periods),status:e.report_status+'｜'+e.conclusion_status,source_labels:['股票研究主线经主管复核的报告',e.topic,e.publication_boundary],keywords:['股票研究成果',e.topic,name,e.stock.code,dates.research_completed_at.slice(0,10),e.direction],sections:[
+    {heading:'为什么研究这家公司',paragraphs:[e.research_reason]},
+@@ -76,16 +78,17 @@ export function buildStockResultsIntake(baseline,source,receipt={}){
+  }
+  for(const c of d.status_corrections){const old=get(c.id);if(!old)continue;old.category='archives';old.status='原批准失效｜等待重新复核，历史版本保留';const heading='复核状态变化｜'+d.prepared_at;const text='原项目状态更正：'+c.reason;if(!old.sections.some(s=>s.heading===heading))old.sections.unshift({heading,paragraphs:[text,'此前正文与资料日期保留为历史，不继续列为当前已验收成果。']});}
+  const active=[...new Set([...priorApproved.map(e=>e.id),...d.entries.map(e=>e.id)])].map(id=>get(id)).filter(isApprovedStockReport),companyCount=new Set(active.map(e=>e.code)).size,loans=active.filter(e=>e.keywords.includes('贷款与业务扩张')),prices=active.filter(e=>e.keywords.includes('全球价格变化与A股映射'));
+- const make=(id,title,summary,sections,related)=>({id,title,name:title,kind:'topic',category:'methods',summary,research_date:'报告研究完成日期分别见正文；本站整理：'+siteDay,status:'已验收研究报告目录｜盈利、估值与股价反应按各报告边界',source_labels:['股票研究主线的已验收公开交付'],keywords:['股票研究成果','贷款与业务扩张','全球价格变化与A股映射','研究完成日期','原因','证据'],sections,related});
+- const search=(text)=>origin+'/library/category/stock-results/'+(text?'?q='+encodeURIComponent(text):'');
+- put(make(root,'股票研究成果｜按日期、股票与专题查看','本批'+active.length+'篇已验收报告，涉及'+companyCount+'家公司；独立阅读原因、事实、条件和反证。',[{heading:'进入已验收报告列表',paragraphs:['可以在结果列表输入研究完成日期、股票代码、公司名称或专题。每份报告保存固定网址；原始材料时间与网站整理时间分开。','本次新增'+d.entries.filter(e=>!before.has(e.id)).length+'篇报告，累计'+active.length+'篇；既有正文与原日期保留，不能将累计数量当作今日新发现。'],links:[{label:'全部股票研究成果',url:search('')},{label:'贷款与业务扩张',url:search('贷款与业务扩张')},{label:'全球价格变化与A股映射',url:search('全球价格变化与A股映射')},{label:'按本批研究完成日期查找',url:search(d.entries[0]?.dates.research_completed_at.slice(0,10)||'')}]},{heading:'贷款与业务扩张',paragraphs:['本批'+loans.length+'篇报告。实际用款、拟融资、担保与存量额度分别记录，研究完成不等于项目已经盈利。'],links:loans.map(ref)},{heading:'全球价格变化与A股映射',paragraphs:['本批'+prices.length+'篇报告。先分清销售、采购和加工角色，再核价差、合同、库存与盈利条件。'],links:prices.map(ref)}],active.map(e=>e.id)));
+- for(const [id,title,list]of [[loan,'贷款与业务扩张｜股票研究成果',loans],[price,'全球价格变化与A股映射｜股票研究成果',prices]]){if(id===price&&!d.entries.some(e=>e.topic==='全球价格变化与A股映射')&&!d.status_corrections.some(c=>get(c.id)?.keywords.includes('全球价格变化与A股映射'))&&get(id))continue;put(make(id,title,'本批'+list.length+'篇已完成主管复核的研究；日期、原因和证据在各报告中展示。',[{heading:'从列表检索',paragraphs:['进入专题后可按日期、股票代码或公司名查找；条件研究继续保留盈利兑现未验证的边界。'],links:[{label:'检索本专题',url:search(id===loan?'贷款与业务扩张':'全球价格变化与A股映射')}]},{heading:'本批独立研究报告',paragraphs:['只列本公开交付包中通过主管复核的报告，未接入草稿、待核片段或一般融资台账。',...(id===price?['本专题16篇为保留原日期和独立范围的历史报告，不据此宣称商品BASELINE-R1第一轮已完成。']:[])],links:list.map(ref)}],[root,...list.map(e=>e.id)]));}
++ const topicLists=stockResearchTopics.map(t=>({...t,list:active.filter(e=>e.keywords.includes(t.label))}));
++ const make=(id,title,summary,sections,related)=>({id,title,name:title,kind:'topic',category:'methods',summary,research_date:'报告研究完成日期分别见正文；本站整理：'+siteDay,status:'已验收研究报告目录｜盈利、估值与股价反应按各报告边界',source_labels:['股票研究主线的已验收公开交付'],keywords:['股票研究成果',...stockResearchTopics.map(t=>t.label),'研究完成日期','原因','证据'],sections,related});
++ const search=text=>origin+'/library/category/stock-results/'+(text?'?q='+encodeURIComponent(text):'');
++ put(make(root,'股票研究成果｜按日期、股票与专题查看','本批'+active.length+'篇已验收报告，涉及'+companyCount+'家公司；独立阅读原因、事实、条件和反证。',[{heading:'进入已验收报告列表',paragraphs:['可以在结果列表输入研究完成日期、股票代码、公司名称或专题。每份报告保存固定网址；原始材料时间与网站整理时间分开。','本次新增'+d.entries.filter(e=>!before.has(e.id)).length+'篇报告，累计'+active.length+'篇；既有正文与原日期保留，不能将累计数量当作今日新发现。'],links:[{label:'全部股票研究成果',url:search('')},...topicLists.filter(t=>t.list.length).map(t=>({label:t.label,url:origin+'/library/'+t.entryId+'/'})),{label:'按本批研究完成日期查找',url:search(d.entries[0]?.dates.research_completed_at.slice(0,10)||'')}]},...topicLists.filter(t=>t.list.length).map(t=>({heading:t.label,paragraphs:['本批'+t.list.length+'篇报告。'+t.description],links:t.list.map(ref)}))],active.map(e=>e.id)));
++ for(const t of topicLists){const affected=d.entries.some(e=>e.topic===t.label)||d.status_corrections.some(c=>get(c.id)?.keywords.includes(t.label));if(!affected&&get(t.entryId)||!t.list.length)continue;put(make(t.entryId,t.label+'｜股票研究成果','本批'+t.list.length+'篇已完成主管复核的研究；日期、原因和证据在各报告中展示。',[{heading:'从列表检索',paragraphs:['进入专题后可按日期、股票代码或公司名查找；条件研究继续保留盈利兑现未验证的边界。',t.description],links:[{label:'检索本专题',url:search(t.label)}]},{heading:'本批独立研究报告',paragraphs:['只列本公开交付包中通过主管复核的报告，未接入草稿、待核片段或一般融资台账。'],links:t.list.map(ref)}],[root,...t.list.map(e=>e.id)]));}
+  for(const [code,company]of family){const own=active.filter(e=>e.code===code),heading='股票研究成果与复核状态';let s=company.sections.find(s=>s.heading===heading);if(!s){s={heading,paragraphs:['从下方独立报告查看研究完成日期、原因、证据、条件与反证。复核状态以各报告原页为准，旧版本不会因为新结论而消失。'],links:[]};company.sections.push(s);}for(const e of own)if(!s.links.some(l=>siteLinkKey(l.url)===entryPath(e)))s.links.push(ref(e));company.related=[...new Set([...company.related,root,...own.map(e=>e.id)])];}
+- for(const [projectId,list]of [['loan-audit',loans],['company-research',prices]]){const p=data.projects.find(p=>p.id===projectId);if(!p)continue;const addedReports=list.filter(e=>!before.has(e.id));if(!addedReports.length)continue;const line='股票研究成果补记（'+d.prepared_at.slice(0,10)+'）：本次新增'+addedReports.length+'篇，累计'+list.length+'篇已完成主管复核的报告；各自研究完成日与材料日期保留，盈利兑现未据此验证。';if(!p.results.includes(line))p.results.push(line);}
++ for(const [projectId,list]of [...new Set(stockResearchTopics.map(t=>t.project))].map(id=>[id,topicLists.filter(t=>t.project===id).flatMap(t=>t.list)])){const p=data.projects.find(p=>p.id===projectId);if(!p)continue;const addedReports=list.filter(e=>!before.has(e.id));if(!addedReports.length)continue;const line='股票研究成果补记（'+d.prepared_at.slice(0,10)+'）：本次新增'+addedReports.length+'篇，累计'+list.length+'篇已完成主管复核的报告；各自研究完成日与材料日期保留，盈利兑现未据此验证。';if(!p.results.includes(line))p.results.push(line);}
+  for(const id of ['method-loans','information-evidence-reading-map']){const e=get(id);if(!e)continue;const heading='继续读已验收股票研究成果';if(!e.sections.some(s=>s.heading===heading))e.sections.push({heading,paragraphs:['已完成复核的具体股票报告独立展示，正文保留原因、日期、条件、反证和证据。'],links:[{label:'股票研究成果',url:origin+'/library/category/stock-results/'}]});e.related=[...new Set([...e.related,root])];}
+  data.checked_at=new Date().toISOString();validatePublicSnapshot(data);for(const [id,json]of before){const old=JSON.parse(json),next=get(id);if(!next||entryPath(old)!==entryPath(next))throw Error('Existing URL lost');for(const s of old.sections){for(const p of s.paragraphs)if(!next.sections.some(n=>n.paragraphs.includes(p)))throw Error('Old paragraph lost '+id);for(const l of s.links??[])if(!next.sections.some(n=>n.links?.some(x=>x.url===l.url)))throw Error('Old link lost '+id);}}
+  const added=entries.filter(e=>!before.has(e.id)).map(e=>e.id),updated=entries.filter(e=>before.has(e.id)&&before.get(e.id)!==JSON.stringify(e)).map(e=>e.id);
+- return {data,report:{at:data.checked_at,batch_id:d.batch_id,content_sha256:d.content_sha256,source_file_sha256:source.file_sha256,before_entries:before.size,after_entries:entries.length,accepted_reports:active.length,companies:companyCount,loan_reports:loans.length,price_reports:prices.length,added,updated,updated_projects:data.projects.filter(p=>hash(p)!==hash(baseline.projects.find(x=>x.id===p.id))).map(p=>p.id),old_paragraphs_and_urls_preserved:true,home_changed:false,original_research_executed:false,publication_state:'PREPARED_NOT_PUBLISHED'}};
++ return {data,report:{at:data.checked_at,batch_id:d.batch_id,content_sha256:d.content_sha256,source_file_sha256:source.file_sha256,before_entries:before.size,after_entries:entries.length,accepted_reports:active.length,companies:companyCount,loan_reports:loans.length,price_reports:prices.length,bio_reports:topicLists.find(t=>t.id==='bio').list.length,added,updated,updated_projects:data.projects.filter(p=>hash(p)!==hash(baseline.projects.find(x=>x.id===p.id))).map(p=>p.id),old_paragraphs_and_urls_preserved:true,home_changed:false,original_research_executed:false,publication_state:'PREPARED_NOT_PUBLISHED'}};
+ }
+ async function main(){
+  const file='../../outputs/public-research-data.json',baseline=validatePublicSnapshot(JSON.parse(fs.readFileSync(file,'utf8'))),source=readApprovedStockDelivery(),receipt=JSON.parse(fs.readFileSync('private/stock-results-intake-receipt.json','utf8'));
+diff --git a/tests/ink-experience.test.js b/tests/ink-experience.test.js
+index 92ede94..b16c88c 100644
+--- a/tests/ink-experience.test.js
++++ b/tests/ink-experience.test.js
+@@ -2,6 +2,6 @@ import test from 'node:test';import assert from 'node:assert/strict';import fs f
+ import {sections,entrySectionIds,scopedDocuments} from '../lib/section-registry.js';import {searchDocuments} from '../lib/research-search.js';import {renderHome} from '../lib/home-page.js';import {renderAreaRoute,renderAreaMarkdown} from '../lib/ink-experience.js';
+ const data=JSON.parse(fs.readFileSync(new URL('../../../outputs/public-research-data.json',import.meta.url),'utf8')),origin='https://zhongshuderen.pages.dev';
+ test('home has exactly seven real sections and independent ask; data updates do not inject detail',()=>{const html=renderHome(data,origin);assert.equal((html.match(/class="project-blossom/g)||[]).length,7);for(const s of sections)assert(html.includes('href="/areas/'+s.id+'/"'));assert(html.includes('大师，理解，'));assert(html.includes('新世界'));assert(html.includes('观察市场，理解公司。'));assert(!html.includes('id="visitor-stats"'));assert(html.includes('visitor-total-summary'));assert(html.includes('href="/ask/"'));assert(!html.includes('贷款扩张 ↗'));assert(!html.includes('机器人研究</span>'));});
+-test('scope keeps formulas in quant, excludes generic bridges and preserves every original entry',()=>{const before=JSON.stringify(data),docs=searchDocuments(data.knowledge,{snapshot:data});const quant=scopedDocuments(docs,data,'quant-prediction'),ai=scopedDocuments(docs,data,'ai-tools'),loan=scopedDocuments(docs,data,'loan-price');assert(quant.some(d=>d.id.startsWith('tdx-')));assert(!ai.some(d=>d.id.startsWith('tdx-')));assert.deepEqual(new Set(loan.filter(d=>d.category==='stock-results').map(d=>d.id)),new Set(data.knowledge.entries.filter(e=>e.category==='stock-results').map(e=>e.id)));assert(loan.filter(d=>d.category==='stocks').length<100);assert(!loan.some(d=>d.id.startsWith('c1000-')));assert.equal(JSON.stringify(data),before);});
++test('scope keeps formulas in quant, excludes generic bridges and preserves every original entry',()=>{const before=JSON.stringify(data),docs=searchDocuments(data.knowledge,{snapshot:data});const quant=scopedDocuments(docs,data,'quant-prediction'),ai=scopedDocuments(docs,data,'ai-tools'),loan=scopedDocuments(docs,data,'loan-price');assert(quant.some(d=>d.id.startsWith('tdx-')));assert(!ai.some(d=>d.id.startsWith('tdx-')));assert.deepEqual(new Set(loan.filter(d=>d.category==='stock-results').map(d=>d.id)),new Set(data.knowledge.entries.filter(e=>e.category==='stock-results'&&!e.keywords.includes('生物中试与上市公司映射')).map(e=>e.id)));assert(loan.filter(d=>d.category==='stocks').length<100);assert(!loan.some(d=>d.id.startsWith('c1000-')));assert.equal(JSON.stringify(data),before);});
+ test('second level is a quiet entrance; warehouse carries isolated query and filters',()=>{for(const s of sections){const page=renderAreaRoute(data,new URL(origin+'/areas/'+s.id+'/'),origin);assert(page.includes('/visuals/liezi/'+s.asset));assert(page.includes('action="/areas/'+s.id+'/search/"'));assert(!page.includes('class="result-item"'));const q=renderAreaRoute(data,new URL(origin+'/areas/'+s.id+'/search/?q=不存在的测试词'),origin);assert(q.includes('暂未收录匹配材料'));assert(q.includes('name="type"'));assert(q.includes('name="date"'));const md=renderAreaMarkdown(data,new URL(origin+'/areas/'+s.id+'/index.md'),origin);assert(md?.includes(s.title));}});
+ test('loan landing keeps genuine original focus, five fish maximum and real source dates',()=>{const h=renderAreaRoute(data,new URL(origin+'/areas/loan-price/'),origin);assert((h.match(/class="ink-fish"/g)||[]).length<=5);assert(h.includes('loan-fish.webp'));assert(h.includes('loan-basket.webp'));assert(h.includes('仓库区'));assert(h.includes('条件研究'));assert(!h.includes('focus-choice'));});
+diff --git a/tests/knowledge-capacity.test.js b/tests/knowledge-capacity.test.js
+index 64ebeb1..a11fb9d 100644
+--- a/tests/knowledge-capacity.test.js
++++ b/tests/knowledge-capacity.test.js
+@@ -17,11 +17,11 @@ function fixture(count){
+  return data;
+ }
+ 
+-test('5006 entries retain every full-text document, stable URL and machine-index row',()=>{
++test('at least5006 entries retain every full-text document, stable URL and machine-index row',()=>{
+  const data=fixture(5006),last=data.knowledge.entries.at(-1),origin='https://example.com';
+  validatePublicSnapshot(data);
+  const docs=searchDocuments(data.knowledge,{snapshot:data});
+- assert.equal(knowledgeIndex(data.knowledge,origin,data.checked_at).entries.length,5006);
++ assert.equal(knowledgeIndex(data.knowledge,origin,data.checked_at).entries.length,Math.max(5006,seed.knowledge.entries.length));
+  const indexed=new Map(docs.map(d=>[d.path,d.id]));
+  for(const entry of data.knowledge.entries)assert.equal(indexed.get(entryPath(entry)),entry.id);
+  assert(knowledgePaths(data.knowledge).includes(entryPath(last)));
+diff --git a/tests/stock-research-table.test.js b/tests/stock-research-table.test.js
+index d69fe40..e662844 100644
+--- a/tests/stock-research-table.test.js
++++ b/tests/stock-research-table.test.js
+@@ -9,7 +9,7 @@ const data=JSON.parse(fs.readFileSync(new URL('../../../outputs/public-research-
+ const reports=stockReports(data.knowledge);
+ test('existing approved report dates and reasons feed the table without an extra data copy',()=>{
+  const published=data.knowledge.entries.filter(e=>e.category==='stock-results');assert.equal(reports.length,published.length);
+- for(const r of reports){assert(r.updatedMs>0,r.id);assert(r.reason.length>10);assert(['loan','price'].includes(r.topic));assert(r.entry.sections.some(s=>s.paragraphs.includes('报告最新更新日期：'+r.updated)));}
++ for(const r of reports){assert(r.updatedMs>0,r.id);assert(r.reason.length>10);assert(['loan','price','bio'].includes(r.topic));assert(r.entry.sections.some(s=>s.paragraphs.includes('报告最新更新日期：'+r.updated)));}
+ });
+ test('one stock groups its distinct business matters, while latest source dates break update-time ties',()=>{
+  const all=selectStockGroups(reports,{topic:'loan',level:'all'});assert.equal(new Set(all.map(g=>g.code)).size,all.length);
+@@ -58,7 +58,7 @@ test('approved stock reports each use one topic visual without changing evidence
+  for(const r of reports){
+   const path=entryPath(r.entry),html=renderKnowledge(data.knowledge,new URL(origin+path),origin);
+   assert.equal((html.match(/data-visual=/g)||[]).length,1,r.id);
+-  assert.match(html,new RegExp('data-visual="visual-'+(r.topic==='loan'?'loan-expansion':'price-mapping')+'-v1"'));
++  assert.match(html,new RegExp('data-visual="visual-'+(r.topic==='loan'?'loan-expansion':r.topic==='price'?'price-mapping':'evidence')+'-v1"'));
+   assert.match(html,/主题插画 .*不代表实测数据/);
+   assert(html.includes('href="'+origin+path+'"'));
+   const escaped=s=>s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
+@@ -84,3 +84,13 @@ test('the Edge reader shares the illustrated report renderer while its JSON rema
+  const snapshot=await handler(new Request(origin+'/research.json'),context);
+  assert.deepEqual(await snapshot.json(),data);
+ });
++
++
++test('biopilot filter, detail and return URL retain the biological topic',()=>{
++ const k=structuredClone(data.knowledge),e=structuredClone(reports[0].entry);e.id='stock-research-bio-fixture';e.keywords=e.keywords.filter(k=>!['贷款与业务扩张','全球价格变化与A股映射'].includes(k));e.keywords.push('生物中试与上市公司映射');k.entries.push(e);
++ const r=stockReports(k).find(r=>r.id===e.id);assert.equal(r.topic,'bio');assert.equal(r.topicLabel,'生物中试与上市公司映射');
++ assert(selectStockGroups(stockReports(k),{topic:'bio',level:'all'}).some(g=>g.cases.some(c=>c.id===e.id)));
++ assert(!selectStockGroups(stockReports(k),{topic:'price',level:'all'}).some(g=>g.cases.some(c=>c.id===e.id)));
++ const html=renderStockBoard(k,new URL(origin+'/library/stock-research-results/?topic=bio&level=all'),origin);assert(html.includes('value="bio" selected'));assert(html.includes('topic=bio'));assert(html.includes('生物中试与上市公司映射'));
++ const article=renderKnowledge(k,new URL(origin+'/library/'+e.id+'/?board=all&topic=bio&level=all'),origin);assert(article.includes('topic=bio'));
++});
+diff --git a/tests/stock-results-intake.test.js b/tests/stock-results-intake.test.js
+index 89acc5d..7558cbb 100644
+--- a/tests/stock-results-intake.test.js
++++ b/tests/stock-results-intake.test.js
+@@ -35,3 +35,16 @@ test('unreviewed orphan baseline report cannot silently become an accepted cumul
+  assert.throws(()=>buildStockResultsIntake(f.baseline,f.source,f.receipt),/baseline report/);
+ });
+ test('same already published delivery remains a no-op',()=>{const f=setup();f.receipt.last_published_content_sha256=f.source.delivery.content_sha256;assert.equal(buildStockResultsIntake(f.baseline,f.source,f.receipt).report.changed,false);});
++
++
++test('biopilot topic preserves prior reports and stays outside loan and price subgroups',()=>{
++ const f=setup();f.source.delivery.entries[0].topic='生物中试与上市公司映射';
++ const out=buildStockResultsIntake(f.baseline,f.source,f.receipt),e=out.data.knowledge.entries.find(e=>e.id===f.source.delivery.entries[0].id);
++ assert(e.related.includes('stock-research-biopilot-mapping'));assert(!e.related.includes('stock-research-price-mapping'));assert(!e.related.includes('stock-research-loan-expansion'));
++ const subgroup=out.data.knowledge.entries.find(e=>e.id==='stock-research-biopilot-mapping');assert(subgroup.related.includes(e.id));assert.equal(out.report.bio_reports,f.old.filter(e=>e.keywords.includes('生物中试与上市公司映射')).length+1);
++ for(const old of f.old)assert.deepEqual(out.data.knowledge.entries.find(e=>e.id===old.id),old);
++ for(const id of ['stock-research-price-mapping','stock-research-loan-expansion'])assert.deepEqual(out.data.knowledge.entries.find(e=>e.id===id),f.baseline.knowledge.entries.find(e=>e.id===id));
++});
++test('unknown business topic is rejected instead of silently falling through to price',()=>{
++ const f=setup();f.source.delivery.entries[0].topic='unreviewed-topic';assert.throws(()=>buildStockResultsIntake(f.baseline,f.source,f.receipt),/Unknown approved topic/);
++});
